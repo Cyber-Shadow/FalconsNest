@@ -1,0 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif);
+
+.title {
+    background: gold;
+    font-family: "PT Serif";
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+}
