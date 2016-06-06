@@ -6,5 +6,5 @@ Django based School Canteen Service!
 Target Audiences:
 
     Students         -Ease of use, Quick, Lunch!
-    Canteen Staff    -Statisics, Ease of use, No food waste.
+    Canteen Staff    -Statistics, Ease of use, No food waste.
 
