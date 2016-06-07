@@ -1,0 +1,25 @@
+body {
+  background: #EFFAFC;
+  border-radius: 10px;
+}
+
+.login {
+  width: 400px;
+  height: 250px;
+  border: 2px solid lightblue;
+  position: fixed;
+  left: 30px;
+}
+
+.prompt {
+  font-size: 20px;
+}
+
+#headertext h3 {
+  font-weight: bold;
+}
+
+#headerlinks {
+  font-size: 20px;
+  line-height: 100px;
+}
