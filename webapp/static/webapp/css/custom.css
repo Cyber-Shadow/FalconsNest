@@ -1,6 +1,11 @@
+html {
+  width: 100%;
+}
+
 body {
   background: #EFFAFC;
   border-radius: 10px;
+  width: 100%;
 }
 
 .login {
@@ -15,11 +20,35 @@ body {
   font-size: 20px;
 }
 
+#imgcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#headerimg {
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+
 #headertext h3 {
   font-weight: bold;
 }
 
 #headerlinks {
   font-size: 20px;
-  line-height: 100px;
+  line-height: 30px;
+  padding-top: 50px;
+}
+
+#loginpending {
+  display: block;
+  padding-top: 50px;
+}
+
+#loggedin {
+  display: none;
+  padding-top: 50px;
 }
