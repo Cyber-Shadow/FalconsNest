@@ -46,7 +46,12 @@ body {
   margin-top: 20px;
 }
 
-#headertext h3 {
+#headertext {
+  height: 70px;
+}
+
+#headertext h4 {
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
@@ -57,10 +62,13 @@ body {
   line-height: 30px;
   border-left: 1px solid black;
   vertical-align: middle;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #headerlink {
+  text-align: center;
+  height: 100%;
   border-right: 1px solid black;
 }
 
