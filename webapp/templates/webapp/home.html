@@ -1,27 +1,24 @@
 {% extends "webapp/header.html" %}
 
 {% block content %}
+
 <html>
-
-
-
+  
 <body>
-  <center>
-  <div class="login">
-    <div class="loginbar">
-      <h1>LOGIN</h1>
-    </div>
-    <div class="prompt">
-      <form action=forms.py method="POST">
-        {% csrf_token %}
-        StudentID:<br> <input class="form-control" type="text" name="username"><br>
-        Password:<br> <input class="form-control" type="password" name="password"><br>
-        <input type="submit" value="Submit">
-      </form>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="col-sm-8">
+          <!-- Insert slideshow here -->
+        </div>
+        <div class="col-sm-4">
+          <h1>Welcome to Falcon's Nest.</h1>
+          <button id="button" type="button" onclick="launch()">Hello!</button>
+        </div>
+      </div>
     </div>
   </div>
-  </center>
 </body>
+  
 </html>
 {% endblock %}
-<!--{% include "webapp/includes/snippiet.html" %}-->

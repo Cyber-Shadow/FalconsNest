@@ -2,64 +2,70 @@
 <html lang="en">
 
 <head>
-	<title>Falcon's Nest</title>
-	<meta charset="utf-8" /> {% load staticfiles %}
+  <title>Falcon's Nest</title>
+	<meta charset="utf-8"/>
+	{% load staticfiles %}
 	<link rel="stylesheet" type="text/css" href="{% static 'webapp/css/bootstrap.min.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'webapp/css/custom.css' %}">
-	<link rel="shortcut icon" href="{%  static 'webapp/img/favicon.ico' %}">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/project/custom.css' %}">
+  <link rel="shortcut icon" href="{%  static 'webapp/img/favicon.ico' %}">
+  <script type="text/javascript" src="{% static 'webapp/js/jquery-3.0.0.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'webapp/js/project/headerjs.js' %}"></script>
+	<meta name="viewport" content ="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="body">
-	<div class="container-fluid" style="min-height:95%; ">
+  <div class="container-fluid" id="headercontfluid">
+    <div class="row" id="rowheader">
+		  <div class="col-sm-1" id="imgcontainer">
+				<br>
+				<img src="{% static 'webapp/img/icon.png' %}" class="responsive-img" id="headerimg" alt="face">
+		  </div>
+		    <div class="col-sm-11">
+          <br>
+          <div class="col-sm-2" id="headertext">
+            <h3>Falcon's Nest</h3>
+          </div>
+          <div class="col-sm-8" id="headerlinks">
+            <div class="col-sm-2" id="headerlink">
+              <center><a href='/'>Home</a></center>
+            </div>
+            <div class="col-sm-2" id="headerlink">
+              <center><a href='/yournest.html'>Your Nest</a></center>
+            </div>
+            <div class="col-sm-2" id="headerlink">
+              <center><a href='/menu.html'>Menu</a></center>
+            </div>
+            <div class="col-sm-2" id="headerlink">
+              <center><a href='/about.html'>About</a></center>
+            </div>
+          </div>
+          <div class="col-sm-1">
+            <div id="loginpending" style="display:block;">
+              <a href="/login">Signup</a>/<a href="/login">Login</a> here!
+            </div>
+            <div id="loggedin" style="display:none;">
+               Hello!
+            </div>
+          </div>
+		    </div><hr>
+    </div>
+
 		<div class="row">
-			<div class="col-sm-2">
-				<br>
-				<center>
-					<img src="{% static 'webapp/img/icon.PNG' %}" class="responsive-img" style='max-height:150px;' alt="Icon">
-				</center>
-			</div>
-			<div class="col-sm-10">
-				<br>
-				<div class="col-sm-2" id="headertext">
-					<center>
-						<h3>Falcon's Nest</h3>
-						<h4>NSBHS Online Canteen</h4>
-					</center>
-				</div>
-				<div class="col-sm-8" id="headerlinks">
-					<div class="col-sm-2">
-						<center><a href='/'>Home</a></center>
-					</div>
-					<div class="col-sm-2">
-						<center><a href='/about'>About</a></center>
-					</div>
-					<div class="col-sm-2">
-						<center><a href='/menu'>Menu</a></center>
-					</div>
-					<div class="col-sm-2">
-						<center><a href='/yournest'>Your Nest</a></center>
-					</div>
-				</div>
-				<div class="col-sm-2">
+		  <div class="col-sm-2">
+        <br>
 
-				</div>
-			</div>
-			<hr>
+        <br>
+        <div class="col-sm-12">
 
-			<div class="row">
-				<div class="col-sm-2">
-					<br>
-
-					<br>
-					<div class="col-sm-12">
-
-						<div class='container-fluid'>
-							<br><br> {% block content %} {% endblock %}
-						</div>
-					</div>
-				</div>
-			</div>
+          <div class='container-fluid'>
+            <br><br>
+            {% block content %}
+            {% endblock %}	
+          </div>
+		     </div>
+		  </div> 
+    </div>
+  </div>
 </body>
 
 </html>
