@@ -13,7 +13,8 @@ body {
 
 .login {
   width: 400px;
-  height: 250px;
+  height: 340px;
+  padding: 20px;
   border: 2px solid lightblue;
   position: fixed;
   left: 30px;
