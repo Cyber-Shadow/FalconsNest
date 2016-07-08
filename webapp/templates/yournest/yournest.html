@@ -7,11 +7,16 @@
 
 <body>
   <center>
-  <div class="login">
-    <div class="loginbar">
-      <h1>Temp Yournest</h1>
+  <div class="register">
+    <div class="registerbar">
+      <h1>REGISTER</h1>
+      <br>
     </div>
     <div class="prompt">
+      <form action=forms.py method="POST">
+        {% csrf_token %}
+        StudentID:<br> <input class="form-control" type="text" name="username"><br>
+        <input type="submit" value="Submit">
       </form>
     </div>
   </div>
