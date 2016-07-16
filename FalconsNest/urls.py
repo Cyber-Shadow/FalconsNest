@@ -21,5 +21,4 @@ urlpatterns = [
     url(r'^', include('webapp.urls')),
     url(r'^yournest/', include('yournest.urls')),
     url(r'^login/', include('webapp.urls'))
-#    url(r'^register/', include('register.urls'))
 ]
