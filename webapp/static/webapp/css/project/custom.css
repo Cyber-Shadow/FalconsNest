@@ -151,7 +151,7 @@ body {
   transition: 0.5s;
 }
 .btn span:after {
-  content: ' >>>';
+  content: '>>';
   position: absolute;
   opacity: 0;
   top: 0;
