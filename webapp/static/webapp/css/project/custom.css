@@ -136,11 +136,7 @@ body {
   transition: 0.5s;
 }
 .btn span:after {
-<<<<<<< HEAD
   content: '>>';
-=======
-  content: '»';
->>>>>>> origin/master
   position: absolute;
   opacity: 0;
   top: 0;
