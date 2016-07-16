@@ -136,11 +136,7 @@ body {
   transition: 0.5s;
 }
 .btn span:after {
-<<<<<<< HEAD
   content: '>>>';
-=======
-  content: '>>';
->>>>>>> 8bcfdbbf69aa7de83c16815ede210af726da8191
   position: absolute;
   opacity: 0;
   top: 0;
