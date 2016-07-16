@@ -3,6 +3,7 @@ from django.shortcuts import render_to_response
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib import auth
 from django.template.context_processors import csrf
+from django.contrib.auth.models import User
 
 
 
@@ -45,13 +46,16 @@ def logout(request):
 
 def register_user(request):
     if request.method == 'POST':
-        form = MyRegistrationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return HttpResponseRedirect('/register_success')
+        username = request.POST.get('username', '')
+        password = request.POST.get('password', '')
+        user = User.objects.create_user(username, password)
+        if username is not None():
+            if password is not None():
+                user.save()
+                return HttpResponseRedirect('/register_success')
 
     else:
-        form = MyRegistrationForm()
+        return None
     args = {}
     args.update(csrf(request))
 
@@ -62,3 +66,6 @@ def register_user(request):
 
 def register_success(request):
     return render_to_response('register_success.html')
+
+def register_page(request):
+    return render(request, 'webapp/register.html',)
