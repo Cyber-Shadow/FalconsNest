@@ -14,7 +14,7 @@ def index(request):
 def login(request):
     c = {}
     c.update(csrf(request))
-    return render_to_response('webapp/login2.html', c)
+    return render_to_response('webapp/login.html', c)
 
 
 def auth_view(request):
@@ -48,11 +48,9 @@ def register_user(request):
     if request.method == 'POST':
         username = request.POST.get('username', '')
         password = request.POST.get('password', '')
-        user = User.objects.create_user(username, password)
-        if username is not None():
-            if password is not None():
-                user.save()
-                return HttpResponseRedirect('/register_success')
+        user = User.objects.create_user(username, "", password)
+        user.save()
+        return HttpResponseRedirect('/register_success')
 
     else:
         return None
@@ -65,7 +63,7 @@ def register_user(request):
 
 
 def register_success(request):
-    return render_to_response('register_success.html')
+    return render_to_response('webapp/register_success.html')
 
 def register_page(request):
     return render(request, 'webapp/register.html',)
