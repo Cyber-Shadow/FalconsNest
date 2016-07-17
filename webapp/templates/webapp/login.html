@@ -18,10 +18,12 @@
       <div class="prompt">
         <form action=forms.py method="POST">
           {% csrf_token %}
-          Student ID:<br> <input class="form-control" type="text" name="username"><br>
-          Password:<br> <input class="form-control" type="password" name="password">
+          <h3>Student ID:</h3> <input class="form-control" type="text" name="username"><br>
+          <h3>Password:</h3> <input class="form-control" type="password" name="password">
           <p></p><br>
+          <div id="button">
           <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
+          </div>
         </form>
       </div>
 </body>
