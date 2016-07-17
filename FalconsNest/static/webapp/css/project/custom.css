@@ -30,6 +30,7 @@ min-width:100%;
 
 .logo {
     box-shadow: 15px -1px 100px #888888;
+    text-align: center;
 }
 
 .login {
