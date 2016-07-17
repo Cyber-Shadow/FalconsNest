@@ -11,9 +11,10 @@
 
 <body>
 
-<hr>
-<div class="container">
 
+<div class="container">
+  <button type="button" class="btn btn-primary btn-lg raised" data-toggle="collapse" data-target="#Signin"><span>Sign In!</span></button>
+  <div id="Signin" class="collapse">
 
       <div class="loginbar">
         <h1>LOGIN</h1>
@@ -21,13 +22,15 @@
       <div class="prompt">
         <form action=forms.py method="POST">
           {% csrf_token %}
-          Student ID:<br> <input class="form-control" type="text" name="username"><br>
+          StudentID:<br> <input class="form-control" type="text" name="username"><br>
           Password:<br> <input class="form-control" type="password" name="password">
-          <p></p><br>
-          <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
+          <p></p>
+          <font size=2px> Don't have an account? <a href="/register">Register here!</a> <p></p></font>
+          <input type="submit" value="Submit">
         </form>
       </div>
 
+  </div>
 </div>
 
 </body>
