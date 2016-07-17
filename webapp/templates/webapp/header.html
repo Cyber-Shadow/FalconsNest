@@ -13,54 +13,13 @@
 	<meta name="viewport" content ="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="body">
-  <div class="container-fluid" id="headercontfluid">
-    <div class="row" id="rowheader">
-		  <div class="col-sm-1" id="imgcontainer">
-				<br>
-				<a href=/><img src="{% static 'webapp/img/icon.png' %}" class="responsive-img" id="headerimg" alt="face"></a>
-		  </div>
-		    <div class="col-sm-11">
-          <br>
-          <div class="col-sm-2" id="headertext">
-            <h3>Falcon's Nest</h3>
-          </div>
-          <div class="col-sm-8" id="headerlinks">
-            <div class="col-sm-2" id="headerlink">
-              <center><a href='/index'>Home</a></center>
-            </div>
-            <div class="col-sm-2" id="headerlink">
-              <center><a href='/yournest'>Your Nest</a></center>
-            </div>
-            <div class="col-sm-2" id="headerlink">
-              <center><a href='/menu'>Menu</a></center>
-            </div>
-            <div class="col-sm-2" id="headerlink">
-              <center><a href='/about'>About</a></center>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div id="loggedin" style="display:none;">
-               Hello!
-            </div>
-          </div>
-		    </div><hr>
-    </div>
-
-		<div class="row">
-		  
-        <br>
-
-        <br>
-        
-
           <div class='container-fluid'>
             <br><br>
             {% block content %}
             {% endblock %}
           </div>
-		     
-		  
+
+
     </div>
   </div>
 </body>
