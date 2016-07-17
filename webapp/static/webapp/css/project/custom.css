@@ -2,10 +2,11 @@
 
 html {
   width: 100%;
+  background-color: rgb(165, 208, 174);
 }
 
 body {
-  background: #EFFAFC;
+  background: transparent;
   border-radius: 10px;
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
