@@ -29,6 +29,10 @@ min-width:100%;
 }
 
 .logo {
+<<<<<<< HEAD
+=======
+    box-shadow: 15px -1px 100px #888888;
+>>>>>>> origin/master
     text-align: center;
 }
 
