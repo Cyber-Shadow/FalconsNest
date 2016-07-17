@@ -13,9 +13,8 @@ body {
 }
 
 h3 {
-text-align: center;
+text-align: left;
 padding-bottom: 0px;
-padding-right: 40%;
 }
 
 #Signin {
@@ -29,7 +28,14 @@ min-width:100%;
 }
 
 .logo {
+    text-align: center;
+}
+
+.logo img {
     box-shadow: 15px -1px 100px #888888;
+    display: inline-block;
+    border: none;
+    margin: 0 auto;
 }
 
 .login {
@@ -51,7 +57,9 @@ min-width:100%;
 }
 
 .prompt {
-  font-size: 20px;
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
 }
 
 .loginbar {
@@ -61,7 +69,7 @@ text-align: center
 
 .form-control {
     display: block;
-    width: 50%;
+    width: 100%;
     min-width: 250px;
     height: 60px;
     padding: 6px 12px;
