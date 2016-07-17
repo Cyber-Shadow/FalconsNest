@@ -29,16 +29,14 @@ min-width:100%;
 }
 
 .logo {
-    box-shadow: 15px -1px 100px #888888;
+    text-align: center;
 }
 
-.login {
-  width: 400px;
-  height: 380px;
-  padding: 20px;
-  border: 2px solid lightblue;
-  position: fixed;
-  left: 30px;
+.logo img {
+    box-shadow: 15px -1px 100px #888888;
+    display: inline-block;
+    border: none;
+    margin: 0 auto;
 }
 
 .register {
