@@ -6,7 +6,6 @@ from django.template.context_processors import csrf
 from django.contrib.auth.models import User
 
 
-
 def index(request):
     return render(request, "webapp/home.html")
 
@@ -16,8 +15,9 @@ def login(request):
     c.update(csrf(request))
     return render_to_response('webapp/login.html', c)
 
-
 def auth_view(request):
+    global invalid
+    invalid = "False"
     username = request.POST.get('username', '')
     password = request.POST.get('password', '')
     user = auth.authenticate(username=username, password=password)
@@ -27,6 +27,7 @@ def auth_view(request):
 
         return HttpResponseRedirect('/loggedin')
     else:
+        invalid = "True"
         return HttpResponseRedirect('/invalid')
 
 
@@ -36,7 +37,11 @@ def loggedin(request):
 
 
 def invalid_login(request):
-    return render_to_response('webapp/invalid_login.html')
+    c = {}
+    c.update(csrf(request))
+    invalid = {"content":"Your account or password is incorrect."}
+    c.update(invalid)
+    return render_to_response('webapp/login.html', c)
 
 
 def logout(request):

@@ -10,7 +10,8 @@
 </head>
 <br>
 <div class="logo" height="100px" width="100px">
-  <img src="static/webapp/img/logo.png" alt="logo">
+    {% load staticfiles %}
+    <img src={% static 'webapp/img/logo.png'%} alt="logo">
 </div>
 <body>
 <br>
@@ -29,6 +30,7 @@
           <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
           </div>
         </form>
+          {{ content }}
       </div>
 </body>
 </html>

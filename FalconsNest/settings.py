@@ -115,6 +115,8 @@ USE_TZ = True
 
 ACCOUNT_EMAIL_REQUIRED = False
 
+LOGIN_REDIRECT_URL = '/'
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
