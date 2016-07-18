@@ -1,0 +1,28 @@
+{% extends "webapp/header.html" %}
+
+{% block content %}
+<html>
+
+
+
+<body>
+  <center>
+  <div class="register">
+    <div class="registerbar">
+      <h1>REGISTER</h1>
+      <br>
+    </div>
+    <div class="prompt">
+      <form action=/authr/ method="POST">
+        {% csrf_token %}
+          StudentID:<br> <input class="form-control" type="text" name="username"><br>
+          Password:<br> <input class="form-control" type="password" name="password"><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  </center>
+</body>
+</html>
+{% endblock %}
+<!--{% include "webapp/includes/snippiet.html" %}-->

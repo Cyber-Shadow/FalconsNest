@@ -22,7 +22,7 @@
         <h1>LOGIN</h1>
       </div>
       <div class="prompt">
-        <form action=forms.py method="POST">
+        <form action="/auth/" method="POST">
           {% csrf_token %}
           <h3>Student ID:</h3> <input class="form-control" type="text" name="username"><br>
           <h3>Password:</h3> <input class="form-control" type="password" name="password">

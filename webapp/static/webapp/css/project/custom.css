@@ -2,7 +2,7 @@
 
 html {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: #fff;
 }
 
 body {
@@ -33,10 +33,17 @@ min-width:100%;
 }
 
 .logo img {
+<<<<<<< HEAD
   box-shadow: 5px -1px 100px #888888;
   display: inline-block;
   border: none;
   margin: 0 auto;
+=======
+    box-shadow: 5px -1px 100px #888888;
+    display: inline-block;
+    border: none;
+    margin: 0 auto;
+>>>>>>> origin/master
 }
 
 .login {
