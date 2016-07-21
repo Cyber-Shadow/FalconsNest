@@ -2,7 +2,7 @@
 
 html {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: #f2f2;
 }
 
 body {
@@ -16,6 +16,7 @@ h3 {
 text-align: left;
 padding-bottom: 0px;
 }
+
 
 #Signin {
 min-width:100%;
@@ -32,16 +33,17 @@ min-width:100%;
 }
 
 .logo img {
-    box-shadow: 15px -1px 100px #888888;
+<<<<<<< HEAD
+  box-shadow: 5px -1px 100px #888888;
+  display: inline-block;
+  border: none;
+  margin: 0 auto;
+=======
+    box-shadow: 5px -1px 100px #888888;
     display: inline-block;
     border: none;
     margin: 0 auto;
-}
-
-#title {
-
-    box-shadow: none;
-
+>>>>>>> origin/master
 }
 
 .login {
