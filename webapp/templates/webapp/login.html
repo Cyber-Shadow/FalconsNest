@@ -4,23 +4,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
 </head>
-<br>
-<div class="logo" height="100px" width="100px">
-    {% load staticfiles %}
-    <a href="/" style="text-decoration: none;">
-    <img src={% static 'webapp/img/logo.png'%} alt="logo" style="box-shadow: 5px 5px 15px #888888;">
-    <img src={% static 'webapp/img/title.png'%} alt="title" style="box-shadow: none; padding-left: 35px; padding-top: 20px; ">
-    </a>
-</div>
-
-<body>
-<br>
-<hr>
-<p>
       <div class="loginbar">
         <h1>LOGIN</h1>
       </div>
@@ -34,9 +18,11 @@
           <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
           <br>
           </div>
+          <br>
         </form>
           {{ content }}
       </div>
+      <br>
 </body>
 </html>
 {% endblock %}
