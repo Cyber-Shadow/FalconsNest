@@ -12,7 +12,7 @@
 <div class="logo" height="100px" width="100px">
     {% load staticfiles %}
     <img src={% static 'webapp/img/logo.png'%} alt="logo" style="box-shadow: 5px 5px 15px #888888;">
-    <img src="static/webapp/img/title.png" alt="title" style="box-shadow: none; padding-left: 35px; padding-top: 20px; ">
+    <img src={% static 'webapp/img/title.png'%} alt="title" style="box-shadow: none; padding-left: 35px; padding-top: 20px; ">
 </div>
 
 <body>
@@ -30,6 +30,7 @@
           <p></p><br>
           <div id="button">
           <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
+          <br>
           </div>
         </form>
           {{ content }}
