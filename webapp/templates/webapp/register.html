@@ -2,22 +2,21 @@
 
 {% block content %}
 <html>
-
-
-
-<body>
-  <center>
-  <div class="register">
-    <div class="registerbar">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <div class="loginbar">
       <h1>REGISTER</h1>
-      <br>
     </div>
     <div class="prompt">
       <form action=/authr/ method="POST">
         {% csrf_token %}
           StudentID:<br> <input class="form-control" type="text" name="username"><br>
           Password:<br> <input class="form-control" type="password" name="password"><br>
-        <input type="submit" value="Submit">
+          <div id="button">
+          <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
+          <br>
+          </div>
       </form>
     </div>
   </div>
