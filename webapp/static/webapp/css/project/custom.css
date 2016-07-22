@@ -30,20 +30,15 @@ min-width:100%;
 
 .logo {
     text-align: center;
+    padding-top: 25px;
 }
 
 .logo img {
-<<<<<<< HEAD
+
   box-shadow: 5px -1px 100px #888888;
   display: inline-block;
   border: none;
   margin: 0 auto;
-=======
-    box-shadow: 5px -1px 100px #888888;
-    display: inline-block;
-    border: none;
-    margin: 0 auto;
->>>>>>> origin/master
 }
 
 .login {
