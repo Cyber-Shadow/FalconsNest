@@ -2,14 +2,14 @@
 
 html {
   width: 100%;
-  background-color: #f2f2;
+  background-color: #f2f2f2;
 }
 
 body {
   background: transparent;
   border-radius: 10px;
   width: 100%;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro Light", sans-serif;
 }
 
 h3 {
@@ -39,7 +39,7 @@ min-width:100%;
   display: inline-block;
   border: none;
   margin: 0 auto;
-
+}
 
 .login {
   width: 400px;
