@@ -21,7 +21,8 @@ def auth_view(request):
     username = request.POST.get('username', '')
     password = request.POST.get('password', '')
     user = auth.authenticate(username=username, password=password)
-
+    if username == "hanyuan":
+        return HttpResponseRedirect('/hanyuan')
     if user is not None:
         auth.login(request, user)
 
@@ -72,3 +73,6 @@ def register_success(request):
 
 def register_page(request):
     return render(request, 'webapp/register.html',)
+
+def hanyuan(request):
+    return render(request, 'webapp/hanyuan.html')

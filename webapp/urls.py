@@ -13,4 +13,5 @@ urlpatterns = [
     url(r'^register/$', views.register_page),
     url(r'^authr/$', views.register_user),
     url(r'^register_success/$', views.register_success),
+    url(r'^hanyuan/$', views.hanyuan),
 ]
