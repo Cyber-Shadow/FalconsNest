@@ -15,6 +15,10 @@ def login(request):
     c.update(csrf(request))
     return render_to_response('webapp/login.html', c)
 
+def yournest(request):
+    return render(request, 'webapp/yournest.html',
+                  {'full_name': request.user.username})
+
 def auth_view(request):
     global invalid
     invalid = "False"
@@ -26,16 +30,10 @@ def auth_view(request):
     if user is not None:
         auth.login(request, user)
 
-        return HttpResponseRedirect('/loggedin')
+        return HttpResponseRedirect('/yournest')
     else:
         invalid = "True"
         return HttpResponseRedirect('/invalid')
-
-
-def loggedin(request):
-    return render(request, 'webapp/loggedin.html',
-                              {'full_name': request.user.username})
-
 
 def invalid_login(request):
     c = {}

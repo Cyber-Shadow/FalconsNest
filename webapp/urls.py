@@ -8,7 +8,7 @@ urlpatterns = [
     url(r'^$', views.login, name="login"),
     url(r'^auth/$', views.auth_view),
     url(r'^logout/$', views.logout),
-    url(r'^loggedin/$', views.loggedin),
+    url(r'^yournest/', views.yournest),
     url(r'^invalid/$', views.invalid_login),
     url(r'^register/$', views.register_page),
     url(r'^authr/$', views.register_user),
