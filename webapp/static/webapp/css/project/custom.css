@@ -301,7 +301,7 @@ ul.header li {
     font-size: 36pt;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 326px){
     ul.header li {
-        text-align: middle;
+        text-align: left;
         float: none;
