@@ -1,33 +1,8 @@
 {% extends "webapp/header.html" %}
 
 {% block content %}
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-      <div class="loginbar">
-        <h1>LOGIN</h1>
-      </div>
-      <div class="prompt">
-        <form action="/auth/" method="POST">
-          {% csrf_token %}
-          <h3>Student ID:</h3> <input class="form-control" type="text" name="username"><br>
-          <h3>Password:</h3> <input class="form-control" type="password" name="password">
-          <p></p>
-          <font size="4">First time using FalconsNest? <a href="/register">Register Here!</a></font>
-          <p></p>
 
-
-
-          <div id="button">
-          <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
-          <br>
-          </div>
-          <br>
-        </form>
-          {{ content }}
-      </div>
-      <br>
+        <p>Logged in as {{full_name}}</p>
 </body>
 </html>
 {% endblock %}
