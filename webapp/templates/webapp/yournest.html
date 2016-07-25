@@ -1,35 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #049372;
-}
-
-li {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 6px 10px;
-    text-decoration: none;
-    font-family: Century Gothic;
-    font-size: 36pt;
-}
-
-</style>
+  {% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{% static 'webapp/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/project/custom.css' %}">
+  <link rel="shortcut icon" href="{%  static 'webapp/img/favicon.ico' %}">
+  <script type="text/javascript" src="{% static 'webapp/js/jquery-3.0.0.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'webapp/js/project/headerjs.js' %}"></script>
+	<meta name="viewport" content ="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <ul class="header">
+    <li style="font-family:Century Gothic; ">Falcon's Nest</li>
+    <li style="font-size:14pt;float:right;">Logged in as {{full_name}}</li>
+  </ul>
 </head>
-<body>
-
-<ul>
-  <li style="font-family:Century Gothic; ">Falcon's Nest</li>
-  <li style="font-size:14pt;float:right;">Logged in as {{full_name}}</li>
-</ul>
-
-</body>
 </html>
-

@@ -280,3 +280,28 @@ div style="width:100%; height:100%
     background: #049372;
     box-shadow: none;
 }
+body {margin:0;}
+
+ul.header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #049372;
+}
+
+ul.header li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+    text-decoration: none;
+    font-family: Century Gothic;
+    font-size: 36pt;
+}
+
+@media screen and (max-width: 400px){
+    ul.header li {
+        text-align: middle;
+        float: none;
