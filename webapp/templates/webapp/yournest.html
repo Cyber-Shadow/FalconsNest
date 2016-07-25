@@ -1,8 +1,35 @@
-{% extends "webapp/header.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #049372;
+}
 
-{% block content %}
+li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+    text-decoration: none;
+    font-family: Century Gothic;
+    font-size: 36pt;
+}
 
-        <p>Logged in as {{full_name}}</p>
+</style>
+</head>
+<body>
+
+<ul>
+  <li style="font-family:Century Gothic; ">Falcon's Nest</li>
+  <li style="font-size:14pt;float:right;">Logged in as {{full_name}}</li>
+</ul>
+
 </body>
 </html>
-{% endblock %}
+
