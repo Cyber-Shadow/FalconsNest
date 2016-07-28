@@ -59,7 +59,7 @@ def yournest(request):
     except:
         return HttpResponseRedirect('/register')
     try:
-        orderdict = {"intorder1": intorder1, "intorder2": intorder2}
+        orderdict = {"intorder1": intorder1, "intorder2": intorder2, 'full_name': request.user.username}
     except:
         intorder1 = 0
         intorder2 = 0
