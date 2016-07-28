@@ -38,7 +38,7 @@ def auth_view(request):
 def invalid_login(request):
     c = {}
     c.update(csrf(request))
-    invalid = {"content":"Your account or password is incorrect."}
+    invalid = {"content":"Your account or password is incorrect. Please try again."}
     c.update(invalid)
     return render_to_response('webapp/login.html', c)
 
