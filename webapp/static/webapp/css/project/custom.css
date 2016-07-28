@@ -190,10 +190,12 @@ h3 {
   vertical-align: top;
 }
 
-#header {
+.header {
   font: "Source Sans Pro";
   vertical-align: middle;
 }
+
+
 
 /**************************
   DEFAULT BOOTSTRAP STYLES
@@ -286,27 +288,30 @@ h3 {
 body {margin:0;}
 
 ul.header {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #049372;
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #049372;
 }
 
 ul.header li {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 6px 10px;
-    text-decoration: none;
-    font-family: Source Sans Pro Light;
-    font-size: 36pt;
-    background: #049372;
-    box-shadow: none;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 6px 10px;
+  text-decoration: none;
+  font-family: "Source Sans Pro";
+  font-size: 36pt;
+  background: #049372;
+  box-shadow: none;
   }
- -
- -@media screen and (max-width: 326px){
- -    ul.header li {
- -        text-align: left;
- -        float: none;
+
+@media screen and (max-width: 326px){
+  ul.header li {
+    text-align: left;
+    float: none;
+  }
+}
