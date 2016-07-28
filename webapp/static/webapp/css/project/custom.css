@@ -190,10 +190,6 @@ h3 {
   vertical-align: top;
 }
 
-.header {
-  font: "Source Sans Pro";
-}
-
 .headername {
   font-size: 14pt;
   text-align: right;
@@ -306,7 +302,6 @@ ul.header li {
   padding: 6px 10px;
   text-decoration: none;
   font-family: "Source Sans Pro";
-  font-size: 36pt;
   background: #049372;
   box-shadow: none;
   }
