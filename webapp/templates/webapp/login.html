@@ -12,13 +12,13 @@
                   <font color="#F00" style="font-weight:bold;">{{ content }}</font>
         <form action="/auth/" method="POST">
           {% csrf_token %}
-          <h3>Student ID:</h3> <input class="form-control" type="text" name="username"><br>
-          <h3>Password:</h3> <input class="form-control" type="password" name="password">
-          <p></p>
+          <div class="logininvalid">
+            {{ content }}
+          </div>
           <font size="4">First time using FalconsNest? <a href="/register">Register Here!</a></font>
-          <p></p>
-
-
+          <h3>Student ID:</h3> <input class="form-control" type="text" name="username"><br>
+          <h3>Password:</h3> <input class="form-control" type="password" name="password"><br>
+          <br>
 
           <div id="button">
           <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
