@@ -192,11 +192,12 @@ h3 {
 
 .header {
   font: "Source Sans Pro";
-  vertical-align: middle;
-  font-size: 14pt;
 }
 
-
+.headername {
+  font-size: 14pt;
+  text-align: right;
+}
 
 /**************************
   DEFAULT BOOTSTRAP STYLES
