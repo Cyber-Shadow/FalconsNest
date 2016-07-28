@@ -9,6 +9,7 @@
         <h1>LOGIN</h1>
       </div>
       <div class="prompt">
+                  <font color="#F00">{{ content }}</font>
         <form action="/auth/" method="POST">
           {% csrf_token %}
           <h3>Student ID:</h3> <input class="form-control" type="text" name="username"><br>
@@ -25,7 +26,6 @@
           </div>
           <br>
         </form>
-          {{ content }}
       </div>
       <br>
 </body>
