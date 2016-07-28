@@ -20,11 +20,6 @@ def order(request):
     global intorder1, intorder2
     order1 = request.POST.get('order1', '')
     order2 = request.POST.get('order2', '')
-    print order1
-    if isinstance(order1, (int, long)) == True:
-        pass
-    if isinstance(order2, (int, long)) == True:
-        pass
     try:
         order1
     except:
