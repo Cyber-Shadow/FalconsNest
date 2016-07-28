@@ -72,6 +72,11 @@ h3 {
   color: red;
 }
 
+.form-controlNest {
+  width: 50%;
+  float: left;
+}
+
 .form-control {
   display: block;
   width: 100%;
@@ -190,11 +195,6 @@ h3 {
   vertical-align: top;
 }
 
-.headername {
-  font-size: 14pt;
-  text-align: right;
-}
-
 /**************************
   DEFAULT BOOTSTRAP STYLES
 **************************/
@@ -286,29 +286,37 @@ h3 {
 body {margin:0;}
 
 ul.header {
-  
+
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #049372;
+  font-size: 48pt
 }
 
 ul.header li {
-  float: left;
   display: block;
   color: white;
-  text-align: center;
-  padding: 6px 10px;
+  padding: 1px 10px;
   text-decoration: none;
   font-family: "Source Sans Pro";
   background: #049372;
   box-shadow: none;
   }
 
-@media screen and (max-width: 326px){
+@media screen and (max-width: 360px){
   ul.header li {
     text-align: left;
     float: none;
   }
+}
+
+li.titlename {
+  float: left;
+}
+
+li.headername {
+  font-size: 16pt;
+  float: right;
 }
