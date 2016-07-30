@@ -18,16 +18,18 @@ def login(request):
     return render_to_response('webapp/login.html', c)
 
 def chris(request):
-    global orderdict
+    global orderdict, intorder1, intorder2
     if request.user.username == "chris":
         try:
             if orderdict is None:
+                pass
+            elif intorder1 is None:
                 pass
         except:
             intorder1 = 0
             intorder2 = 0
             orderdict = {"intorder1": intorder1, "intorder2": intorder2, 'full_name': request.user.username}
-        return render_to_response('webapp/chris.html', orderdict)
+        return render_to_response('webapp/chris.html', {"intorder1": intorder1, "intorder2": intorder2, 'full_name': request.user.username})
     else:
         return HttpResponseRedirect('/unauthorised')
 
@@ -78,7 +80,7 @@ def yournest(request):
         intorder1 = 0
         intorder2 = 0
         orderdict = {"intorder1": intorder1, "intorder2": intorder2, 'full_name': request.user.username}
-    return render(request, 'webapp/yournest.html', orderdict)
+    return render(request, 'webapp/yournest.html', {"intorder1": intorder1, "intorder2": intorder2, 'full_name': request.user.username})
 
 
 def auth_view(request):
