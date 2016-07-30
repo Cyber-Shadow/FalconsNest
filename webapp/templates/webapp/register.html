@@ -1,27 +1,27 @@
 {% extends "webapp/header.html" %}
 
 {% block content %}
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
     <div class="loginbar">
-      <h1>REGISTER</h1>
+        <h1>REGISTER</h1>
     </div>
     <div class="prompt">
-      <form action=/authr/ method="POST">
-        {% csrf_token %}
-          StudentID:<br> <input class="form-control" type="text" name="username"><br>
-          Password:<br> <input class="form-control" type="password" name="password"><br>
-          <div id="button">
-          <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
-          <br>
-          </div>
-      </form>
+        <form action=/authr/ method="POST">
+            {% csrf_token %}
+            StudentID:<br> <input class="form-control" type="text" name="username"><br>
+            Password:<br> <input class="form-control" type="password" name="password"><br>
+            <div id="button">
+                <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
+                <br>
+            </div>
+        </form>
     </div>
-  </div>
-  </center>
-</body>
-</html>
+    </div>
+    </center>
+    </body>
+    </html>
 {% endblock %}
 <!--{% include "webapp/includes/snippiet.html" %}-->

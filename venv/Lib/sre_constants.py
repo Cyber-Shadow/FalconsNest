@@ -19,13 +19,16 @@ try:
     from _sre import MAXREPEAT
 except ImportError:
     import _sre
+
     MAXREPEAT = _sre.MAXREPEAT = 65535
+
 
 # SRE standard exception (access as sre.error)
 # should this really be here?
 
 class error(Exception):
     pass
+
 
 # operators
 
@@ -146,6 +149,7 @@ CHCODES = [
     CATEGORY_UNI_NOT_LINEBREAK
 ]
 
+
 def makedict(list):
     d = {}
     i = 0
@@ -153,6 +157,7 @@ def makedict(list):
         d[item] = i
         i = i + 1
     return d
+
 
 OPCODES = makedict(OPCODES)
 ATCODES = makedict(ATCODES)
@@ -204,19 +209,19 @@ CH_UNICODE = {
 }
 
 # flags
-SRE_FLAG_TEMPLATE = 1 # template mode (disable backtracking)
-SRE_FLAG_IGNORECASE = 2 # case insensitive
-SRE_FLAG_LOCALE = 4 # honour system locale
-SRE_FLAG_MULTILINE = 8 # treat target as multiline string
-SRE_FLAG_DOTALL = 16 # treat target as a single string
-SRE_FLAG_UNICODE = 32 # use unicode locale
-SRE_FLAG_VERBOSE = 64 # ignore whitespace and comments
-SRE_FLAG_DEBUG = 128 # debugging
+SRE_FLAG_TEMPLATE = 1  # template mode (disable backtracking)
+SRE_FLAG_IGNORECASE = 2  # case insensitive
+SRE_FLAG_LOCALE = 4  # honour system locale
+SRE_FLAG_MULTILINE = 8  # treat target as multiline string
+SRE_FLAG_DOTALL = 16  # treat target as a single string
+SRE_FLAG_UNICODE = 32  # use unicode locale
+SRE_FLAG_VERBOSE = 64  # ignore whitespace and comments
+SRE_FLAG_DEBUG = 128  # debugging
 
 # flags for INFO primitive
-SRE_INFO_PREFIX = 1 # has prefix
-SRE_INFO_LITERAL = 2 # entire pattern is literal (given by prefix)
-SRE_INFO_CHARSET = 4 # pattern starts with character from given set
+SRE_INFO_PREFIX = 1  # has prefix
+SRE_INFO_LITERAL = 2  # entire pattern is literal (given by prefix)
+SRE_INFO_CHARSET = 4  # pattern starts with character from given set
 
 if __name__ == "__main__":
     def dump(f, d, prefix):
@@ -224,6 +229,8 @@ if __name__ == "__main__":
         items.sort(key=lambda a: a[1])
         for k, v in items:
             f.write("#define %s_%s %s\n" % (prefix, k.upper(), v))
+
+
     f = open("sre_constants.h", "w")
     f.write("""\
 /*

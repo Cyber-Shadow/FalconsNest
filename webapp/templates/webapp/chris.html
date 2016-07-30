@@ -18,14 +18,7 @@
 </ul>
 <form action="/order/" method="POST">
     {% csrf_token %}
-    <h3>Falcon Burger:</h3> <input class="form-controlNest" type="text" name="order1" style="float"><br>
-    <br>
-    <div id="button">
-        <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
-        {{ intorder1 }}
-        <br>
-    </div>
-    <br>
+    <h3>Falcon Burgers: {{ intorder1 }}</h3>
 </form>
 </div>
 </div>

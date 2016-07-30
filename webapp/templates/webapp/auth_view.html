@@ -1,35 +1,35 @@
 {% extends "webapp/header.html" %}
 
 {% block content %}
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-<hr>
-<div class="container">
+    <hr>
+    <div class="container">
 
 
-      <div class="loginbar">
-        <h1>LOGIN</h1>
-      </div>
-      <div class="prompt">
-        <form action=forms.py method="POST">
-          {% csrf_token %}
-          Student ID:<br> <input class="form-control" type="text" name="username"><br>
-          Password:<br> <input class="form-control" type="password" name="password">
-          <p></p><br>
-          <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
-        </form>
-      </div>
+        <div class="loginbar">
+            <h1>LOGIN</h1>
+        </div>
+        <div class="prompt">
+            <form action=forms.py method="POST">
+                {% csrf_token %}
+                Student ID:<br> <input class="form-control" type="text" name="username"><br>
+                Password:<br> <input class="form-control" type="password" name="password">
+                <p></p><br>
+                <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
+            </form>
+        </div>
 
-</div>
+    </div>
 
-</body>
-</html>
+    </body>
+    </html>
 {% endblock %}

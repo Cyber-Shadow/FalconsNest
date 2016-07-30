@@ -7,13 +7,14 @@
     by Marc-Andre Lemburg (mal@lemburg.com).
 
 """
+import bz2  # this codec needs the optional bz2 module !
+
 import codecs
-import bz2 # this codec needs the optional bz2 module !
+
 
 ### Codec APIs
 
-def bz2_encode(input,errors='strict'):
-
+def bz2_encode(input, errors='strict'):
     """ Encodes the object input and returns a tuple (output
         object, length consumed).
 
@@ -26,8 +27,8 @@ def bz2_encode(input,errors='strict'):
     output = bz2.compress(input)
     return (output, len(input))
 
-def bz2_decode(input,errors='strict'):
 
+def bz2_decode(input, errors='strict'):
     """ Decodes the object input and returns a tuple (output
         object, length consumed).
 
@@ -44,12 +45,14 @@ def bz2_decode(input,errors='strict'):
     output = bz2.decompress(input)
     return (output, len(input))
 
-class Codec(codecs.Codec):
 
+class Codec(codecs.Codec):
     def encode(self, input, errors='strict'):
         return bz2_encode(input, errors)
+
     def decode(self, input, errors='strict'):
         return bz2_decode(input, errors)
+
 
 class IncrementalEncoder(codecs.IncrementalEncoder):
     def __init__(self, errors='strict'):
@@ -67,6 +70,7 @@ class IncrementalEncoder(codecs.IncrementalEncoder):
     def reset(self):
         self.compressobj = bz2.BZ2Compressor()
 
+
 class IncrementalDecoder(codecs.IncrementalDecoder):
     def __init__(self, errors='strict'):
         assert errors == 'strict'
@@ -82,11 +86,14 @@ class IncrementalDecoder(codecs.IncrementalDecoder):
     def reset(self):
         self.decompressobj = bz2.BZ2Decompressor()
 
-class StreamWriter(Codec,codecs.StreamWriter):
+
+class StreamWriter(Codec, codecs.StreamWriter):
     pass
 
-class StreamReader(Codec,codecs.StreamReader):
+
+class StreamReader(Codec, codecs.StreamReader):
     pass
+
 
 ### encodings module API
 

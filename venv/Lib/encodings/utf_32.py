@@ -1,14 +1,17 @@
 """
 Python 'utf-32' Codec
 """
-import codecs, sys
+import codecs
+import sys
 
 ### Codec APIs
 
 encode = codecs.utf_32_encode
 
+
 def decode(input, errors='strict'):
     return codecs.utf_32_decode(input, errors, True)
+
 
 class IncrementalEncoder(codecs.IncrementalEncoder):
     def __init__(self, errors='strict'):
@@ -44,6 +47,7 @@ class IncrementalEncoder(codecs.IncrementalEncoder):
                 self.encoder = codecs.utf_32_le_encode
             else:
                 self.encoder = codecs.utf_32_be_encode
+
 
 class IncrementalDecoder(codecs.BufferedIncrementalDecoder):
     def __init__(self, errors='strict'):
@@ -96,6 +100,7 @@ class IncrementalDecoder(codecs.BufferedIncrementalDecoder):
         else:
             self.decoder = None
 
+
 class StreamWriter(codecs.StreamWriter):
     def __init__(self, stream, errors='strict'):
         self.encoder = None
@@ -116,8 +121,8 @@ class StreamWriter(codecs.StreamWriter):
         else:
             return self.encoder(input, errors)
 
-class StreamReader(codecs.StreamReader):
 
+class StreamReader(codecs.StreamReader):
     def reset(self):
         codecs.StreamReader.reset(self)
         try:
@@ -132,9 +137,10 @@ class StreamReader(codecs.StreamReader):
             self.decode = codecs.utf_32_le_decode
         elif byteorder == 1:
             self.decode = codecs.utf_32_be_decode
-        elif consumed>=4:
-            raise UnicodeError,"UTF-32 stream does not start with BOM"
+        elif consumed >= 4:
+            raise UnicodeError, "UTF-32 stream does not start with BOM"
         return (object, consumed)
+
 
 ### encodings module API
 

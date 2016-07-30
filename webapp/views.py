@@ -1,11 +1,12 @@
+from django.contrib import auth
+from django.contrib.auth.models import User
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.shortcuts import render_to_response
-from django.http import HttpResponseRedirect, HttpResponse
-from django.contrib import auth
 from django.template.context_processors import csrf
-from django.contrib.auth.models import User
-from django.contrib.auth import authenticate
-import numbers
+
+def unauthorisedpage(request):
+    return render_to_response('webapp/unauthorised.html')
 
 def index(request):
     return render(request, "webapp/home.html")
@@ -15,6 +16,22 @@ def login(request):
     c = {}
     c.update(csrf(request))
     return render_to_response('webapp/login.html', c)
+
+def chris(request):
+    global orderdict
+    if request.user.username == "chris":
+        try:
+            if orderdict is None:
+                pass
+        except:
+            intorder1 = 0
+            intorder2 = 0
+            orderdict = {"intorder1": intorder1, "intorder2": intorder2, 'full_name': request.user.username}
+        return render_to_response('webapp/chris.html', orderdict)
+    else:
+        return HttpResponseRedirect('/unauthorised')
+
+
 
 def order(request):
     global intorder1, intorder2
@@ -29,14 +46,15 @@ def order(request):
     except:
         order2 = 0
     order1int = int(order1)
-#    order1int = int(order2)
+    #    order1int = int(order2)
     intorder1 += order1int
-#    intorder2 += intorder2
+    #    intorder2 += intorder2
     print intorder1
     return HttpResponseRedirect('/yournest')
 
+
 def yournest(request):
-    global intorder1, intorder2
+    global intorder1, intorder2, orderdict
     try:
         global user
     except:
@@ -47,9 +65,10 @@ def yournest(request):
             if user == {}:
                 return HttpResponseRedirect('/register')
             else:
+                if request.user.username == "chris":
+                    return HttpResponseRedirect('/chris')
                 print(request.user.username + " was authenticated.")
         else:
-        # the authentication system was unable to verify the username and password
             print("The username and password were incorrect.")
     except:
         return HttpResponseRedirect('/register')
@@ -82,7 +101,7 @@ def auth_view(request):
 def invalid_login(request):
     c = {}
     c.update(csrf(request))
-    invalid = {"content":"Your account or password is incorrect. Please try again."}
+    invalid = {"content": "Your account or password is incorrect. Please try again."}
     c.update(invalid)
     return render_to_response('webapp/login.html', c)
 
@@ -113,8 +132,10 @@ def register_user(request):
 def register_success(request):
     return render_to_response('webapp/register_success.html')
 
+
 def register_page(request):
-    return render(request, 'webapp/register.html',)
+    return render(request, 'webapp/register.html', )
+
 
 def hanyuan(request):
     return render(request, 'webapp/hanyuan.html')

@@ -9,7 +9,6 @@ import stat
 __all__ = ['commonprefix', 'exists', 'getatime', 'getctime', 'getmtime',
            'getsize', 'isdir', 'isfile']
 
-
 try:
     _unicode = unicode
 except NameError:
@@ -17,6 +16,7 @@ except NameError:
     # will not exist. Fake one.
     class _unicode(object):
         pass
+
 
 # Does a path exist?
 # This is false for dangling symbolic links on systems that support them.
@@ -82,6 +82,7 @@ def commonprefix(m):
         if c != s2[i]:
             return s1[:i]
     return s1
+
 
 # Split a path in root and extension.
 # The extension is everything starting at the last dot in the last

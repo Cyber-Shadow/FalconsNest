@@ -1,7 +1,5 @@
-from django.conf.urls import url, include
-from django.views.generic.base import RedirectView
+from django.conf.urls import url
 from . import views
-
 
 urlpatterns = [
     url(r'^index/$', views.index, name="index"),
@@ -9,8 +7,10 @@ urlpatterns = [
     url(r'^auth/$', views.auth_view),
     url(r'^logout/$', views.logout),
     url(r'^yournest/', views.yournest),
+    url(r'^unauthorised/', views.unauthorisedpage),
     url(r'^invalid/$', views.invalid_login),
     url(r'^register/$', views.register_page),
+    url(r'^chris/$', views.chris),
     url(r'^authr/$', views.register_user),
     url(r'^register_success/$', views.register_success),
     url(r'^hanyuan/$', views.hanyuan),

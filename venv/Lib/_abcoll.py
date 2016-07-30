@@ -8,8 +8,9 @@ via collections; they are defined here only to alleviate certain
 bootstrapping issues.  Unit tests are in test_collections.
 """
 
-from abc import ABCMeta, abstractmethod
 import sys
+
+from abc import ABCMeta, abstractmethod
 
 __all__ = ["Hashable", "Iterable", "Iterator",
            "Sized", "Container", "Callable",
@@ -18,6 +19,7 @@ __all__ = ["Hashable", "Iterable", "Iterator",
            "MappingView", "KeysView", "ItemsView", "ValuesView",
            "Sequence", "MutableSequence",
            ]
+
 
 ### ONE-TRICK PONIES ###
 
@@ -67,11 +69,11 @@ class Iterable:
                 return True
         return NotImplemented
 
+
 Iterable.register(str)
 
 
 class Iterator(Iterable):
-
     @abstractmethod
     def next(self):
         'Return the next item from the iterator. When exhausted, raise StopIteration'
@@ -266,7 +268,7 @@ class Set(Sized, Iterable, Container):
         h &= MASK
         for x in self:
             hx = hash(x)
-            h ^= (hx ^ (hx << 16) ^ 89869747)  * 3644798167
+            h ^= (hx ^ (hx << 16) ^ 89869747) * 3644798167
             h &= MASK
         h = h * 69069 + 907133923
         h &= MASK
@@ -275,6 +277,7 @@ class Set(Sized, Iterable, Container):
         if h == -1:
             h = 590923713
         return h
+
 
 Set.register(frozenset)
 
@@ -356,6 +359,7 @@ class MutableSet(Set):
                 self.discard(value)
         return self
 
+
 MutableSet.register(set)
 
 
@@ -363,7 +367,6 @@ MutableSet.register(set)
 
 
 class Mapping(Sized, Iterable, Container):
-
     """A Mapping is a generic container for associating key/value
     pairs.
 
@@ -428,8 +431,8 @@ class Mapping(Sized, Iterable, Container):
     def __ne__(self, other):
         return not (self == other)
 
-class MappingView(Sized):
 
+class MappingView(Sized):
     def __init__(self, mapping):
         self._mapping = mapping
 
@@ -441,7 +444,6 @@ class MappingView(Sized):
 
 
 class KeysView(MappingView, Set):
-
     @classmethod
     def _from_iterable(self, it):
         return set(it)
@@ -453,10 +455,11 @@ class KeysView(MappingView, Set):
         for key in self._mapping:
             yield key
 
+
 KeysView.register(type({}.viewkeys()))
 
-class ItemsView(MappingView, Set):
 
+class ItemsView(MappingView, Set):
     @classmethod
     def _from_iterable(self, it):
         return set(it)
@@ -474,10 +477,11 @@ class ItemsView(MappingView, Set):
         for key in self._mapping:
             yield (key, self._mapping[key])
 
+
 ItemsView.register(type({}.viewitems()))
 
-class ValuesView(MappingView):
 
+class ValuesView(MappingView):
     def __contains__(self, value):
         for key in self._mapping:
             if value == self._mapping[key]:
@@ -488,10 +492,11 @@ class ValuesView(MappingView):
         for key in self._mapping:
             yield self._mapping[key]
 
+
 ValuesView.register(type({}.viewvalues()))
 
-class MutableMapping(Mapping):
 
+class MutableMapping(Mapping):
     """A MutableMapping is a generic container for associating
     key/value pairs.
 
@@ -581,6 +586,7 @@ class MutableMapping(Mapping):
             self[key] = default
         return default
 
+
 MutableMapping.register(dict)
 
 
@@ -631,6 +637,7 @@ class Sequence(Sized, Iterable, Container):
         'S.count(value) -> integer -- return number of occurrences of value'
         return sum(1 for v in self if v == value)
 
+
 Sequence.register(tuple)
 Sequence.register(basestring)
 Sequence.register(buffer)
@@ -638,7 +645,6 @@ Sequence.register(xrange)
 
 
 class MutableSequence(Sequence):
-
     """All the operations on a read-only sequence.
 
     Concrete subclasses must provide __new__ or __init__,
@@ -666,8 +672,8 @@ class MutableSequence(Sequence):
     def reverse(self):
         'S.reverse() -- reverse *IN PLACE*'
         n = len(self)
-        for i in range(n//2):
-            self[i], self[n-i-1] = self[n-i-1], self[i]
+        for i in range(n // 2):
+            self[i], self[n - i - 1] = self[n - i - 1], self[i]
 
     def extend(self, values):
         'S.extend(iterable) -- extend sequence by appending elements from the iterable'
@@ -691,5 +697,6 @@ class MutableSequence(Sequence):
     def __iadd__(self, values):
         self.extend(values)
         return self
+
 
 MutableSequence.register(list)

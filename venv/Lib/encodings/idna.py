@@ -1,6 +1,8 @@
 # This module implements the RFCs 3490 (IDNA) and 3491 (Nameprep)
 
-import stringprep, re, codecs
+import codecs
+import re
+import stringprep
 from unicodedata import ucd_3_2_0 as unicodedata
 
 # IDNA section 3.1
@@ -9,6 +11,7 @@ dots = re.compile(u"[\u002E\u3002\uFF0E\uFF61]")
 # IDNA section 5
 ace_prefix = "xn--"
 uace_prefix = unicode(ace_prefix, "ascii")
+
 
 # This assumes query strings, so AllowUnassigned is true
 def nameprep(label):
@@ -27,14 +30,14 @@ def nameprep(label):
     # Prohibit
     for c in label:
         if stringprep.in_table_c12(c) or \
-           stringprep.in_table_c22(c) or \
-           stringprep.in_table_c3(c) or \
-           stringprep.in_table_c4(c) or \
-           stringprep.in_table_c5(c) or \
-           stringprep.in_table_c6(c) or \
-           stringprep.in_table_c7(c) or \
-           stringprep.in_table_c8(c) or \
-           stringprep.in_table_c9(c):
+                stringprep.in_table_c22(c) or \
+                stringprep.in_table_c3(c) or \
+                stringprep.in_table_c4(c) or \
+                stringprep.in_table_c5(c) or \
+                stringprep.in_table_c6(c) or \
+                stringprep.in_table_c7(c) or \
+                stringprep.in_table_c8(c) or \
+                stringprep.in_table_c9(c):
             raise UnicodeError("Invalid character %r" % c)
 
     # Check bidi
@@ -58,6 +61,7 @@ def nameprep(label):
                 raise UnicodeError("Violation of BIDI requirement 3")
 
     return label
+
 
 def ToASCII(label):
     try:
@@ -102,6 +106,7 @@ def ToASCII(label):
         return label
     raise UnicodeError("label empty or too long")
 
+
 def ToUnicode(label):
     # Step 1: Check for ASCII
     if isinstance(label, str):
@@ -141,21 +146,22 @@ def ToUnicode(label):
     # Step 8: return the result of step 5
     return result
 
+
 ### Codec APIs
 
 class Codec(codecs.Codec):
-    def encode(self,input,errors='strict'):
+    def encode(self, input, errors='strict'):
 
         if errors != 'strict':
             # IDNA is quite clear that implementations must be strict
-            raise UnicodeError("unsupported error handling "+errors)
+            raise UnicodeError("unsupported error handling " + errors)
 
         if not input:
             return "", 0
 
         result = []
         labels = dots.split(input)
-        if labels and len(labels[-1])==0:
+        if labels and len(labels[-1]) == 0:
             trailing_dot = '.'
             del labels[-1]
         else:
@@ -163,12 +169,12 @@ class Codec(codecs.Codec):
         for label in labels:
             result.append(ToASCII(label))
         # Join with U+002E
-        return ".".join(result)+trailing_dot, len(input)
+        return ".".join(result) + trailing_dot, len(input)
 
-    def decode(self,input,errors='strict'):
+    def decode(self, input, errors='strict'):
 
         if errors != 'strict':
-            raise UnicodeError("Unsupported error handling "+errors)
+            raise UnicodeError("Unsupported error handling " + errors)
 
         if not input:
             return u"", 0
@@ -192,13 +198,14 @@ class Codec(codecs.Codec):
         for label in labels:
             result.append(ToUnicode(label))
 
-        return u".".join(result)+trailing_dot, len(input)
+        return u".".join(result) + trailing_dot, len(input)
+
 
 class IncrementalEncoder(codecs.BufferedIncrementalEncoder):
     def _buffer_encode(self, input, errors, final):
         if errors != 'strict':
             # IDNA is quite clear that implementations must be strict
-            raise UnicodeError("unsupported error handling "+errors)
+            raise UnicodeError("unsupported error handling " + errors)
 
         if not input:
             return ("", 0)
@@ -228,10 +235,11 @@ class IncrementalEncoder(codecs.BufferedIncrementalEncoder):
         size += len(trailing_dot)
         return (result, size)
 
+
 class IncrementalDecoder(codecs.BufferedIncrementalDecoder):
     def _buffer_decode(self, input, errors, final):
         if errors != 'strict':
-            raise UnicodeError("Unsupported error handling "+errors)
+            raise UnicodeError("Unsupported error handling " + errors)
 
         if not input:
             return (u"", 0)
@@ -268,11 +276,14 @@ class IncrementalDecoder(codecs.BufferedIncrementalDecoder):
         size += len(trailing_dot)
         return (result, size)
 
-class StreamWriter(Codec,codecs.StreamWriter):
+
+class StreamWriter(Codec, codecs.StreamWriter):
     pass
 
-class StreamReader(Codec,codecs.StreamReader):
+
+class StreamReader(Codec, codecs.StreamReader):
     pass
+
 
 ### encodings module API
 

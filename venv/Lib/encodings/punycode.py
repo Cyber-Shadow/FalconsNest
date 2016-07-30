@@ -6,6 +6,7 @@ Written by Martin v. Löwis.
 
 import codecs
 
+
 ##################### Encoding #####################################
 
 def segregate(str):
@@ -19,7 +20,8 @@ def segregate(str):
             extended[c] = 1
     extended = extended.keys()
     extended.sort()
-    return "".join(base).encode("ascii"),extended
+    return "".join(base).encode("ascii"), extended
+
 
 def selective_len(str, max):
     """Return the length of str, considering only characters below max."""
@@ -28,6 +30,7 @@ def selective_len(str, max):
         if ord(c) < max:
             res += 1
     return res
+
 
 def selective_find(str, char, index, pos):
     """Return a pair (index, pos), indicating the next occurrence of
@@ -43,9 +46,10 @@ def selective_find(str, char, index, pos):
             return (-1, -1)
         c = str[pos]
         if c == char:
-            return index+1, pos
+            return index + 1, pos
         elif c < char:
             index += 1
+
 
 def insertion_unsort(str, extended):
     """3.2 Insertion unsort coding"""
@@ -56,18 +60,19 @@ def insertion_unsort(str, extended):
         index = pos = -1
         char = ord(c)
         curlen = selective_len(str, char)
-        delta = (curlen+1) * (char - oldchar)
+        delta = (curlen + 1) * (char - oldchar)
         while 1:
-            index,pos = selective_find(str,c,index,pos)
+            index, pos = selective_find(str, c, index, pos)
             if index == -1:
                 break
             delta += index - oldindex
-            result.append(delta-1)
+            result.append(delta - 1)
             oldindex = index
             delta = 0
         oldchar = char
 
     return result
+
 
 def T(j, bias):
     # Punycode parameters: tmin = 1, tmax = 26, base = 36
@@ -76,7 +81,10 @@ def T(j, bias):
     if res > 26: return 26
     return res
 
+
 digits = "abcdefghijklmnopqrstuvwxyz0123456789"
+
+
 def generate_generalized_integer(N, bias):
     """3.3 Generalized variable-length integers"""
     result = []
@@ -90,6 +98,7 @@ def generate_generalized_integer(N, bias):
         N = (N - t) // (36 - t)
         j += 1
 
+
 def adapt(delta, first, numchars):
     if first:
         delta //= 700
@@ -99,7 +108,7 @@ def adapt(delta, first, numchars):
     # ((base - tmin) * tmax) // 2 == 455
     divisions = 0
     while delta > 455:
-        delta = delta // 35 # base - tmin
+        delta = delta // 35  # base - tmin
         divisions += 36
     bias = divisions + (36 * delta // (delta + 38))
     return bias
@@ -113,8 +122,9 @@ def generate_integers(baselen, deltas):
     for points, delta in enumerate(deltas):
         s = generate_generalized_integer(delta, bias)
         result.extend(s)
-        bias = adapt(delta, points==0, baselen+points+1)
+        bias = adapt(delta, points == 0, baselen + points + 1)
     return "".join(result)
+
 
 def punycode_encode(text):
     base, extended = segregate(text)
@@ -124,6 +134,7 @@ def punycode_encode(text):
     if base:
         return base + "-" + extended
     return extended
+
 
 ##################### Decoding #####################################
 
@@ -140,10 +151,10 @@ def decode_generalized_number(extended, extpos, bias, errors):
                 raise UnicodeError, "incomplete punicode string"
             return extpos + 1, None
         extpos += 1
-        if 0x41 <= char <= 0x5A: # A-Z
+        if 0x41 <= char <= 0x5A:  # A-Z
             digit = char - 0x41
         elif 0x30 <= char <= 0x39:
-            digit = char - 22 # 0x30-26
+            digit = char - 22  # 0x30-26
         elif errors == "strict":
             raise UnicodeError("Invalid extended code point '%s'"
                                % extended[extpos])
@@ -170,7 +181,7 @@ def insertion_sort(base, extended, errors):
             # There was an error in decoding. We can't continue because
             # synchronization is lost.
             return base
-        pos += delta+1
+        pos += delta + 1
         char += pos // (len(base) + 1)
         if char > 0x10FFFF:
             if errors == "strict":
@@ -182,6 +193,7 @@ def insertion_sort(base, extended, errors):
         extpos = newpos
     return base
 
+
 def punycode_decode(text, errors):
     pos = text.rfind("-")
     if pos == -1:
@@ -189,40 +201,45 @@ def punycode_decode(text, errors):
         extended = text
     else:
         base = text[:pos]
-        extended = text[pos+1:]
+        extended = text[pos + 1:]
     base = unicode(base, "ascii", errors)
     extended = extended.upper()
     return insertion_sort(base, extended, errors)
 
+
 ### Codec APIs
 
 class Codec(codecs.Codec):
-
-    def encode(self,input,errors='strict'):
+    def encode(self, input, errors='strict'):
         res = punycode_encode(input)
         return res, len(input)
 
-    def decode(self,input,errors='strict'):
+    def decode(self, input, errors='strict'):
         if errors not in ('strict', 'replace', 'ignore'):
-            raise UnicodeError, "Unsupported error handling "+errors
+            raise UnicodeError, "Unsupported error handling " + errors
         res = punycode_decode(input, errors)
         return res, len(input)
+
 
 class IncrementalEncoder(codecs.IncrementalEncoder):
     def encode(self, input, final=False):
         return punycode_encode(input)
 
+
 class IncrementalDecoder(codecs.IncrementalDecoder):
     def decode(self, input, final=False):
         if self.errors not in ('strict', 'replace', 'ignore'):
-            raise UnicodeError, "Unsupported error handling "+self.errors
+            raise UnicodeError, "Unsupported error handling " + self.errors
         return punycode_decode(input, self.errors)
 
-class StreamWriter(Codec,codecs.StreamWriter):
+
+class StreamWriter(Codec, codecs.StreamWriter):
     pass
 
-class StreamReader(Codec,codecs.StreamReader):
+
+class StreamReader(Codec, codecs.StreamReader):
     pass
+
 
 ### encodings module API
 
