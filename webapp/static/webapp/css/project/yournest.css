@@ -12,7 +12,7 @@ ul.header {
   padding: 0;
   overflow: hidden;
   background-color: #049372;
-  font-size: 48pt
+  font-size: 48pt;
 
 }
 
@@ -31,6 +31,27 @@ ul.header li {
     text-align: left;
     float: none;
   }
+}
+
+#quickorder {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  text-align: center;
+  border-right: 1px solid grey;
+}
+
+#quickorder button {
+  background-color: #049372;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#menuorder {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  text-align: center;
 }
 
 li.titlename {
