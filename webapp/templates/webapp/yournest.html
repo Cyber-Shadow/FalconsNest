@@ -1,30 +1,92 @@
-{% extends "webapp/yournestheader.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Nest | Falcon's Nest</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/project/yournest.css' %}">
+    <link rel="shortcut icon" href="{% static 'webapp/img/favicon.ico' %}">
+    <script type="text/javascript" src="{% static 'webapp/js/jquery-3.0.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'webapp/js/project/headerjs.js' %}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
 
-{% block content %}
-    <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <div class="loginbar">
-        <h1>LOGIN</h1>
-    </div>
-    <div class="prompt">
-        <font color="#F00" style="font-weight:bold;">{{ content }}</font>
-        <form action="/auth/" method="POST">
-            {% csrf_token %}
-            <h3>Student ID:</h3> <input class="form-control" type="text" name="username"><br>
-            <h3>Password:</h3> <input class="form-control" type="password" name="password">
-            <div style="padding-top:10px;padding-bottom:10px;">
-                <font size="4">First time using FalconsNest? <a href="/register">Register Here!</a></font>
-            </div>
-            <div id="button">
-                <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
-                <br>
-            </div>
-            <br>
-        </form>
-    </div>
-    <br>
-    </body>
-    </html>
-{% endblock %}
+<style>
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #eaeaea;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 15px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+<body>
+<div id="mySidenav" class="sidenav">
+  <img>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">Menu</a>
+  <a href="#">Schedule</a>
+  <a href="#">Account Settings</a>
+  <a href="#">Logout</a>
+</div>
+
+<div id="main">
+  <ul class="header">
+      <li class="hamburger"> <span style="font-size:56px;cursor:pointer" onclick="openNav()">☰</span> </li>
+      <li class="titlename">Falcon's Nest</li>
+      <li class="headername">Logged in as {{ full_name }}</li>
+  </ul>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html>
