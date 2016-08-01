@@ -59,6 +59,18 @@ def order(request):
 def yournest(request):
     global intorder1, intorder2, orderdict
     try:
+        if user is None:
+            return HttpResponseRedirect('/unauthorised')
+        elif request.user.username == "":
+            return HttpResponseRedirect('/unauthorised')
+        elif request.user.username is None:
+            return HttpResponseRedirect('/unauthorised')
+
+    except:
+        return HttpResponseRedirect('/unauthorised')
+
+
+    try:
         global user
     except:
         return HttpResponseRedirect('/register')
