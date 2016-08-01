@@ -15,4 +15,8 @@ urlpatterns = [
     url(r'^register_success/$', views.register_success),
     url(r'^hanyuan/$', views.hanyuan),
     url(r'^order/$', views.order),
+    url(r'^logout/$', views.logout),
+    url(r'^firstlogin/$', views.firstlogin),
 ]
+
+0

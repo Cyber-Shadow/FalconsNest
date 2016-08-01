@@ -1,3 +1,4 @@
+
 from django.contrib import auth
 from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
@@ -88,6 +89,12 @@ def auth_view(request):
     invalid = "False"
     username = request.POST.get('username', '')
     password = request.POST.get('password', '')
+    if User.objects.filter(username=username).exists():
+        print "1"
+        pass
+    else:
+        return HttpResponseRedirect('/firstlogin')
+
     user = auth.authenticate(username=username, password=password)
     if username == "hanyuan":
         return HttpResponseRedirect('/hanyuan')
@@ -110,7 +117,7 @@ def invalid_login(request):
 
 def logout(request):
     auth.logout(request)
-    return render_to_response('webapp/logout.html')
+    return HttpResponseRedirect('/')
 
 
 def register_user(request):
@@ -141,3 +148,6 @@ def register_page(request):
 
 def hanyuan(request):
     return render(request, 'webapp/hanyuan.html')
+
+def firstlogin(request):
+    return render(request, 'webapp/firstlogin.html')
