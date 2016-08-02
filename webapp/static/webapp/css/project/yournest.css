@@ -80,3 +80,7 @@ ul.schoolLinks {
   list-style: none;
   font-size: 16pt;
 }
+
+.zerotransformicon {
+	height: 100px;
+}
