@@ -7,11 +7,13 @@
     <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/project/yournest.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/project/custom.css' %}">
     <link rel="shortcut icon" href="{% static 'webapp/img/favicon.ico' %}">
-    <script type="text/javascript" src="{% static 'webapp/js/jquery-3.0.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'webapp/js/jquery-3.1.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'webapp/js/project/transformicon.js' %}"></script>
     <script type="text/javascript" src="{% static 'webapp/js/project/headerjs.js' %}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script> 
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 
 <style>
   .sidenav {
@@ -70,7 +72,11 @@
 
 <div id="main">
   <ul class="header">
-      <li class="hamburger"> <span style="cursor:pointer" onclick="decision()">☰</span> </li>
+
+            <li class="test"><a class="navicon-button larr" onclick="decision()">
+              <div class="navicon"></div>
+            </a></li>
+
       <li class="titlename">Falcon's Nest</li>
       <li class="headername">Logged in as {{ full_name }}</li>
   </ul>
