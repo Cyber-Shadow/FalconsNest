@@ -1,4 +1,3 @@
-
 from django.contrib import auth
 from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
@@ -12,10 +11,29 @@ def unauthorisedpage(request):
 def index(request):
     return render(request, "webapp/home.html")
 
-
 def login(request):
+    global logouttext, invalid
     c = {}
     c.update(csrf(request))
+    try:
+        if logouttext is True:
+            if invalid is False:
+                logouttextdict = {'content':'You have been logged out.'}
+                c.update(logouttextdict)
+                logouttext = False
+
+
+    except:
+        logouttext = False
+
+    try:
+        if invalid is True:
+            invalid = {'content': 'Your account or password is incorrect. Please try again.'}
+            c.update(invalid)
+            invalid = False
+    except:
+        pass
+
     return render_to_response('webapp/login.html', c)
 
 def chris(request):
@@ -58,6 +76,7 @@ def order(request):
 
 def yournest(request):
     global intorder1, intorder2, orderdict
+    #Try if user is authenticated, if not authenticated redirect to /unauthorised
     try:
         if user is None:
             return HttpResponseRedirect('/unauthorised')
@@ -68,12 +87,6 @@ def yournest(request):
 
     except:
         return HttpResponseRedirect('/unauthorised')
-
-
-    try:
-        global user
-    except:
-        return HttpResponseRedirect('/register')
     try:
         if user is not None:
             # the password verified for the user
@@ -98,11 +111,9 @@ def yournest(request):
 
 def auth_view(request):
     global invalid, user
-    invalid = "False"
     username = request.POST.get('username', '')
     password = request.POST.get('password', '')
     if User.objects.filter(username=username).exists():
-        print "1"
         pass
     else:
         return HttpResponseRedirect('/firstlogin')
@@ -115,22 +126,14 @@ def auth_view(request):
 
         return HttpResponseRedirect('/yournest')
     else:
-        invalid = "True"
-        return HttpResponseRedirect('/invalid')
-
-
-def invalid_login(request):
-    c = {}
-    c.update(csrf(request))
-    invalid = {"content": "Your account or password is incorrect. Please try again."}
-    c.update(invalid)
-    return render_to_response('webapp/login.html', c)
-
+        invalid = True
+        return HttpResponseRedirect('/')
 
 def logout(request):
+    global logouttext
     auth.logout(request)
+    logouttext = True
     return HttpResponseRedirect('/')
-
 
 def register_user(request):
     if request.method == 'POST':
@@ -160,6 +163,7 @@ def register_page(request):
 
 def hanyuan(request):
     return render(request, 'webapp/hanyuan.html')
+
 
 def firstlogin(request):
     return render(request, 'webapp/firstlogin.html')
