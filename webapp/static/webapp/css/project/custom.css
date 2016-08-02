@@ -80,7 +80,6 @@ h3 {
 .form-control {
   display: block;
   width: 100%;
-  min-width: 250px;
   height: 60px;
   padding: 6px 12px;
   font-size: 40px;

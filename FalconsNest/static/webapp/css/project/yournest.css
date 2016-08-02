@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+
+body {
+  margin:0;
+  font-family: Source Sans Pro;
+  background-color: #f2f2f2;
+  transition: background-color .5s;
+}
+
+ul.header {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #049372;
+  font-size: 48pt;
+
+}
+
+ul.header li {
+  display: block;
+  color: white;
+  padding: 1px 10px;
+  text-decoration: none;
+  font-family: "Source Sans Pro";
+  background: #049372;
+  box-shadow: none;
+}
+
+@media all and (max-width: 436px) { 
+  li.titlename { 
+    visibility: hidden; 
+    font-size: 0px;
+	float: left;
+  } 
+  li.hamburger {
+    font-size: 26px; 
+  }
+  li.headername {
+	float: right;
+    vertical-align: middle;	
+  }
+} 
+
+#quickorder {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  text-align: center;
+  border-right: 1px solid grey;
+}
+
+#quickorder button {
+  background-color: #049372;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#menuorder {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  text-align: center;
+}
+
+li.titlename {
+  float: left;
+}
+
+li.headername {
+  font-size: 16pt;
+  float: right;
+  vertical-align: middle;  
+}
+
+li.hamburger {
+  float: left;
+}
