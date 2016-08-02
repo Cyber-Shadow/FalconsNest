@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Import webcomponents-lite.js polyfill -->
+  <script src="https://cdn.rawgit.com/webcomponents/webcomponentsjs/v0.7.19/webcomponents-lite.min.js"></script>
+
+  <!-- Import zero-transformicon build bundle -->
+  <link rel="import" href="https://cdn.rawgit.com/zerodevx/zero-transformicon/v0.1.0/build/zero-transformicon.build.html">
+
+
     <title>Your Nest | Falcon's Nest</title>
     {% load staticfiles %}
     <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/bootstrap.min.css' %}">
@@ -70,7 +78,8 @@
 
 <div id="main">
   <ul class="header">
-      <li class="hamburger"> <span style="cursor:pointer" onclick="decision()">☰</span> </li>
+
+      <li><zero-transformicon icon="menu-arrowleft" color="white" onclick="decision()" style="float:left"></zero-transformicon></li>
       <li class="titlename">Falcon's Nest</li>
       <li class="headername">Logged in as {{ full_name }}</li>
   </ul>
