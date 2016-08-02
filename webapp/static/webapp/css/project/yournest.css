@@ -26,12 +26,20 @@ ul.header li {
   box-shadow: none;
 }
 
-@media screen and (max-width: 360px){
-  ul.header li {
-    text-align: left;
-    float: none;
+@media all and (max-width: 436px) { 
+  li.titlename { 
+    visibility: hidden; 
+    font-size: 0px;
+	float: left;
+  } 
+  li.hamburger {
+    font-size: 26px; 
   }
-}
+  li.headername {
+	float: right;
+    vertical-align: middle;	
+  }
+} 
 
 #quickorder {
   position: absolute;
@@ -61,6 +69,7 @@ li.titlename {
 li.headername {
   font-size: 16pt;
   float: right;
+  vertical-align: middle;  
 }
 
 li.hamburger {
