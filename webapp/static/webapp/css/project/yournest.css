@@ -26,12 +26,20 @@ ul.header li {
   box-shadow: none;
 }
 
-@media screen and (max-width: 360px){
-  ul.header li {
-    text-align: left;
-    float: none;
+@media all and (max-width: 436px) { 
+  li.titlename { 
+    visibility: hidden; 
+    font-size: 0px;
+	float: left;
+  } 
+  li.hamburger {
+    font-size: 26px; 
   }
-}
+  li.headername {
+	float: right;
+    vertical-align: middle;	
+  }
+} 
 
 #quickorder {
   position: absolute;
@@ -61,155 +69,9 @@ li.titlename {
 li.headername {
   font-size: 16pt;
   float: right;
+  vertical-align: middle;  
 }
 
 li.hamburger {
   float: left;
-}
-
-/***********************
-  TRANSFORMICON VALUES
-************************/
-
-.nav-icon {
-  height:70px;
-  width:86px;
-  position:relative;
-  margin:0px 10px;
-  float:left;
-  color: #000;
-
-
-  div {
-    height:6px;
-    width:55px;
-    background:#000;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:auto;
-    transition:all 0.3s;
-
-    &::before, &::after {
-      content:"";
-      height:6px;
-      width:100%;
-      position:absolute;
-      background:#000;
-      transition-duration:0.3s;
-      transition-delay: 0s;
-    }
-    &::before {top:-20px;}
-    &::after {top:20px;}
-  }
-}
-
-.cross.active .span::before {
-    top:0px;
-    transform:rotate(45deg);
-  }
-
- .cross.active .span::after {
-    top:0;
-    transform:rotate(-45deg);
-  }
-.cross.active .span {
-    background:none;
-  }
-
-// anim
-
-.anim.active .span {
-  transform:scale(0.92);
-}
-
-.anim.active .span::before {
-  transform:scale(0.92);
-  top:0;
-}
-.anim.active .span::after {
-  transform:scale(0.92);
-  top:0;
-}
-
-
-// left arrow
-.left-arrow::before,.left-arrow::after {
-  transform-origin: top left;
-}
-
-.left-arrow.active .span::before {
-  width:50%;
-  top:0;
-  transform:translateX(-9.5px) translateY(-8px) rotate(-45deg);
-   border-bottom-left-radius:5px;
-  border-top-left-radius:5px;
-}
-.left-arrow.active .span::after {
-  width:50%;
-  top:0;
-  transform:translateX(-9.5px) translateY(8px) rotate(45deg);
-  border-bottom-left-radius:5px;
-  border-top-left-radius:5px;
-}
-.left-arrow.active .span {
-  transform:translateX(-5px);
-}
-
-// right arrow
-.right-arrow::before,.right-arrow::after {
-  transform-origin: top right;
-}
-
-.right-arrow.active .span::before {
-  width:50%;
-  top:0;
-  transform:translateX(32px) translateY(-8px) rotate(45deg);
-   border-bottom-right-radius:5px;
-  border-top-right-radius:5px;
-}
-.right-arrow.active .span::after {
-  width:50%;
-  top:0;
-  transform:translateX(32px) translateY(8px) rotate(-45deg);
-  border-bottom-right-radius:5px;
-  border-top-right-radius:5px;
-}
-.right-arrow.active .span {
-  transform:translateX(5px);
-}
-
-
-/// styling
-.container {
-  height:auto;
-  width:500px;
-  margin:100px auto;
-}
-
-header{
-  text-align:center;
-  font-size:25px;
-  font-family: 'Press Start 2P', cursive;
-  height:150px;
-  width:100%;
-  color:#fff;
-  background:#000;
-  position:relative;
-  top:0px;
-  overflow:hidden;
-  line-height:80px;
-
-  p {
-    font-family:inherit;
-    color:#fff;
-    text-align:center;
-    font-size:12px;
-  }
-}
-
-body {
-  background:#FFF4FF;
 }
