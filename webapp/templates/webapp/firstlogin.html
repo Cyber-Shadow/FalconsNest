@@ -6,18 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <div class="loginbar">
-        <h1>LOGIN</h1>
+        <h1 style="font-weight:bold;">Hi!{{ firsttimeuser }} Welcome to Falcon's Nest, the easy way to order food!</h1>
     </div>
+  </br>
     <div class="prompt">
         <font color="#F00" style="font-weight:bold;">{{ content }}</font>
         <form action="/auth/" method="POST">
             {% csrf_token %}
-            <h3>Student ID:</h3> <input class="form-control" type="text" name="username"><br>
+            <h2>Before you continue, you must change your password...</h2>
             <h3>Password:</h3> <input class="form-control" type="password" name="password">
-            <div style="padding-top:10px;padding-bottom:10px;">
-                <font size="4">First time using FalconsNest? <a href="/register">Register Here!</a></font>
-            </div>
             <div id="button">
+            </br>
                 <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
                 <br>
             </div>

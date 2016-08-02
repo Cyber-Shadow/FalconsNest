@@ -167,3 +167,7 @@ def hanyuan(request):
 
 def firstlogin(request):
     return render(request, 'webapp/firstlogin.html')
+
+
+def schoollinks(request):
+    return render(request, 'webapp/schoollinks.html')

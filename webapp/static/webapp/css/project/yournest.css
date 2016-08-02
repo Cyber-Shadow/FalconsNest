@@ -26,20 +26,20 @@ ul.header li {
   box-shadow: none;
 }
 
-@media all and (max-width: 436px) { 
-  li.titlename { 
-    visibility: hidden; 
+@media all and (max-width: 436px) {
+  li.titlename {
+    visibility: hidden;
     font-size: 0px;
 	float: left;
-  } 
+  }
   li.hamburger {
-    font-size: 26px; 
+    font-size: 26px;
   }
   li.headername {
 	float: right;
-    vertical-align: middle;	
+    vertical-align: middle;
   }
-} 
+}
 
 #quickorder {
   position: absolute;
@@ -69,9 +69,14 @@ li.titlename {
 li.headername {
   font-size: 16pt;
   float: right;
-  vertical-align: middle;  
+  vertical-align: middle;
 }
 
 li.hamburger {
   float: left;
+}
+
+ul.schoolLinks {
+  list-style: none;
+  font-size: 16pt;
 }

@@ -16,4 +16,5 @@ urlpatterns = [
     url(r'^order/$', views.order),
     url(r'^logout/$', views.logout),
     url(r'^firstlogin/$', views.firstlogin),
+    url(r'^links/$', views.schoollinks),
 ]
