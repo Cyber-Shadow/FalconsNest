@@ -110,12 +110,13 @@ def yournest(request):
 
 
 def auth_view(request):
-    global invalid, user
+    global invalid, user, firstloginport
     username = request.POST.get('username', '')
     password = request.POST.get('password', '')
     if User.objects.filter(username=username).exists():
         pass
     else:
+        firstloginport = username
         return HttpResponseRedirect('/firstlogin')
 
     user = auth.authenticate(username=username, password=password)
@@ -136,21 +137,33 @@ def logout(request):
     return HttpResponseRedirect('/')
 
 def register_user(request):
+    try:
+        global authrb
+    except:
+        pass
+
+
     if request.method == 'POST':
-        username = request.POST.get('username', '')
+        username = authrb
         password = request.POST.get('password', '')
-        user = User.objects.create_user(username, "", password)
-        user.save()
-        return HttpResponseRedirect('/register_success')
+        confirm = request.POST.get('confirm', '')
+        print password
+        if password == confirm:
+            user = User.objects.create_user(username, "", password)
+            user.save()
+            user = auth.authenticate(username=username, password=password)
+            auth.login(request, user)
+            return HttpResponseRedirect('/register_success')
+        else:
+            print "pw != c"
 
     else:
-        return None
+        return HttpResponseRedirect('/unauthorised')
     args = {}
     args.update(csrf(request))
 
-    args['form'] = form
+    return HttpResponseRedirect('/unauthorised')
 
-    return render_to_response('register.html', args)
 
 
 def register_success(request):
@@ -167,10 +180,33 @@ def hanyuan(request):
 
 def firstlogin(request):
     global firstloginport
-    firstloginoff = firstloginport
+    try:
+        global authrb
+    except:
+        print "authrb fail"
+        #authrb = None
+        pass
+
+    if request.user.is_authenticated():
+        return HttpResponseRedirect('/unauthorised')
+
+    try:
+        if firstloginport is None:
+            return HttpResponseRedirect('/unauthorised')
+    except:
+        pass
+
+    try:
+        firstloginoff = firstloginport
+        authrb = firstloginoff
+
+    except:
+        firstloginoff = None
+
+
     c = {}
     c.update(csrf(request))
-    tempdict = {'firstloginuser':firstloginoff}
+    tempdict = {'firsttimeuser':firstloginoff}
     c.update(tempdict)
     return render(request, 'webapp/firstlogin.html', c)
 

@@ -11,10 +11,11 @@
   </br>
     <div class="prompt">
         <font color="#F00" style="font-weight:bold;">{{ content }}</font>
-        <form action="/auth/" method="POST">
+        <form action="/authr/" method="POST">
             {% csrf_token %}
             <h2>Before you continue, you must change your password...</h2>
             <h3>Password:</h3> <input class="form-control" type="password" name="password">
+            <h3>Confirm Password:</h3> <input class="form-control" type="password" name="confirm">
             <div id="button">
             </br>
                 <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
