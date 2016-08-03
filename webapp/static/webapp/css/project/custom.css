@@ -72,6 +72,11 @@ h3 {
   color: red;
 }
 
+.form-controlNest {
+  width: 50%;
+  float: left;
+}
+
 .form-control {
   display: block;
   width: 100%;

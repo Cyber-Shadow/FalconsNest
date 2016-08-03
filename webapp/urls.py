@@ -17,5 +17,4 @@ urlpatterns = [
     url(r'^logout/$', views.logout),
     url(r'^firstlogin/$', views.firstlogin),
     url(r'^links/$', views.schoollinks),
-    url(r'^settings/$', views.settings),
 ]
