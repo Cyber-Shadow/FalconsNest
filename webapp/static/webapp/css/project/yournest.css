@@ -26,18 +26,25 @@ ul.header li {
   box-shadow: none;
 }
 
+li.zero-transformicon {
+  height: 100px;
+}
+
 @media all and (max-width: 436px) {
   li.titlename {
     visibility: hidden;
     font-size: 0px;
-	float: left;
+  	float: left;
   }
   li.hamburger {
     font-size: 26px;
   }
   li.headername {
-	float: right;
+    float: right;
     vertical-align: middle;
+  }
+  li.zero-transformicon {
+    height: 0px;
   }
 }
 
