@@ -13,9 +13,6 @@ def index(request):
 
 def login(request):
     global logouttext, invalid
-    if request.user.is_authenticated():
-        return HttpResponseRedirect('/yournest')
-
     c = {}
     c.update(csrf(request))
     try:
