@@ -166,13 +166,7 @@ def hanyuan(request):
 
 
 def firstlogin(request):
-    global firstloginport
-    firstloginoff = firstloginport
-    c = {}
-    c.update(csrf(request))
-    tempdict = {'firstloginuser':firstloginoff}
-    c.update(tempdict)
-    return render(request, 'webapp/firstlogin.html', c)
+    return render(request, 'webapp/firstlogin.html')
 
 
 def schoollinks(request):
