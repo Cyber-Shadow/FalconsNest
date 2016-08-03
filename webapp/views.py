@@ -177,3 +177,7 @@ def firstlogin(request):
 
 def schoollinks(request):
     return render(request, 'webapp/schoollinks.html')
+
+
+ def settings(request):
+     return render(request, 'webapp/settings.html')

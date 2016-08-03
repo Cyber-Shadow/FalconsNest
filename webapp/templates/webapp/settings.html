@@ -1,30 +1,30 @@
 {% extends "webapp/yournestheader.html" %}
 
-{% block content %}
-<html lang="en">
+ {% block content %}
+ <html lang="en">
 
-<body>
-  <div class="accountSettings" style="width:1000px;margin:auto;">
-    <h1 class="settingstitle">Account Settings</h1>
-    <div class="prompt" >
-      <font color="#F00" style="font-weight:bold;">{{ content }}</font>
-      <form action="/auth/" method="POST">
-        {% csrf_token %}
-        <h2>Change your password:</h2>
-        <h3>Old Password:</h3> <input class="form-control" type="password" name="password">
-        <h3>Password:</h3> <input class="form-control" type="password" name="password">
-        <h3>Confirm Password:</h3> <input class="form-control" type="password" name="password">
-    </div>
-  </div>
-    <br>
-  <div style="width:500px;margin:auto;">
-    <h2>Change your favourite order:</h2>
-    <h3>Order:</h3> <input class="form-control" type="text" name="favorder" placeholder="Search the menu..">
-    <br>
-    <br>
-  <div>  
+ <body>
+   <div class="accountSettings" style="width:1000px;margin:auto;">
+     <h1 class="settingstitle">Account Settings</h1>
+     <div class="prompt" >
+       <font color="#F00" style="font-weight:bold;">{{ content }}</font>
+       <form action="/auth/" method="POST">
+         {% csrf_token %}
+         <h2>Change your password:</h2>
+         <h3>Old Password:</h3> <input class="form-control" type="password" name="password">
+         <h3>Password:</h3> <input class="form-control" type="password" name="password">
+         <h3>Confirm Password:</h3> <input class="form-control" type="password" name="password">
+     </div>
+   </div>
+     <br>
+   <div style="width:500px;margin:auto;">
+     <h2>Change your favourite order:</h2>
+     <h3>Order:</h3> <input class="form-control" type="text" name="favorder" placeholder="Search the menu..">
+     <br>
+     <br>
+   <div>
     <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
-  </div>
-</div>
-</body>
-{% endblock %}
+   </div>
+ </div>
+ </body>
+ {% endblock %}
