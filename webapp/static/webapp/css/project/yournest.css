@@ -39,8 +39,11 @@ ul.header li {
 	float: right;
     vertical-align: middle;
   }
-  button.tcon.tcon-menu--arrow.tcon-menu--arrowleft.tcon-transform {
-    height: 40px;
+}
+
+@media all and (min-width: 437px) {
+  .tcon-menu--arrow.zero-transformicon, .tcon-menu--arrowleft.zero-transformicon {
+  height: 90px;
   }
 }
 
@@ -98,7 +101,6 @@ button.tcon-menu__lines.style-scope.zero-transformicon {
 }
 
 /** This is a test. **/
-
 zero-transformicon {
   display: inline-block;position: relativetranslateZ: 0;
 }
@@ -112,7 +114,7 @@ zero-transformicon {
 }
 
 .tcon.zero-transformicon {
-  -webkit-appearance: none;-moz-appearance: none;appearance: none;border: none;cursor: pointer;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;height: 40px;transition: 0.3s;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;width: 40px;background: transparent;outline: none;-webkit-tap-highlight-color: transparent;-webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;-moz-appearance: none;appearance: none;border: none;cursor: pointer;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;transition: 0.3s;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;width: 40px;background: transparent;outline: none;-webkit-tap-highlight-color: transparent;-webkit-tap-highlight-color: transparent;
 }
 
 .tcon.zero-transformicon > *.zero-transformicon {
@@ -209,7 +211,6 @@ zero-transformicon {
 
 .tcon-menu--arrow.zero-transformicon, .tcon-menu--arrowleft.zero-transformicon {
   width: auto;
-  height: 101px;
 }
 
 .tcon-menu--arrow.tcon-transform.zero-transformicon .tcon-menu__lines.zero-transformicon::before,.tcon-transform.tcon-menu--arrowleft.zero-transformicon .tcon-menu__lines.zero-transformicon::before,.tcon-menu--arrow.tcon-transform.zero-transformicon .tcon-menu__lines.zero-transformicon::after, .tcon-transform.tcon-menu--arrowleft.zero-transformicon .tcon-menu__lines.zero-transformicon::after {
