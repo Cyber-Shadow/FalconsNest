@@ -92,6 +92,10 @@ button.tcon-menu__lines.style-scope.zero-transformicon {
   text-align: center;
 }
 
+.favorderbtn {
+  display: table;
+  margin: 0 auto
+}
 
 /** This is a test. **/
 
