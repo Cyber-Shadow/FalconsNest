@@ -8,13 +8,15 @@ from django.template.context_processors import csrf
 def unauthorisedpage(request):
     return render_to_response('webapp/unauthorised.html')
 
-def index(request):
-    return render(request, "webapp/home.html")
 
 def login(request):
     global logouttext, invalid
     c = {}
     c.update(csrf(request))
+    struser = str(request.user.username)
+    if struser != "":
+        return HttpResponseRedirect('/yournest')
+        
     try:
         if logouttext is True:
             if invalid is False:
@@ -77,16 +79,10 @@ def order(request):
 def yournest(request):
     global intorder1, intorder2, orderdict
     #Try if user is authenticated, if not authenticated redirect to /unauthorised
-    try:
-        if user is None:
-            return HttpResponseRedirect('/unauthorised')
-        elif request.user.username == "":
-            return HttpResponseRedirect('/unauthorised')
-        elif request.user.username is None:
-            return HttpResponseRedirect('/unauthorised')
-
-    except:
+    struser1 = request.user.username
+    if struser1 == "":
         return HttpResponseRedirect('/unauthorised')
+        
     try:
         if user is not None:
             # the password verified for the user
@@ -142,7 +138,6 @@ def register_user(request):
     except:
         pass
 
-
     if request.method == 'POST':
         username = authrb
         password = request.POST.get('password', '')
@@ -183,8 +178,6 @@ def firstlogin(request):
     try:
         global authrb
     except:
-        print "authrb fail"
-        #authrb = None
         pass
 
     if request.user.is_authenticated():
@@ -212,8 +205,8 @@ def firstlogin(request):
 
 
 def schoollinks(request):
-    return render(request, 'webapp/schoollinks.html')
+    return render(request, 'webapp/schoollinks.html', {'full_name':request.user.username})
 
 
 def settings(request):
-    return render(request, 'webapp/settings.html')
+    return render(request, 'webapp/settings.html', {'full_name':request.user.username})
