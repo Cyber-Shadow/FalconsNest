@@ -6,17 +6,25 @@
 
 <head>
 </head>
-
+<!-- I screwed everything up. Ill explain on monday -->
 <body>
   <div id="quickorder">
     <h2>Quick Order</h2>
-    <form action="/order/" method="POST">
-      <button input type="submit" id="quickorderbtn" class="btn btn-primary raised"><span>Order Here!</span></button>
+    <form action="/quickorder/" method="POST">{% csrf_token %}
+     <button input type="submit" class="btn btn-lg btn-primary raised"><span>Order Here!</span></button>
     </form>
   </div>
-  <br>
+  <br> 
   <div id="menuorder">
-    <h2>Menu Order</h2>
+    <h2>Search Order</h2>
+    <div style="padding-left: 15%; padding-right: 15%;">
+      <form action="/order/" method="POST">{% csrf_token %}
+        <h3>Order:</h3> 
+        <input class="form-control" type="order" name="order1" placeholder="Menu...">
+        <br>
+        <button input type="submit" class="btn btn-lg btn-primary raised"><span>Order Here!</span></button>
+      </form>
+   </div>
   </div>
 </body>
 

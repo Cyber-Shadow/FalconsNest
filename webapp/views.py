@@ -24,7 +24,6 @@ def login(request):
                 c.update(logouttextdict)
                 logouttext = False
 
-
     except:
         logouttext = False
 
@@ -35,7 +34,7 @@ def login(request):
             invalid = False
     except:
         pass
-
+    
     return render_to_response('webapp/login.html', c)
 
 def chris(request):
@@ -54,7 +53,9 @@ def chris(request):
     else:
         return HttpResponseRedirect('/unauthorised')
 
-
+def quickorder(request):
+    quickrquest = request.POST.get('quickrquest', '')
+    
 
 def order(request):
     global intorder1, intorder2
@@ -77,17 +78,17 @@ def order(request):
 
 
 def yournest(request):
-    global intorder1, intorder2, orderdict
+    global intorder1, intorder2, orderdict, user
     #Try if user is authenticated, if not authenticated redirect to /unauthorised
     struser1 = request.user.username
     if struser1 == "":
-        return HttpResponseRedirect('/unauthorised')
+        return HttpResponseRedirect('/')
         
     try:
         if user is not None:
             # the password verified for the user
             if user == {}:
-                return HttpResponseRedirect('/register')
+                return HttpResponseRedirect('/')
             else:
                 if request.user.username == "chris":
                     return HttpResponseRedirect('/chris')
@@ -95,7 +96,7 @@ def yournest(request):
         else:
             print("The username and password were incorrect.")
     except:
-        return HttpResponseRedirect('/register')
+        return HttpResponseRedirect('/')
     try:
         orderdict = {"intorder1": intorder1, "intorder2": intorder2, 'full_name': request.user.username}
     except:
@@ -111,21 +112,23 @@ def auth_view(request):
     password = request.POST.get('password', '')
     if User.objects.filter(username=username).exists():
         pass
+    
     else:
-        firstloginport = username
-        return HttpResponseRedirect('/firstlogin')
+        strpassword = str(password)
+        if strpassword == "falcon":
+            firstloginport = username
+            return HttpResponseRedirect('/firstlogin')
 
     user = auth.authenticate(username=username, password=password)
     if username == "hanyuan":
         return HttpResponseRedirect('/hanyuan')
     if user is not None:
         auth.login(request, user)
-
         return HttpResponseRedirect('/yournest')
     else:
         invalid = True
         return HttpResponseRedirect('/')
-
+        
 def logout(request):
     global logouttext
     auth.logout(request)
@@ -133,6 +136,7 @@ def logout(request):
     return HttpResponseRedirect('/')
 
 def register_user(request):
+    global notconfirmedbol
     try:
         global authrb
     except:
@@ -150,7 +154,9 @@ def register_user(request):
             auth.login(request, user)
             return HttpResponseRedirect('/register_success')
         else:
-            print "pw != c"
+            notconfirmedbol = True
+            
+            return HttpResponseRedirect('/firstlogin')
 
     else:
         return HttpResponseRedirect('/unauthorised')
@@ -174,7 +180,7 @@ def hanyuan(request):
 
 
 def firstlogin(request):
-    global firstloginport
+    global firstloginport, notconfirmedbol
     try:
         global authrb
     except:
@@ -195,8 +201,20 @@ def firstlogin(request):
 
     except:
         firstloginoff = None
-
-
+    
+    try:
+        notconfirmedbol
+    except:
+        notconfirmedbol = False
+            
+    if notconfirmedbol is True:
+        notconfirmedbol = False
+        c = {}
+        c.update(csrf(request))
+        tempdict = {'firsttimeuser':firstloginoff, 'invalid':"Your passwords did not match."}
+        c.update(tempdict)
+        return render(request, 'webapp/firstlogin.html', c)
+    
     c = {}
     c.update(csrf(request))
     tempdict = {'firsttimeuser':firstloginoff}

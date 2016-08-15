@@ -2,7 +2,7 @@
 
 body {
   margin:0;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans Pro";
   background-color: #f2f2f2;
   transition: background-color .5s;
 }
@@ -12,12 +12,9 @@ ul.header {
   padding: 0;
   overflow: hidden;
   background-color: #049372;
-  font-size: 48pt;
-
 }
 
 ul.header li {
-  display: block;
   color: white;
   padding: 1px 10px;
   text-decoration: none;
@@ -26,54 +23,75 @@ ul.header li {
   box-shadow: none;
 }
 
-@media all and (max-width: 436px) {
+@media all and (max-width: 568px) {
+  #quickheader {
+    display: none;
+  }
+  #quickorder {
+    display: block;
+  }
   li.titlename {
+    display: none;
+  }
+/*  li.titlename {
     visibility: hidden;
     font-size: 0px;
-	float: left;
-  }
-  li.hamburger {
-    font-size: 26px;
-  }
+	  float: left; 
+} */
   li.headername {
-	float: right;
-    vertical-align: middle;
+    font-size: 22px;
+  	float: right;
+    vertical-align: middle; 
+  }
+  .tcon-menu--arrow.zero-transformicon, .tcon-menu--arrowleft.zero-transformicon {
+    padding-left: 0pt;
   }
 }
-
-@media all and (min-width: 437px) {
-  .tcon-menu--arrow.zero-transformicon, .tcon-menu--arrowleft.zero-transformicon {
-  height: 90px;
+ 
+@media all and (min-width: 569px) {
+  #quickorder {
+  display: none;  
   }
+}
+ 
+@media all and (min-width: 437px) {
+   .tcon-menu--arrow.zero-transformicon, .tcon-menu--arrowleft.zero-transformicon {
+   height: 90px;
+  }
+  li.titlename {
+  float: left;
+  font-size: 48pt;
+  }
+}
+#qckorder {
+  text-align: right;
+  padding: 0px;
+}
+
+/* @812px make side bar overlap */
+/* figure out how to */
+
+#quickheader {
+  padding: 10px 10px;
+  background-color: #02664f;
+  font-size: 20px;
+  text-transform: none;
 }
 
 #quickorder {
-  position: absolute;
   left: 0;
-  width: 50%;
+  width: 100%;
   text-align: center;
-  border-right: 1px solid grey;
-}
-
-#quickorder button {
-  background-color: #049372;
-  border-radius: 5px;
-  font-size: 20px;
 }
 
 #menuorder {
-  position: absolute;
   right: 0;
-  width: 50%;
+  width: 100%;
   text-align: center;
 }
 
-li.titlename {
-  float: left;
-}
-
 li.headername {
-  font-size: 16pt;
+  font-size: 22px;
   float: right;
   vertical-align: middle;
 }
@@ -84,7 +102,7 @@ li.hamburger {
 
 ul.schoolLinks {
   list-style: none;
-  font-size: 16pt;
+  font-size: 16px;
 }
 
 button.tcon-menu__lines.style-scope.zero-transformicon {
@@ -95,14 +113,18 @@ button.tcon-menu__lines.style-scope.zero-transformicon {
   text-align: center;
 }
 
-.favorderbtn {
-  display: table;
-  margin: 0 auto
+#quickheaderr {
+  float: right;
+  vertical-align: middle;
+  background-color: #05B57D;
+  
 }
 
+
 /** This is a test. **/
+
 zero-transformicon {
-  display: inline-block;position: relativetranslateZ: 0;
+  display: inline-block; position: relativetranslateZ 0; padding-left: 0;
 }
 
 .hidden.zero-transformicon {

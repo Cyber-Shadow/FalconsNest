@@ -6,6 +6,7 @@
  <body>
    <div class="accountSettings">
      <h1 class="settingstitle">Account Settings</h1>
+     
      <div class="prompt" >
        <font color="#F00" style="font-weight:bold;">{{ content }}</font>
        <form action="/auth/" method="POST">
@@ -19,12 +20,16 @@
      <br>
    <div class="prompt">
      <h2>Change your favourite order:</h2>
-     <h3>Order:</h3> <input class="form-control" type="password" name="password" placeholder="Menu..">
-     <br>
-     <br>
-   <div class="favorderbtn">
-    <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
-   </div>
+     <h3>Order:</h3> 
+       <form action="/faveorder/" method="post">
+       <input class="form-control" type="order" name="order" placeholder="Menu..">
+       <br>
+       <br>
+     <div class="favorderbtn">
+       /* Insert a form here? */
+       <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
+     </div> 
+   </form>
  </div>
  </body>
  {% endblock %}
