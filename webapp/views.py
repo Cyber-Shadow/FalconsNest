@@ -39,17 +39,16 @@ def login(request):
 
 def chris(request):
     global orderdict, intorder1, intorder2
+    temporderdict = {}
     if request.user.username == "chris":
         try:
             if orderdict is None:
                 pass
-            elif intorder1 is None:
-                pass
         except:
-            intorder1 = 0
-            intorder2 = 0
-            orderdict = {"intorder1": intorder1, "intorder2": intorder2, 'full_name': request.user.username}
-        return render_to_response('webapp/chris.html', {"intorder1": intorder1, "intorder2": intorder2, 'full_name': request.user.username})
+            fullnamedict = {'full_name':request.user.username}
+            temporderdict = orderdict
+            temporderdict.update(fullnamedict)
+        return render_to_response('webapp/chris.html', temporderdict)
     else:
         return HttpResponseRedirect('/unauthorised')
 
@@ -85,25 +84,27 @@ def yournest(request):
         return HttpResponseRedirect('/')
         
     try:
+        '''
         if user is not None:
             # the password verified for the user
             if user == {}:
                 return HttpResponseRedirect('/')
-            else:
-                if request.user.username == "chris":
-                    return HttpResponseRedirect('/chris')
-                print(request.user.username + " was authenticated.")
-        else:
-            print("The username and password were incorrect.")
+        '''
+            
+        if request.user.username == "chris":
+            return HttpResponseRedirect('/chris')
+            print(request.user.username + " was authenticated.")
     except:
         return HttpResponseRedirect('/')
     try:
-        orderdict = {"intorder1": intorder1, "intorder2": intorder2, 'full_name': request.user.username}
+        fullnamedict = {'full_name':request.user.username}
+        temporderdict = orderdict
+        temporderdict.update(fullnamedict)
     except:
-        intorder1 = 0
-        intorder2 = 0
-        orderdict = {"intorder1": intorder1, "intorder2": intorder2, 'full_name': request.user.username}
-    return render(request, 'webapp/yournest.html', {"intorder1": intorder1, "intorder2": intorder2, 'full_name': request.user.username})
+        orderdict = {}
+        temporderdict = orderdict
+        temporderdict.update(fullnamedict)
+    return render(request, 'webapp/yournest.html', temporderdict)
 
 
 def auth_view(request):
@@ -228,3 +229,12 @@ def schoollinks(request):
 
 def settings(request):
     return render(request, 'webapp/settings.html', {'full_name':request.user.username})
+    
+def addorder(request):
+    global orderdict
+    orderad = request.POST.get('orderad', '')
+    orderaddict = {len(orderdict) : 0}
+    orderdict.update(orderaddict)
+    return HttpResponseRedirect('/chris')
+    
+    
