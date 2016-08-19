@@ -23,7 +23,7 @@ ul.header li {
   box-shadow: none;
 }
 
-@media all and (max-width: 568px) {
+@media all and (max-width: 652px) {
   #quickheader {
     display: none;
   }
@@ -33,11 +33,6 @@ ul.header li {
   li.titlename {
     display: none;
   }
-/*  li.titlename {
-    visibility: hidden;
-    font-size: 0px;
-	  float: left; 
-} */
   li.headername {
     font-size: 22px;
   	float: right;
@@ -48,25 +43,24 @@ ul.header li {
   }
 }
  
-@media all and (min-width: 569px) {
+@media all and (min-width: 652px) {
   #quickorder {
   display: none;  
   }
-}
- 
-@media all and (min-width: 437px) {
    .tcon-menu--arrow.zero-transformicon, .tcon-menu--arrowleft.zero-transformicon {
-   height: 90px;
+  height: 90px;
   }
   li.titlename {
   float: left;
   font-size: 48pt;
   }
 }
+
 #qckorder {
   text-align: right;
   padding: 0px;
 }
+
 
 /* @812px make side bar overlap */
 /* figure out how to */
@@ -96,17 +90,13 @@ li.headername {
   vertical-align: middle;
 }
 
-li.hamburger {
+.hamburger {
   float: left;
 }
 
-ul.schoolLinks {
+.schoolLinks {
   list-style: none;
   font-size: 16px;
-}
-
-button.tcon-menu__lines.style-scope.zero-transformicon {
-  height: 101px;
 }
 
 .settingstitle {

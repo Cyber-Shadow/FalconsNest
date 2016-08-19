@@ -17,4 +17,5 @@ urlpatterns = [
     url(r'^firstlogin/$', views.firstlogin),
     url(r'^links/$', views.schoollinks),
     url(r'^settings/$', views.settings),
+    url(r'^addorder/$', views.addorder),
 ]

@@ -1,8 +1,7 @@
 from django.contrib import auth
 from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
-from django.shortcuts import render
-from django.shortcuts import render_to_response
+from django.shortcuts import render, render_to_response
 from django.template.context_processors import csrf
 
 def unauthorisedpage(request):
@@ -37,17 +36,22 @@ def login(request):
     
     return render_to_response('webapp/login.html', c)
 
+
 def chris(request):
-    global orderdict, intorder1, intorder2
+    global orderdict, ordernamedict
     temporderdict = {}
     if request.user.username == "chris":
         try:
-            if orderdict is None:
-                pass
-        except:
             fullnamedict = {'full_name':request.user.username}
             temporderdict = orderdict
             temporderdict.update(fullnamedict)
+            temporderdict.update(csrf(request))
+            temporderdict.update(ordernamedict)
+        except:
+            orderdict = {}
+            temporderdict = orderdict
+            temporderdict.update(csrf(request))
+            #temporderdict.update(ordernamedict)
         return render_to_response('webapp/chris.html', temporderdict)
     else:
         return HttpResponseRedirect('/unauthorised')
@@ -59,25 +63,13 @@ def quickorder(request):
 def order(request):
     global intorder1, intorder2
     order1 = request.POST.get('order1', '')
-    order2 = request.POST.get('order2', '')
-    try:
-        order1
-    except:
-        order1 = 0
-    try:
-        order2
-    except:
-        order2 = 0
-    order1int = int(order1)
-    #    order1int = int(order2)
-    intorder1 += order1int
-    #    intorder2 += intorder2
-    print intorder1
+    
+    orderdictadder = orderdict.get(0)
     return HttpResponseRedirect('/yournest')
 
 
 def yournest(request):
-    global intorder1, intorder2, orderdict, user
+    global ordernamedict, orderdict, user
     #Try if user is authenticated, if not authenticated redirect to /unauthorised
     struser1 = request.user.username
     if struser1 == "":
@@ -92,18 +84,23 @@ def yournest(request):
         '''
             
         if request.user.username == "chris":
-            return HttpResponseRedirect('/chris')
             print(request.user.username + " was authenticated.")
+            return HttpResponseRedirect('/chris')
+
     except:
         return HttpResponseRedirect('/')
     try:
+        
         fullnamedict = {'full_name':request.user.username}
         temporderdict = orderdict
         temporderdict.update(fullnamedict)
+        temporderdict.update(ordernamedict)
     except:
         orderdict = {}
         temporderdict = orderdict
         temporderdict.update(fullnamedict)
+        #temporderdict.update(ordernamedict)
+    print temporderdict
     return render(request, 'webapp/yournest.html', temporderdict)
 
 
@@ -231,10 +228,17 @@ def settings(request):
     return render(request, 'webapp/settings.html', {'full_name':request.user.username})
     
 def addorder(request):
-    global orderdict
-    orderad = request.POST.get('orderad', '')
+    global orderdict, ordernamedict
+    orderad = request.POST.get('addorder', '')
     orderaddict = {len(orderdict) : 0}
+    tempordernamedict = {'name' + str(len(orderdict)): str(orderad)}
+    try:
+        ordernamedict.update(tempordernamedict)
+    except:
+        ordernamedict = {}
+        ordernamedict.update(tempordernamedict)
+        
+    print ordernamedict
     orderdict.update(orderaddict)
     return HttpResponseRedirect('/chris')
-    
     

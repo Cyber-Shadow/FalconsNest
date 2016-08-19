@@ -6,11 +6,12 @@
 <head>
     <title>Your Nest | Falcon's Nest</title>
 </head>
-<body> 
-<form action="/order/" method="POST">
-    {% csrf_token %}
-    <h3>Falcon Burgers: {{ intorder1 }}</h3>
-</form>
+<body>
+        <h3>{{ name1 }}: {{ 0 }}</h3> 
+<form action="/addorder/" method="POST">{% csrf_token %}
+     <h3>Add an item:</h3> 
+     <input class="form-control" type="order" name="addorder" placeholder="Menu...">
+     </form>
 </div>
 </div>
 </body>
