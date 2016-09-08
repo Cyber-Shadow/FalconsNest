@@ -98,30 +98,6 @@ h3 {
   width: 100%;
 }
 
-.btn span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.btn span:after {
-  content: ">>";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.btn:hover span {
-  padding-right: 25px;
-}
-
-.btn:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 
 #rowheader {
   background: #049372;
@@ -159,7 +135,7 @@ h3 {
 }
 
 #collaplog {
-  align-items: middle;
+  vertical-align: middle;
 }
 
 #headertext h4 {
@@ -201,9 +177,7 @@ h3 {
 
 .btn {
   display: inline-block;
-  padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
   text-align: center;
@@ -217,7 +191,6 @@ h3 {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 0px;
-  padding: 10px 16px;
   margin: auto;
 }
 
@@ -230,7 +203,7 @@ h3 {
 .btn-primary {
   color: #fff;
   background-color: #049372;
-  border-color: #357ebd;
+  border: none;
 }
 
 .btn-primary:hover,
@@ -240,7 +213,7 @@ h3 {
 .open .dropdown-toggle.btn-primary {
   color: #fff;
   background-color: #049372;
-  border-color: #285e8e;
+  border: none;
 }
 
 /***********************
@@ -256,17 +229,36 @@ h3 {
   margin-top: 3px;
 }
 
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: ">>";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
 /***********************
   CUSTON BTN VALUES
 ************************/
 
-.btn {
-  padding: 14px 24px;
-  border: 0 none;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
 .btn:focus, .btn:active:focus, .btn.active:focus {
   outline: 0 none;
 }

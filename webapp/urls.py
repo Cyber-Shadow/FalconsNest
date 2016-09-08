@@ -1,21 +1,29 @@
 from django.conf.urls import url
-from . import views
+from . import views, auth
 
 urlpatterns = [
-    url(r'^$', views.login, name="login"),
-    url(r'^auth/$', views.auth_view),
-    url(r'^logout/$', views.logout),
-    url(r'^yournest/', views.yournest),
-    url(r'^unauthorised/', views.unauthorisedpage),
-    url(r'^register/$', views.register_page),
-    url(r'^chris/$', views.chris),
-    url(r'^authr/$', views.register_user),
-    url(r'^register_success/$', views.register_success),
+    #Pages
     url(r'^hanyuan/$', views.hanyuan),
-    url(r'^order/$', views.order),
-    url(r'^logout/$', views.logout),
-    url(r'^firstlogin/$', views.firstlogin),
     url(r'^links/$', views.schoollinks),
     url(r'^settings/$', views.settings),
+    url(r'^yournest/', views.yournest),
+    url(r'^chris/', views.chris),
+    url(r'^menu/', views.menu),
+    
+    #Actions
     url(r'^addorder/$', views.addorder),
+    url(r'^delorder/$', views.delorder),
+    #url(r'^addmenu/$', views.addmenu),
+    url(r'^order/$', views.order),
+    
+    #Authenication
+    url(r'^$', auth.login),
+    url(r'^auth/$', auth.auth_view),
+    url(r'^logout/$', auth.logout),
+    url(r'^authr/$', auth.register_user),
+    url(r'^logout/$', auth.logout),
+    url(r'^firstlogin/$', auth.firstlogin),
+    url(r'^register_success/$', auth.register_success),
+    url(r'^unauthorised/', auth.unauthorisedpage),
+
 ]

@@ -2,18 +2,34 @@
 
 {% block content %}
 
-<html lang="en">
-<head>
-    <title>Your Nest | Falcon's Nest</title>
-</head>
 <body>
-        <h3>{{ name1 }}: {{ 0 }}</h3> 
+    <div>
+    {% if name0 is not None %}
+    <h3>{{ name0 }}: {{ int0 }}</h3>
+    <form action="/delorder/" method="POST">{% csrf_token %}
+    <input type = "hidden" name = "delorder" value = "0" />
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit">Remove {{ name0 }}</button>
+    {% endif %}
+    {% if name1 is not None %}
+    <h3>{{ name1 }}: {{ int1 }}</h3>
+    {% endif %}
+    {% if name2 is not None %}
+    <h3>{{ name2 }}: {{ int2 }}</h3>
+    {% endif %}
+    {% if name3 is not None %}
+    <h3>{{ name3 }}: {{ int3 }}</h3>
+    {% endif %}
+
+    </div>
 <form action="/addorder/" method="POST">{% csrf_token %}
-     <h3>Add an item:</h3> 
+     <h3>Add an item to live ordering:</h3> 
      <input class="form-control" type="order" name="addorder" placeholder="Menu...">
      </form>
-</div>
-</div>
+     
+<form action="/addmenu/" method="POST">{% csrf_token %}
+     <h3>Add an item to the menu:</h3> 
+     <input class="form-control" type="order" name="addmenu" placeholder="Menu...">
+     </form>
 </body>
 </html>
 

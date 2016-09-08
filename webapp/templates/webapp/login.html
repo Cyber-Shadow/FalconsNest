@@ -14,11 +14,9 @@
             {% csrf_token %}
             <h3>Student ID:</h3> <input class="form-control" type="text" name="username">
             <h3>Password:</h3> <input class="form-control" type="password" name="password">
-            <div style="padding-top:10px;padding-bottom:10px;">
-                <font size="4">First time using FalconsNest? <a href="/register">Register Here!</a></font>
-            </div>
+            <br>
             <div id="button">
-                <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
+                <button input type="submit" class="btn btn-primary btn-lg raised">Submit</button>
             </div>
         </form>
     </div>
@@ -26,4 +24,29 @@
     </body>
     </html>
 {% endblock %}
-s
+ <!--    
+ <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <div class="loginbar">
+        <h1>REGISTER</h1>
+    </div>
+    <div class="prompt">
+        <form action=/authr/ method="POST">
+            {% csrf_token %}
+            StudentID:<br> <input class="form-control" type="text" name="username"><br>
+            Password:<br> <input class="form-control" type="password" name="password"><br>
+            <div id="button">
+                <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
+                <br>
+            </div>
+        </form>
+    </div>
+    </div>
+    </center>
+    </body>
+    </html>
+
+<!--{% include "webapp/includes/snippiet.html" %}-->
+-->

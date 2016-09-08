@@ -8,11 +8,15 @@
 
     <title>Your Nest | Falcon's Nest</title>
     {% load staticfiles %}
+    <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.teal-blue.min.css" />
     <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/project/yournest.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/project/custom.css' %}">
     <link rel="shortcut icon" href="{% static 'webapp/img/favicon.ico' %}">
-    <script type="text/javascript" src="{% static 'webapp/js/project/headerjs.js' %}"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="{% static 'webapp/js/project/menu.js' %}"></script>
+    <script type="text/javascript" src="{% static 'webapp/js/project/menusearch.js' %}"></script>
     <script type="text/javascript" src="{% static 'webapp/js/project/webcomponents-lite.min.js' %}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -32,7 +36,7 @@
   }
 
   .sidenav a {
-    padding: 10px 10px 10px 32px;
+    padding: 10px 10px 10px 18px;
     text-decoration: none;
     font-size: 25px;
     color: #bfbfbf;
@@ -54,50 +58,45 @@
     margin-bottom: 25px;
   }
 
-  #main {
+  #main, #content{
     transition: margin-left .5s;
+    /*transition: margin-right .5s;*/
   }
+  
+  @media screen and (max-width: 812px) {}
 
-  @media screen and (max-height: 450px) {
+  @media screen and (max-height: 530px) {
     .sidenav {padding-top: 0px;}
     .sidenav a {font-size: 18px;}
   }
 </style>
 
 <div id="mySidenav" class="sidenav">
-  <a href="/yournest" style="padding: 0; vertical-align: middle;"><img src="/static/webapp/img/logo.png" alt="logo" style="width: 250px; height: 250px; margin-left: auto; margin-right: auto;"></a>
-  <a href="/menu">Menu</a>
-  <a href="/settings">Account Settings</a>
-  <a href="/links">School Links</a>
-  <a href="/about">About</a>
-  <a href="/logout">Logout</a>
+  <a href="/yournest" style="padding:0px;vertical-align:middle;"><img src="/static/webapp/img/logo.png" alt="logo" style="width: 250px; height: 250px; margin-left: auto; margin-right: auto;"></a>
+  <a href="/menu"><i class="material-icons">local_dining</i>   Menu </a>
+  <a href="/settings"><i class="material-icons">settings</i>   Account Settings</a>
+  <a href="/links"><i class="material-icons">link</i>   School Links</a>
+  <a href="/about"><i class="material-icons">help_outline</i>   About</a>
+  <a href="/logout"><i class="material-icons">subdirectory_arrow_left</i>   Logout</a>
 </div>
 
-<div id="main">
-  <ul class="header">  
-    <li class="trans"><zero-transformicon icon="menu-arrowleft" color="white" onclick="decision()" style="float:left;">
-      <button class="tcon tcon-menu--arrow tcon-menu--arrowleft style-scope zero-transformicon" aria-label="toggle menu">
-      <span aria-hidden="true" class="tcon-menu__lines style-scope zero-transformicon"></span>
-      <span class="tcon-visuallyhidden style-scope zero-transformicon">toggle menu</span>
-      </button></zero-transformicon></li>
-      <a href="/yournest"><li class="titlename">Falcon's Nest</li></a>
-      <li id="qckorder"> <button input type="submit" class="btn" id="quickheader"><span>Quick Order</span></button> </li>
-      <a href="/settings"><li class="headername">Logged in as {{ full_name }}</li></a>
-  </ul>
-</div>
 
 <script>
 
   x = 0;
 
   function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
+      $("#mySidenav").css("width", "250px");
+      $("#main").css("margin-left", "250px");
+      $("#content").css("margin-left", "250px");
+      $("#main").css("margin-right", "-250px");
   }
 
   function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("main").style.marginLeft= "0";
+      $("#mySidenav").css("width", "0");
+      $("#main").css("margin-left", "0");
+      $("#content").css("margin-left", "0");
+      $("#main").css("margin-right", "0");
   }
 
   function decision() {
@@ -112,8 +111,50 @@
 
 </script>
 
+<div id="main">
+  <ul class="header">  
+    <li class="trans"><zero-transformicon icon="menu-arrowleft" color="white" onclick="decision()" style="float:left;">
+      <button class="tcon tcon-menu--arrow tcon-menu--arrowleft style-scope zero-transformicon" aria-label="toggle menu">
+      <span aria-hidden="true" class="tcon-menu__lines style-scope zero-transformicon"></span>
+      <span class="tcon-visuallyhidden style-scope zero-transformicon">toggle menu</span>
+      </button></zero-transformicon></li>
+      <a href="/yournest"><li class="titlename">Falcon's Nest</li></a>
+      <li id="qckorder"><button id="headerbtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">Quick Order</button></li>
+      <a href="/settings"><li class="headername">Logged in as {{ full_name }}</li></a>
+  </ul>
+</div>
+
 {% block content %}
 {% endblock %}
-
+      
 </head>
 </html>
+
+
+<!--
+<!-- Always shows a header, even in smaller screens. 
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header main">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -
+      <zero-transformicon icon="menu-arrowleft" color="white" onclick="decision()" style="float:left;">
+      <button class="tcon tcon-menu--arrow tcon-menu--arrowleft style-scope zero-transformicon" aria-label="toggle menu">
+      <span aria-hidden="true" class="tcon-menu__lines style-scope zero-transformicon"></span>
+      <span class="tcon-visuallyhidden style-scope zero-transformicon">toggle menu</span>
+      </button></zero-transformicon>
+      <span class="mdl-layout-title">Falcon's Nest</span>
+      <!-- Add spacer, to align navigation to the right --
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. --
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">Quick Order</a>
+      </nav>
+    </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      
+    </div>
+  </main>
+</div>
+-->

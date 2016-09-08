@@ -1,10 +1,27 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300); 
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+#myform {
+    text-align: center;
+    padding: 5px;
+}
+
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
 
 body {
-  margin:0;
+  margin: 0;
   font-family: "Source Sans Pro";
   background-color: #f2f2f2;
   transition: background-color .5s;
+}
+
+#menuinput {
+  height: 30px;
+  width: 50%;
 }
 
 ul.header {
@@ -12,23 +29,27 @@ ul.header {
   padding: 0;
   overflow: hidden;
   background-color: #049372;
+ /* box-shadow: 10px 10px 10px 10px #888888; */
 }
 
 ul.header li {
   color: white;
-  padding: 1px 10px;
   text-decoration: none;
   font-family: "Source Sans Pro";
   background: #049372;
-  box-shadow: none;
+}
+
+#headerbtn {
+ background-color: #07795f; 
+}
+
+#searchorder {
+  text-align: center;
 }
 
 @media all and (max-width: 652px) {
-  #quickheader {
+  #headerbtn {
     display: none;
-  }
-  #quickorder {
-    display: block;
   }
   li.titlename {
     display: none;
@@ -36,24 +57,45 @@ ul.header li {
   li.headername {
     font-size: 22px;
   	float: right;
-    vertical-align: middle; 
+    vertical-align: middle;
+    padding-top: 6px;
   }
   .tcon-menu--arrow.zero-transformicon, .tcon-menu--arrowleft.zero-transformicon {
-    padding-left: 0pt;
+    padding-left: 0px;
+  }
+  #quickorder {
+    display: block;
   }
 }
  
 @media all and (min-width: 652px) {
-  #quickorder {
-  display: none;  
-  }
-   .tcon-menu--arrow.zero-transformicon, .tcon-menu--arrowleft.zero-transformicon {
-  height: 90px;
+  .tcon-menu--arrow.zero-transformicon, .tcon-menu--arrowleft.zero-transformicon {
+  height: 70px;
   }
   li.titlename {
   float: left;
   font-size: 48pt;
   }
+  #quickorder {
+    display: none;
+  }
+  .headername {
+   padding-top: 3px; 
+  }
+}
+
+.white {
+  color: white;
+  text-transform: none;
+  background-color: #07795f;
+}
+
+.titlename {
+  padding-top: 19px;
+}
+
+.material-icons {
+  font-size: 19px;
 }
 
 #qckorder {
@@ -61,15 +103,26 @@ ul.header li {
   padding: 0px;
 }
 
+.itemamount {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 
 /* @812px make side bar overlap */
 /* figure out how to */
 
-#quickheader {
-  padding: 10px 10px;
-  background-color: #02664f;
+
+.flatbutton {
+  padding: 1px 10px;
+  background-color: #07795f;
   font-size: 20px;
   text-transform: none;
+  color: white;
+} 
+
+.flatbutton:hover {
+  background-color: #0c886c;
 }
 
 #quickorder {
@@ -88,33 +141,28 @@ li.headername {
   font-size: 22px;
   float: right;
   vertical-align: middle;
+  padding-right: 8px;
 }
 
 .hamburger {
   float: left;
 }
 
-.schoolLinks {
+#schoolLinks {
   list-style: none;
   font-size: 16px;
+  text-align: center;
 }
 
 .settingstitle {
   text-align: center;
 }
 
-#quickheaderr {
-  float: right;
-  vertical-align: middle;
-  background-color: #05B57D;
-  
-}
-
-
 /** This is a test. **/
 
 zero-transformicon {
-  display: inline-block; position: relativetranslateZ 0; padding-left: 0;
+  display: inline-block; 
+  position: relativetranslateZ 0; padding-left: 0;
 }
 
 .hidden.zero-transformicon {
@@ -223,6 +271,7 @@ zero-transformicon {
 
 .tcon-menu--arrow.zero-transformicon, .tcon-menu--arrowleft.zero-transformicon {
   width: auto;
+  padding-left: 11px;
 }
 
 .tcon-menu--arrow.tcon-transform.zero-transformicon .tcon-menu__lines.zero-transformicon::before,.tcon-transform.tcon-menu--arrowleft.zero-transformicon .tcon-menu__lines.zero-transformicon::before,.tcon-menu--arrow.tcon-transform.zero-transformicon .tcon-menu__lines.zero-transformicon::after, .tcon-transform.tcon-menu--arrowleft.zero-transformicon .tcon-menu__lines.zero-transformicon::after {
@@ -336,6 +385,3 @@ zero-transformicon {
 .tcon-remove--chevron-left.tcon-transform.zero-transformicon::after {
   left: 20%;-webkit-transform: translate(0, 55%) rotate(45deg);transform: translate(0, 55%) rotate(45deg);width: 62%;
 }
-
-.tcon-remove--chevron-right.tcon-transform.zero-transformicon::before {
-  left: 20%;-webkit-transform: translate(0, 55%) rotate(-45deg);transform: translate(0, 55%) ro…
