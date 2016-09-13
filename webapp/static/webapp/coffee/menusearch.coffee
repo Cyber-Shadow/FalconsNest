@@ -1,4 +1,7 @@
-find_item = ->
+sumAmounts = ->
+  (menulist[a][2] for a in [0..menulist.length - 1]).reduce (a, b) -> a + b
+
+findItem = ->
   valcheck = ($("#menuinput").val()).toLowerCase()
   endresult = []
   costs = []
@@ -25,8 +28,8 @@ find_item = ->
                                     endresult[j] + "\", 1)'>+</button>"
   $("#dropdownmenu").html endresult.join "<br>"
   
-changeval = (string, amount) ->
-  sum = (menulist[a][2] for a in [0..menulist.length - 1]).reduce (a, b) -> a + b
+changeVal = (string, amount) ->
+  sum = sumAmounts()
   for k in [0..menulist.length - 1]
     if string == menulist[k][0]
       if (amount == -1 and menulist[k][2] == 0) or (amount == 1 and sum == 3)
@@ -35,13 +38,13 @@ changeval = (string, amount) ->
         $("#" + (menulist[k][0].split(" ")).join("_") + "amount").val menulist[k][2]
         
 updateItem = (string) ->
-  prev_sum = (menulist[a][2] for a in [0..menulist.length - 1]).reduce (a, b) -> a + b
+  prev_sum = sumAmounts()
   amount_val = ($("#" + (string.split(" ")).join("_") + "amount").val()).replace(/\D/g,'')
   $("#" + (string.split(" ")).join("_") + "amount").val amount_val
   for l in [0..menulist.length - 1]
     if string == menulist[l][0]
       menulist[l][2] = amount_val | 0
-      sum = (menulist[a][2] for a in [0..menulist.length - 1]).reduce (a, b) -> a + b
+      sum = sumAmounts()
       if sum > 3
         $("#" + (menulist[l][0].split(" ")).join("_") + "amount").val 3 - prev_sum
         menulist[l][2] = ($("#" + (menulist[l][0].split(" ")).join("_") + "amount").val()) | 0

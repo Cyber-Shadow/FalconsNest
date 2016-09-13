@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300); 
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300';
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 #myform {
@@ -12,9 +12,25 @@
     text-align: center;
 }
 
+#falcon {
+  font-size: 120px;
+  padding-top: 11px;
+  margin-bottom: 5px;
+}
+
+#nest {
+  font-size: 80px;
+  margin-top: 0px;
+}
+
+.webname{
+  left: 20%;
+  position: absolute;
+}
+
 body {
   margin: 0;
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro Extra-Light";
   background-color: #f2f2f2;
   transition: background-color .5s;
 }
@@ -24,12 +40,17 @@ body {
   width: 50%;
 }
 
+#chris {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 ul.header {
   list-style-type: none;
   padding: 0;
   overflow: hidden;
   background-color: #049372;
- /* box-shadow: 10px 10px 10px 10px #888888; */
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
 
 ul.header li {
@@ -88,6 +109,7 @@ ul.header li {
   color: white;
   text-transform: none;
   background-color: #07795f;
+  margin-top: 10px;
 }
 
 .titlename {
@@ -146,6 +168,12 @@ li.headername {
 
 .hamburger {
   float: left;
+}
+
+.logoImgAbout {
+  margin-left: 50px;
+  margin-top: 40px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
 
 #schoolLinks {

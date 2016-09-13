@@ -3,33 +3,97 @@
 {% block content %}
 
 <body>
-    <div>
+  <div id="chris"> 
     {% if name0 is not None %}
-    <h3>{{ name0 }}: {{ int0 }}</h3>
-    <form action="/delorder/" method="POST">{% csrf_token %}
-    <input type = "hidden" name = "delorder" value = "0" />
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit">Remove {{ name0 }}</button>
+        <form action="/delorder/" method="POST">{% csrf_token %}
+          <input type = "hidden" name = "delorder" value = "0" />
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float:right;margin-top:0px" type="submit">Remove {{ name0 }}</button>
+        </form>
+        <h3>{{ name0 }}: {{ int0 }}</h3>
+        
     {% endif %}
     {% if name1 is not None %}
-    <h3>{{ name1 }}: {{ int1 }}</h3>
+    <!--EW GOOD CODE-->
+        <form action="/delorder/" method="POST">{% csrf_token %}
+          <input type = "hidden" name = "delorder" value = "1" />
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;" type="submit">Remove {{ name1 }}</button>
+        </form>
+        <h3>{{ name1 }}: {{ int1 }}</h3> 
+        
     {% endif %}
     {% if name2 is not None %}
-    <h3>{{ name2 }}: {{ int2 }}</h3>
+        <form action="/delorder/" method="POST">{% csrf_token %}
+          <input type = "hidden" name = "delorder" value = "2" />
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;"  type="submit">Remove {{ name2 }}</button>
+        </form>
+        <h3>{{ name2 }}: {{ int2 }}</h3>
+        
     {% endif %}
     {% if name3 is not None %}
-    <h3>{{ name3 }}: {{ int3 }}</h3>
+        <form action="/delorder/" method="POST">{% csrf_token %}
+          <input type = "hidden" name = "delorder" value = "3" />
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;"  type="submit">Remove {{ name3 }}</button>
+        </form>
+        <h3>{{ name3 }}: {{ int3 }}</h3>
+        
+        {% endif %}
+    {% if name4 is not None %}
+        <form action="/delorder/" method="POST">{% csrf_token %}
+          <input type = "hidden" name = "delorder" value = "4" />
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;" type="submit">Remove {{ name4 }}</button>
+        </form>
+        <h3>{{ name4 }}: {{ int4 }}</h3>
+        
     {% endif %}
+    {% if name5 is not None %}
+        <form action="/delorder/" method="POST">{% csrf_token %}
+          <input type = "hidden" name = "delorder" value = "5" />
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;" type="submit">Remove {{ name5 }}</button>
+         </form>
+        <h3>{{ name5 }}: {{ int5 }}</h3>
+        
+    {% endif %}
+    {% if name6 is not None %}
+        <form action="/delorder/" method="POST">{% csrf_token %}
+          <input type = "hidden" name = "delorder" value = "6" />
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;" type="submit">Remove {{ name6 }}</button>
+        </form>
+        <h3>{{ name6 }}: {{ int6 }}</h3>
+        
+    {% endif %}
+    {% if name7 is not None %}
+        <form action="/delorder/" method="POST">{% csrf_token %}
+         <input type = "hidden" name = "delorder" value = "7" />
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;" type="submit">Remove {{ name7 }}</button>
+        </form>
+        <h3>{{ name7 }}: {{ int7 }}</h3>
+        
+    {% endif %}
+    {% if name8 is not None %}
+        <form action="/delorder/" method="POST">{% csrf_token %}
+          <input type = "hidden" name = "delorder" value = "8" />
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;" type="submit">Remove {{ name8 }}</button>
+        </form>
+        <h3>{{ name8 }}: {{ int8 }}</h3>
 
-    </div>
-<form action="/addorder/" method="POST">{% csrf_token %}
-     <h3>Add an item to live ordering:</h3> 
-     <input class="form-control" type="order" name="addorder" placeholder="Menu...">
-     </form>
+    {% endif %}
+   
+  <form action="/addorder/" method="POST">{% csrf_token %}
+    <h3>Add an item to live ordering:</h3> 
+    <input class="form-control" type="order" name="addorder" placeholder="Menu...">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit">Submit</button>
+  </form>
      
-<form action="/addmenu/" method="POST">{% csrf_token %}
-     <h3>Add an item to the menu:</h3> 
-     <input class="form-control" type="order" name="addmenu" placeholder="Menu...">
-     </form>
+  <form action="/addmenu/" method="POST">{% csrf_token %}
+    <h3>Add an item to the menu:</h3> 
+    <p>Format: JJ's Chicken ($1.20) [guys its just for now ok?], This currently appends to menu in their respective sections, i'm planning to replace the current menu with this system</p>
+    <input class="form-control" type="order" name="menuadd" placeholder="Menu...">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit" name="menutype" value="a">Submit as snacks</button>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit" name="menutype" value="b">Submit as drinks</button>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit" name="menutype" value="c">Submit as sweets</button>
+  </form>
+</div>
+
 </body>
 </html>
 

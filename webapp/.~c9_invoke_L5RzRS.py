@@ -57,7 +57,7 @@ def yournest(request):
 def hanyuan(request):
     return render(request, 'webapp/hanyuan.html')
     
-def dirran(request):
+def (request):
     return render(request, 'webapp/dirran.html')
 
 def schoollinks(request):

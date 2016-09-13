@@ -15,12 +15,14 @@
     <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/project/custom.css' %}">
     <link rel="shortcut icon" href="{% static 'webapp/img/favicon.ico' %}">
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="{% static 'webapp/js/project/menu.js' %}"></script>
     <script type="text/javascript" src="{% static 'webapp/js/project/menusearch.js' %}"></script>
     <script type="text/javascript" src="{% static 'webapp/js/project/webcomponents-lite.min.js' %}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script src="/static/webapp/js/project/pageloader.js"></script>
 
 <style>
   .sidenav {
@@ -58,12 +60,9 @@
     margin-bottom: 25px;
   }
 
-  #main, #content{
+  #main, .content{
     transition: margin-left .5s;
-    /*transition: margin-right .5s;*/
   }
-  
-  @media screen and (max-width: 812px) {}
 
   @media screen and (max-height: 530px) {
     .sidenav {padding-top: 0px;}
@@ -73,43 +72,13 @@
 
 <div id="mySidenav" class="sidenav">
   <a href="/yournest" style="padding:0px;vertical-align:middle;"><img src="/static/webapp/img/logo.png" alt="logo" style="width: 250px; height: 250px; margin-left: auto; margin-right: auto;"></a>
+  <a href="/yournest"><i class="material-icons">input</i>   Ordering</a>
   <a href="/menu"><i class="material-icons">local_dining</i>   Menu </a>
   <a href="/settings"><i class="material-icons">settings</i>   Account Settings</a>
   <a href="/links"><i class="material-icons">link</i>   School Links</a>
   <a href="/about"><i class="material-icons">help_outline</i>   About</a>
-  <a href="/logout"><i class="material-icons">subdirectory_arrow_left</i>   Logout</a>
+  <a href="/logout"><i class="material-icons">subdirectory_arrow_left</i>Logout</a>
 </div>
-
-
-<script>
-
-  x = 0;
-
-  function openNav() {
-      $("#mySidenav").css("width", "250px");
-      $("#main").css("margin-left", "250px");
-      $("#content").css("margin-left", "250px");
-      $("#main").css("margin-right", "-250px");
-  }
-
-  function closeNav() {
-      $("#mySidenav").css("width", "0");
-      $("#main").css("margin-left", "0");
-      $("#content").css("margin-left", "0");
-      $("#main").css("margin-right", "0");
-  }
-
-  function decision() {
-    x += 1;
-    if (x == 1) {
-      openNav();
-    } else {
-      closeNav();
-      x -= 2;
-    }
-  }
-
-</script>
 
 <div id="main">
   <ul class="header">  
@@ -119,16 +88,58 @@
       <span class="tcon-visuallyhidden style-scope zero-transformicon">toggle menu</span>
       </button></zero-transformicon></li>
       <a href="/yournest"><li class="titlename">Falcon's Nest</li></a>
-      <li id="qckorder"><button id="headerbtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">Quick Order</button></li>
-      <a href="/settings"><li class="headername">Logged in as {{ full_name }}</li></a>
+      <li id="qckorder"><div class="rightheader"><button id="headerbtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">Quick Order</button></div></li>
+      <a href="/settings"><div class="rightheader"><li class="headername">Logged in as {{ full_name }}</li></div></a>
   </ul>
 </div>
+
+<script>
+
+  x = 0;
+  
+    function hide() {
+      $(window).resize(function() {
+	    if ($(window).width() <= 880) {	
+	        $(".rightheader").css("display", "none");
+	}	
+});
+}
+  function appear() {
+	    $(".rightheader").css("display", "block");
+}
+
+  function openNav() {
+      $("#mySidenav").css("width", "250px");
+      $("#main").css("margin-left", "250px");
+      $(".content").css("margin-left", "250px");
+  }
+
+  function closeNav() {
+      $("#mySidenav").css("width", "0");
+      $("#main").css("margin-left", "0");
+      $(".content").css("margin-left", "0");
+  }
+
+  function decision() {
+    x += 1;
+    if (x == 1) {
+      openNav();
+//      hide();
+    } else {
+      closeNav();
+//     appear();
+      x -= 2;
+    }
+  }
+
+</script>
 
 {% block content %}
 {% endblock %}
       
 </head>
-</html>
+<body>
+<div class="se-pre-con"></div>
 
 
 <!--
