@@ -3,7 +3,7 @@
 
 <head>
     <title>Falcon's Nest</title>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script src="/static/webapp/js/project/pageloader.js"></script>
     <meta charset="utf-8"/>
     {% load staticfiles %}
@@ -12,9 +12,12 @@
     <link rel="shortcut icon" href="{% static 'webapp/img/favicon.ico' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="/static/webapp/js/project/pageloader.js"></script>
 </head>
+
+    {% block content %}
+    {% endblock %}
 
 <div class="logo" height="100px" width="100px">
     {% load staticfiles %}
@@ -28,12 +31,11 @@
 <div class="se-pre-con"></div>
 <br>
 <hr>
-<p>
 
-    {% block content %}
-    {% endblock %}
+
     </div>
     </div>
 </body>
 
 </html>
+

@@ -1,5 +1,5 @@
 sumAmounts = ->
-  (menulist[a][2] for a in [0..menulist.length - 1]).reduce (a, b) -> a + b
+  (menulist[a][2] for a in [0..menulist.length - 1]).reduce((a, b) -> a + b)
 
 findItem = ->
   valcheck = ($("#menuinput").val()).toLowerCase()

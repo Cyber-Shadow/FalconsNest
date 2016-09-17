@@ -64,14 +64,16 @@ h3 {
   padding: 20px;
   border: 2px solid lightblue;
   position: fixed;
-  left: 30px;
+  left: 30px; 
 }
 .loginformcontrol {
   font-size: 25px;
-  width: 50%;
+  width: 80%;
+  height: 50%;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-top:50%;
 }
 
 .prompt {
@@ -182,6 +184,12 @@ h3 {
   padding-top: 20px;
   vertical-align: top;
 }
+
+#loginpage {
+  height:100vh;
+  background-color: #07795f;
+}
+
 
 /**************************
   DEFAULT BOOTSTRAP STYLES

@@ -1,53 +1,38 @@
-{% extends "webapp/header.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/project/yournest.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/project/custom.css' %}">
+</head>
 
-{% block content %}
-    <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <div class="loginbar">
-        <h1>LOGIN</h1>
-    </div>
+<body>
+<div class="col-md-9" id="loginpage">
+<img src="{% static 'webapp/img/logo.png' %}">
+</div>
+<div class="col-md-3" style="height:100%;">
     <div class="loginformcontrol">
         <font color="#F00" style="font-weight:bold;">{{ content }}</font>
         <form action="/auth/" method="POST">
             {% csrf_token %}
-            <h3>Student ID:</h3> <input class="form-control" type="text" name="username">
-            <h3>Password:</h3> <input class="form-control" type="password" name="password">
+            <h3>Student ID:</h3> <div class="input-group">
+            <input type="text" class="form-control" placeholder="Username" name="username">
+            </div>
+            <h3>Password:</h3> <input class="form-control" type="password"  name="password">
             <br>
             <div id="button">
                 <button input type="submit" class="btn btn-primary btn-lg raised">Submit</button>
             </div>
         </form>
     </div>
-    <br>
-    </body>
-    </html>
-{% endblock %}
-
-
- <!--    
- <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <div class="loginbar">
-        <h1>REGISTER</h1>
-    </div>
-    <div class="prompt">
-        <form action=/authr/ method="POST">
-            {% csrf_token %}
-            StudentID:<br> <input class="form-control" type="text" name="username"><br>
-            Password:<br> <input class="form-control" type="password" name="password"><br>
-            <div id="button">
-                <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>
-                <br>
-            </div>
-        </form>
-    </div>
-    </div>
-    </center>
-    </body>
-    </html>
-
-<!--{% include "webapp/includes/snippiet.html" %}-->
+</div>
+    
+</body> 
+</html>
+</body> 
+</html>

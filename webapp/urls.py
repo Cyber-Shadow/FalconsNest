@@ -11,14 +11,16 @@ urlpatterns = [
     url(r'^chris/', views.chris),
     url(r'^chrismenu/', views.chrismenu),
     url(r'^menu/', views.menu),
+    url(r'^error/', views.error),
     url(r'^about/', views.about),
     
     #Actions
     url(r'^addorder/$', views.addorder),
     url(r'^delorder/$', views.delorder),
-    url(r'^addmenu/$', views.addmenu),
+    url(r'^addmenu/$', views.addmenu), 
     url(r'^delmenu/$', views.delmenu),
     url(r'^order/$', views.order),
+    url(r'^faveorder/$', views.faveorder),
     
     #Authenication
     url(r'^$', auth.login),

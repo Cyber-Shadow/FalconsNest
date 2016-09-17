@@ -14,15 +14,16 @@
     <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/project/yournest.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/project/custom.css' %}">
     <link rel="shortcut icon" href="{% static 'webapp/img/favicon.ico' %}">
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="{% static 'webapp/js/project/menusearch.js' %}"></script>
     <script type="text/javascript" src="{% static 'webapp/js/project/webcomponents-lite.min.js' %}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="/static/webapp/js/project/pageloader.js"></script>
+    <script type="text/javascript" src="{% static '/webapp/jquery-touchswipe/jquery.touchSwipe.min.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 
 <style>
   .sidenav {
@@ -35,6 +36,7 @@
     background-color: #4f4f4f;
     overflow-x: hidden;
     transition: 0.5s;
+    overflow: hidden;
   }
 
   .sidenav a {
@@ -68,6 +70,14 @@
     .sidenav {padding-top: 0px;}
     .sidenav a {font-size: 18px;}
   }
+  
+  .swipearea {
+    width: 5%;
+    height: 100%;
+    text-align: left;
+    left: 0;  
+  }
+  
 </style>
 
 <div id="mySidenav" class="sidenav">
@@ -91,43 +101,37 @@
       <li id="qckorder"><div class="rightheader"><button id="headerbtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">Quick Order</button></div></li>
       <a href="/settings"><div class="rightheader"><li class="headername">Logged in as {{ full_name }}</li></div></a>
   </ul>
+  <div class="swipe-area"></div>
 </div>
+
+
 
 <script>
 
   x = 0;
-  
-    function hide() {
-      $(window).resize(function() {
-	    if ($(window).width() <= 880) {	
-	        $(".rightheader").css("display", "none");
-	}	
-});
-}
-  function appear() {
-	    $(".rightheader").css("display", "block");
-}
 
   function openNav() {
-      $("#mySidenav").css("width", "250px");
-      $("#main").css("margin-left", "250px");
-      $(".content").css("margin-left", "250px");
+    if (($(window).width() <= 880 && $(window).width() >= 650) || ($(window).width() <= 450)) {	
+  	  $(".rightheader").css("display", "none");
+  	}
+    $("#mySidenav").css("width", "250px");
+    $("#main").css("margin-left", "250px");
+    $(".content").css("margin-left", "250px");
   }
 
   function closeNav() {
-      $("#mySidenav").css("width", "0");
-      $("#main").css("margin-left", "0");
-      $(".content").css("margin-left", "0");
+    $(".rightheader").css("display", "block");
+    $("#mySidenav").css("width", "0");
+    $("#main").css("margin-left", "0");
+    $(".content").css("margin-left", "0");
   }
 
   function decision() {
     x += 1;
     if (x == 1) {
       openNav();
-//      hide();
     } else {
       closeNav();
-//     appear();
       x -= 2;
     }
   }

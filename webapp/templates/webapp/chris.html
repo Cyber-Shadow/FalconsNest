@@ -3,98 +3,68 @@
 {% block content %}
 
 <body>
-  <div id="chris"> 
-    {% if name0 is not None %}
-        <form action="/delorder/" method="POST">{% csrf_token %}
-          <input type = "hidden" name = "delorder" value = "0" />
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float:right;margin-top:0px" type="submit">Remove {{ name0 }}</button>
-        </form>
-        <h3>{{ name0 }}: {{ int0 }}</h3>
-        
-    {% endif %}
-    {% if name1 is not None %}
-    <!--EW GOOD CODE-->
-        <form action="/delorder/" method="POST">{% csrf_token %}
-          <input type = "hidden" name = "delorder" value = "1" />
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;" type="submit">Remove {{ name1 }}</button>
-        </form>
-        <h3>{{ name1 }}: {{ int1 }}</h3> 
-        
-    {% endif %}
-    {% if name2 is not None %}
-        <form action="/delorder/" method="POST">{% csrf_token %}
-          <input type = "hidden" name = "delorder" value = "2" />
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;"  type="submit">Remove {{ name2 }}</button>
-        </form>
-        <h3>{{ name2 }}: {{ int2 }}</h3>
-        
-    {% endif %}
-    {% if name3 is not None %}
-        <form action="/delorder/" method="POST">{% csrf_token %}
-          <input type = "hidden" name = "delorder" value = "3" />
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;"  type="submit">Remove {{ name3 }}</button>
-        </form>
-        <h3>{{ name3 }}: {{ int3 }}</h3>
-        
-        {% endif %}
-    {% if name4 is not None %}
-        <form action="/delorder/" method="POST">{% csrf_token %}
-          <input type = "hidden" name = "delorder" value = "4" />
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;" type="submit">Remove {{ name4 }}</button>
-        </form>
-        <h3>{{ name4 }}: {{ int4 }}</h3>
-        
-    {% endif %}
-    {% if name5 is not None %}
-        <form action="/delorder/" method="POST">{% csrf_token %}
-          <input type = "hidden" name = "delorder" value = "5" />
-         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;" type="submit">Remove {{ name5 }}</button>
-         </form>
-        <h3>{{ name5 }}: {{ int5 }}</h3>
-        
-    {% endif %}
-    {% if name6 is not None %}
-        <form action="/delorder/" method="POST">{% csrf_token %}
-          <input type = "hidden" name = "delorder" value = "6" />
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;" type="submit">Remove {{ name6 }}</button>
-        </form>
-        <h3>{{ name6 }}: {{ int6 }}</h3>
-        
-    {% endif %}
-    {% if name7 is not None %}
-        <form action="/delorder/" method="POST">{% csrf_token %}
-         <input type = "hidden" name = "delorder" value = "7" />
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;" type="submit">Remove {{ name7 }}</button>
-        </form>
-        <h3>{{ name7 }}: {{ int7 }}</h3>
-        
-    {% endif %}
-    {% if name8 is not None %}
-        <form action="/delorder/" method="POST">{% csrf_token %}
-          <input type = "hidden" name = "delorder" value = "8" />
-         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" style="float: right;" type="submit">Remove {{ name8 }}</button>
-        </form>
-        <h3>{{ name8 }}: {{ int8 }}</h3>
+<style>
+  .right {
+    float: right;
+  }
+  #space {
+    height: 10px;
+  }
+  button {
+    top: auto;
+  }
+</style>
+<div class=content>
+  <div id="chris">
+    {% for order in orderlist %}
+      <form action="/delorder/" method="POST">{% csrf_token %}
+        <input type = "hidden" name = "delorder" value = '{{ order.name }}' />
+        <button class="right mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit">Remove {{ order.name }}</button>
+        <div id="space"></div>
+      </form>
+      <h3>{{ order.name }}: ${{ order.price }} Ordered: {{ order.value }}</h3>
+    {% endfor %}
 
-    {% endif %}
-   
-  <form action="/addorder/" method="POST">{% csrf_token %}
-    <h3>Add an item to live ordering:</h3> 
-    <input class="form-control" type="order" name="addorder" placeholder="Menu...">
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit">Submit</button>
-  </form>
+    <form action="/addorder/" method="POST">{% csrf_token %}
+      <h3>Add an item to live ordering:</h3> 
+      <input class="form-control" type="order" name="addorder" placeholder="Menu...">
+      <input class="form-control" type="order" name="addorderprice" placeholder="Insert Price...">
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit">Submit</button>
+    </form>
      
-  <form action="/addmenu/" method="POST">{% csrf_token %}
-    <h3>Add an item to the menu:</h3> 
-    <p>Format: JJ's Chicken ($1.20) [guys its just for now ok?], This currently appends to menu in their respective sections, i'm planning to replace the current menu with this system</p>
-    <input class="form-control" type="order" name="menuadd" placeholder="Menu...">
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit" name="menutype" value="a">Submit as snacks</button>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit" name="menutype" value="b">Submit as drinks</button>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit" name="menutype" value="c">Submit as sweets</button>
-  </form>
+    <form action="/addmenu/" method="POST">{% csrf_token %}
+      <h3>Add an item to the menu:</h3> 
+      <p>Unorderable food (e.g. Sushi) are fresh food that cannot be ordered.</p>
+      <input class="form-control" type="order" name="menuadd" placeholder="Menu...">
+      <input class="form-control" type="order" name="menuaddprice" placeholder="Menu...">
+      <button data-toggle="collapse" data-target="#ordertypes">Display Options</button>
+      <div class="collapse" id="ordertypes">
+        <label class="ordertype mdl-radio mdl-js-radio mdl-js-ripple-effect" for="menutype-u" />
+          <input type="radio" class="mdl-radio__button" id="menutype-u" name="menutype" value="u">
+          <span class="mdl-radio__label">Unorderable</span>
+        </label> <br>
+        <label class="ordertype mdl-radio mdl-js-radio mdl-js-ripple-effect" for="menutype-s" />
+          <input type="radio" class="mdl-radio__button" id="menutype-s" name="menutype" value="s">
+          <span class="mdl-radio__label">Snacks</span>
+        </label> <br>
+        <label class="ordertype mdl-radio mdl-js-radio mdl-js-ripple-effect" for="menutype-d" />
+          <input type="radio" class="mdl-radio__button" id="menutype-d" name="menutype" value="d">
+          <span class="mdl-radio__label">Drinks</span>
+        </label> <br>
+        <label class="ordertype mdl-radio mdl-js-radio mdl-js-ripple-effect" for="menutype-t"/>
+          <input type="radio" class="mdl-radio__button" id="menutype-t" name="menutype" value="t">
+          <span class="mdl-radio__label">Desserts</span>
+        </label> <br>
+        <label class="ordertype mdl-radio mdl-js-radio mdl-js-ripple-effect" for="menutype-i" />
+          <input type="radio" class="mdl-radio__button" id="menutype-i" name="menutype" value="i">
+          <span class="mdl-radio__label">Icecreams & Iceblocks</span>
+        </label> <br>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
 </div>
-
 </body>
-</html>
+</html> 
 
 {% endblock %}

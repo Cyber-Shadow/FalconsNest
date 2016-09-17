@@ -1,0 +1,59 @@
+{
+  "name": "jquery-touchswipe",
+  "title": "Touch Swipe",
+  "description": "A jquery plugin to be used on touch devices such as iPad, iPhone, Android etc, to react to swipe gestures.",
+  "keywords": [
+    "touchSwipe",
+    "touch",
+    "swipe",
+    "gestures",
+    "tocuhevent",
+    "jquery"
+  ],
+  "main": "./jquery.touchSwipe.min.js",
+  "author": {
+    "name": "Matt Bryson"
+  },
+  "version": "1.6.15",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattbryson/TouchSwipe-Jquery-Plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/mattbryson/TouchSwipe-Jquery-Plugin/master/LICENCE"
+    },
+    {
+      "type": "GPL V2",
+      "url": "https://raw.githubusercontent.com/mattbryson/TouchSwipe-Jquery-Plugin/master/LICENCE"
+    }
+  ],
+  "homepage": "http://labs.rampinteractive.co.uk/touchSwipe/demos/",
+  "gitHead": "d48215666f0d63038774b364ed97568145356583",
+  "_id": "jquery-touchswipe@1.6.15",
+  "scripts": {},
+  "_shasum": "be8372f2c799f9fd6b3c15e5034bf7e25e28dd83",
+  "_from": "jquery-touchswipe@latest",
+  "_npmVersion": "2.7.0",
+  "_nodeVersion": "0.12.0",
+  "_npmUser": {
+    "name": "mattbryson",
+    "email": "matt.bryson@gmai.com"
+  },
+  "maintainers": [
+    {
+      "name": "mattbryson",
+      "email": "matt.bryson@gmai.com"
+    }
+  ],
+  "dist": {
+    "shasum": "be8372f2c799f9fd6b3c15e5034bf7e25e28dd83",
+    "tarball": "https://registry.npmjs.org/jquery-touchswipe/-/jquery-touchswipe-1.6.15.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/jquery-touchswipe/-/jquery-touchswipe-1.6.15.tgz"
+}
