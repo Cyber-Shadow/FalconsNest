@@ -1,21 +1,34 @@
 <html>
 
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type='text/javascript' src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
 </head>
 
 <body>
+
 <script>
+var menulist = [
+  {% for order in menulist %}
+    ['{{ order.name }}', {{ order.price }}, 0],
+  {% endfor %}
+];
+var changeVal, findItem, sumAmounts, updateItem;
 
-var changeval, find_item, updateItem;
-  menulist = [
-    {% for order in menulist %}
-      ["{{ order.name }}", {{ order.price }}],
-    {% endfor %}
-  ];
+sumAmounts = function() {
+  var a;
+  return ((function() {
+    var m, ref, results;
+    results = [];
+    for (a = m = 0, ref = menulist.length - 1; 0 <= ref ? m <= ref : m >= ref; a = 0 <= ref ? ++m : --m) {
+      results.push(menulist[a][2]);
+    }
+    return results;
+  })()).reduce(function(a, b) {
+    return a + b;
+  });
+};
 
-
-find_item = function() {
+findItem = function() {
   var amounts, costs, endresult, i, j, m, n, ref, ref1, temp, valcheck;
   valcheck = ($("#menuinput").val()).toLowerCase();
   endresult = [];
@@ -32,24 +45,15 @@ find_item = function() {
   if (endresult.length !== 0) {
     for (j = n = 0, ref1 = endresult.length - 1; 0 <= ref1 ? n <= ref1 : n >= ref1; j = 0 <= ref1 ? ++n : --n) {
       temp = (endresult[j].split(" ")).join("_");
-      endresult[j] = endresult[j] + " ($" + costs[j] + ")" + "<button class='btn flatbutton' id='" + temp + "minus' onClick='changeval(\"" + endresult[j] + "\", -1)'>-</button> <input class='itemamount' id='" + temp + "amount' value='" + amounts[j] + "' onkeyup='updateItem(\"" + endresult[j] + "\")'></input> <button class='btn flatbutton' id='" + temp + "plus' onClick='changeval(\"" + endresult[j] + "\", 1)'>+</button>";
+      endresult[j] = endresult[j] + " ($" + costs[j] + ")" + "<div class=<button class='btn flatbutton' id='" + temp + "minus' onClick='changeVal(\"" + endresult[j] + "\", -1)'>-</button> <input class='itemamount' name='" + endresult[j] + "'  id='" + temp + "amount' value='" + amounts[j] + "' onkeyup='updateItem(\"" + endresult[j] + "\")'></input>" + "<button class='btn flatbutton' id='" + temp + "plus' onClick='changeVal(\"" + endresult[j] + "\", 1)'>+</button>";
     }
   }
-  return $("#dropdownmenu").html(endresult.join("<br>"));
+  return $("#dropdownmenu").html(endresult.join("<br>") + "<br><button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white'" + "type='submit'>Order your stuff!</button>");
 };
 
-changeval = function(string, amount) {
-  var a, k, m, ref, results, sum;
-  sum = ((function() {
-    var m, ref, results;
-    results = [];
-    for (a = m = 0, ref = menulist.length - 1; 0 <= ref ? m <= ref : m >= ref; a = 0 <= ref ? ++m : --m) {
-      results.push(menulist[a][2]);
-    }
-    return results;
-  })()).reduce(function(a, b) {
-    return a + b;
-  });
+changeVal = function(string, amount) {
+  var k, m, ref, results, sum;
+  sum = sumAmounts();
   results = [];
   for (k = m = 0, ref = menulist.length - 1; 0 <= ref ? m <= ref : m >= ref; k = 0 <= ref ? ++m : --m) {
     if (string === menulist[k][0]) {
@@ -67,33 +71,15 @@ changeval = function(string, amount) {
 };
 
 updateItem = function(string) {
-  var a, amount_val, l, m, prev_sum, ref, results, sum;
-  prev_sum = ((function() {
-    var m, ref, results;
-    results = [];
-    for (a = m = 0, ref = menulist.length - 1; 0 <= ref ? m <= ref : m >= ref; a = 0 <= ref ? ++m : --m) {
-      results.push(menulist[a][2]);
-    }
-    return results;
-  })()).reduce(function(a, b) {
-    return a + b;
-  });
+  var amount_val, l, m, prev_sum, ref, results, sum;
+  prev_sum = sumAmounts();
   amount_val = ($("#" + (string.split(" ")).join("_") + "amount").val()).replace(/\D/g, '');
   $("#" + (string.split(" ")).join("_") + "amount").val(amount_val);
   results = [];
   for (l = m = 0, ref = menulist.length - 1; 0 <= ref ? m <= ref : m >= ref; l = 0 <= ref ? ++m : --m) {
     if (string === menulist[l][0]) {
       menulist[l][2] = amount_val | 0;
-      sum = ((function() {
-        var n, ref1, results1;
-        results1 = [];
-        for (a = n = 0, ref1 = menulist.length - 1; 0 <= ref1 ? n <= ref1 : n >= ref1; a = 0 <= ref1 ? ++n : --n) {
-          results1.push(menulist[a][2]);
-        }
-        return results1;
-      })()).reduce(function(a, b) {
-        return a + b;
-      });
+      sum = sumAmounts();
       if (sum > 3) {
         $("#" + (menulist[l][0].split(" ")).join("_") + "amount").val(3 - prev_sum);
         results.push(menulist[l][2] = ($("#" + (menulist[l][0].split(" ")).join("_") + "amount").val()) | 0);
@@ -106,9 +92,7 @@ updateItem = function(string) {
   }
   return results;
 };
-
 </script>
 
 </body>
-
 </html>

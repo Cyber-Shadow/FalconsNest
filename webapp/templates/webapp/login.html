@@ -4,18 +4,23 @@
     {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/project/yournest.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'webapp/css/project/custom.css' %}">
 </head>
 
 <body>
-<div class="col-md-9" id="loginpage">
-<img src="{% static 'webapp/img/logo.png' %}">
+<table>
+<tr>
+<td width="75%" style="background-color: #07795f;"> 
+<div id="loginpage" style="width:100%">
+<img src="{% static 'webapp/img/logo.svg' %}">
 </div>
-<div class="col-md-3" style="height:100%;">
+</td>
+<td width="33.5%" min-width="150px">
+<div style="height:100vh; width:100%;">
     <div class="loginformcontrol">
         <font color="#F00" style="font-weight:bold;">{{ content }}</font>
         <form action="/auth/" method="POST">
@@ -23,7 +28,7 @@
             <h3>Student ID:</h3> <div class="input-group">
             <input type="text" class="form-control" placeholder="Username" name="username">
             </div>
-            <h3>Password:</h3> <input class="form-control" type="password"  name="password">
+            <h3>Password:</h3> <input class="form-control" type="password"  placeholder="Password"  name="password">
             <br>
             <div id="button">
                 <button input type="submit" class="btn btn-primary btn-lg raised">Submit</button>
@@ -31,6 +36,9 @@
         </form>
     </div>
 </div>
+</td>
+</tr>
+</table>
     
 </body> 
 </html>

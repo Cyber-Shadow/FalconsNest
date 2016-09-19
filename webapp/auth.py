@@ -14,26 +14,28 @@ def register_page(request):
 
 def auth_view(request):
     global invalid, user, firstloginport
-    username = request.POST.get('username', '')
-    password = request.POST.get('password', '')
-    if User.objects.filter(username=username).exists():
-        pass
+    if request.method == 'POST':
+        username = request.POST.get('username', '')
+        password = request.POST.get('password', '')
+        if User.objects.filter(username=username).exists():
+            pass
+        else:
+            strpassword = str(password)
+            if strpassword == "falcon":
+                firstloginport = username
+                return HttpResponseRedirect('/firstlogin')
     
+        user = auth.authenticate(username=username, password=password)
+        if username == "hanyuan":
+            return HttpResponseRedirect('/hanyuan')
+        if user is not None:
+            auth.login(request, user)
+            return HttpResponseRedirect('/yournest')
+        else:
+            invalid = True
+            return HttpResponseRedirect('/')
     else:
-        strpassword = str(password)
-        if strpassword == "falcon":
-            firstloginport = username
-            return HttpResponseRedirect('/firstlogin')
-
-    user = auth.authenticate(username=username, password=password)
-    if username == "hanyuan":
-        return HttpResponseRedirect('/hanyuan')
-    if user is not None:
-        auth.login(request, user)
-        return HttpResponseRedirect('/yournest')
-    else:
-        invalid = True
-        return HttpResponseRedirect('/')
+        return HttpResponseRedirect('/error')
         
 def logout(request):
     global logouttext
@@ -73,12 +75,6 @@ def register_user(request):
 
 
 def firstlogin(request):
-    global firstloginport, notconfirmedbol
-    try:
-        global authrb
-    except:
-        pass
-
     if request.user.is_authenticated():
         return HttpResponseRedirect('/unauthorised')
 

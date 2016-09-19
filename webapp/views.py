@@ -8,9 +8,9 @@ from .models import *
 from django.db.models import F
 
 def chris(request):                                #Main Chris page
-    chrisdict = {}
-    orderlist = ordermodel.objects.all()
     if request.user.username == "chris":
+        chrisdict = {}
+        orderlist = ordermodel.objects.all()    
         try:
             fullnamedict = {'full_name':request.user.username}
             chrisdict =  dict(ordrdct)
@@ -25,15 +25,12 @@ def chris(request):                                #Main Chris page
     else:
         return HttpResponseRedirect('/unauthorised')
 
-def quickorder(request):                          #Quickorder
-    quickrquest = request.POST.get('quickrquest', '')
     
 def yournest(request):
-    global ordernamedict,  ordrdct, user
     #Try if user is authenticated, if not authenticated redirect to /unauthorised
     menulist = ordermodel.objects.all()
     yourdict = {}
-    if request.user.username == "":
+    if not request.user.is_authenticated:
         return HttpResponseRedirect('/')
         
     try:
@@ -68,10 +65,13 @@ def dirran(request):
     return render(request, 'webapp/dirran.html')
 
 def schoollinks(request):
-    return render(request, 'webapp/schoollinks.html', {'full_name':request.user.username})
+    if request.user.is_authenticated:
+        return render(request, 'webapp/schoollinks.html', {'full_name':request.user.username})
+    else:
+        return HttpResponseRedirect('/error')
 
 def settings(request):
-    if request.user.username != "": 
+    if request.user.is_authenticated: 
         pushdict = { 'full_name' : request.user.username,
                      'orderlist' : ordermodel.objects.all(),
                 } 
@@ -106,65 +106,93 @@ def chrismenu(request):
                  "sweetslist" : menumodel.objects.filter(category = "s"),
                  "icelist" : menumodel.objects.filter(category = "i"),
                  }
+    pushdict.update(csrf(request))
     return render(request, 'webapp/chrismenu.html', pushdict)    
     
     
 def about(request):
-    return render(request, 'webapp/about.html', {'full_name':request.user.username})    
-    
-def addorder(request):
-    try:
-        orderad = str(request.POST.get('addorder', ''))
-    except:
-        return HttpResponseRedirect('/error')
-    try:
-        orderadprice = float(request.POST.get('addorderprice', ''))
-    except:
-        return HttpResponseRedirect('/error')
-    if not ordermodel.objects.filter(name = orderad).exists():
-        ordermodel_obj = ordermodel(name=orderad, value = 0, price = orderadprice)
-        ordermodel_obj.save()
-        return HttpResponseRedirect('/chris')
-    else:
-        return HttpResponseRedirect('/error')
-
-
-def delorder(request):
-    if request.user.username == "chris":
-        orderdel = request.POST.get('delorder', '')
-        print orderdel
-        dlo = ordermodel.objects.get(name = orderdel)
-        dlo.delete()
-        return HttpResponseRedirect('/chris')
+    if request.user.is_authenticated:    
+        return render(request, 'webapp/about.html', {'full_name':request.user.username}) 
     else:
         return HttpResponseRedirect('/unauthorised')
+
+def terms(request):
+    if request.user.is_authenticated:    
+        return render(request, 'webapp/terms.html', {'full_name':request.user.username}) 
+    else:
+        return HttpResponseRedirect('/unauthorised')    
+    
+def addorder(request):
+    if request.method == 'POST':
+        if request.user.username == "chris":
+            try:
+                orderad = str(request.POST.get('addorder', ''))
+            except:
+                return HttpResponseRedirect('/error')
+            try:
+                orderadprice = float(request.POST.get('addorderprice', ''))
+            except:
+                return HttpResponseRedirect('/error')
+            if not ordermodel.objects.filter(name = orderad).exists():
+                ordermodel_obj = ordermodel(name=orderad, value = 0, price = orderadprice)
+                ordermodel_obj.save()
+                return HttpResponseRedirect('/chris')
+            else:
+                return HttpResponseRedirect('/error')
+        else:
+            return HttpResponseRedirect("/unauthorised")
+    else:
+        return HttpResponseRedirect('/error')
+  
+  
+
+def delorder(request):
+    if request.method == 'POST':
+        if request.user.username == "chris":
+            try:
+                orderdel = request.POST.get('delorder', '')
+                dlo = ordermodel.objects.get(name = orderdel)
+                dlo.delete()
+            except:
+                return HttpResponseRedirect('/error')
+            return HttpResponseRedirect('/chris')
+        else:
+            return HttpResponseRedirect('/unauthorised')
+    else:
+        return HttpResponseRedirect('/error')
     
     
 def addmenu(request):
-    try:
-        menuad = str(request.POST.get('menuadd', ''))
-    except:
-        return HttpResponseRedirect('/error')
-    try:
-        menuadprice = float(request.POST.get('menuaddprice', ''))
-    except:
-        return HttpResponseRedirect('/error')
-    try:
-        menuadtype = str(request.POST.get('menutype', ''))
-    except:
-        return HttpResponseRedirect('/error')
-    if not menumodel.objects.filter(name = menuad).exists():
+    if request.method == 'POST':
         try:
-            menumodel_obj = menumodel(name=menuad, category = menuadtype, price = menuadprice)
-            menumodel_obj.save()
-            return HttpResponseRedirect('/chris')
+            menuad = str(request.POST.get('menuadd', ''))
         except:
             return HttpResponseRedirect('/error')
+        try:
+            menuadprice = float(request.POST.get('menuaddprice', ''))
+        except:
+            return HttpResponseRedirect('/error')
+        try:
+            menuadtype = str(request.POST.get('menutype', ''))
+        except:
+            return HttpResponseRedirect('/error')
+        if not menumodel.objects.filter(name = menuad).exists():
+            try:
+                menumodel_obj = menumodel(name=menuad, category = menuadtype, price = menuadprice)
+                menumodel_obj.save()
+                return HttpResponseRedirect('/chris')
+            except:
+                return HttpResponseRedirect('/error')
+        else:
+            return HttpResponseRedirect('/error')
+        return HttpResponseRedirect('/chris')
     else:
         return HttpResponseRedirect('/error')
-    return HttpResponseRedirect('/chris')
+
 
 def delmenu(request):
+    if request.user.username != "chris":
+        return HttpResponseRedirect("/unauthorised")
     menudel = request.POST.get('del', '')
     try:
         menumodel_obj = menumodel.objects.get(name = menudel)
@@ -175,26 +203,50 @@ def delmenu(request):
     return HttpResponseRedirect('/chrismenu')
 
 def order(request):
-    if request.user.username == "":
-        return HttpResponseRedirect('/unauthorised')
-    ordernow = str(request.POST.get('ordernow', ''))
-    orderamount = int(request.POST.get('orderamount', ''))
-    submitorder = ordermodel.objects.get(name=ordernow)
-    submitorder.value = F('value') + orderamount
-    submitorder.save()
-    return HttpResponseRedirect('/yournest')
-    
-    
-def faveorder(request):
-    print "fuckyea"
-    if request.user.user == "":
-        return HttpResponseRedirect('/unauthorised')
-    faveorder = str(request.POST.get('faveorder', ''))
-    if faveorder in ordermodel.objects.all():
+    if request.method == 'POST':
+        if request.user.is_authenticated:
+            ordernow = str(request.POST.get('ordernow', ''))
+            orderamount = int(request.POST.get('orderamount', ''))
+            if ordermodel.objects.filter(name=ordernow).exists():
+                submitorder = ordermodel.objects.get(name=ordernow)
+                submitorder.value = F('value') + orderamount
+                submitorder.save()
+                return HttpResponseRedirect('/yournest')
+            else:
+                return HttpResponseRedirect('/error')
+        else:
+            return HttpResponseRedirect('/unauthorised')
+    else:
         return HttpResponseRedirect('/error')
-    favemodel_obj = favemodel(name=request.user.username, favourite = faveorder)
-    favemodel_obj.save()
+
+
+def faveorder(request):
+    if request.method == 'POST':
+        if request.user.is_authenticated:
+            if not ordermodel.objects.filter(name=str(request.POST.get('faveorder', ''))).exists():
+                return HttpResponseRedirect('/error')
+            try:
+                favemodel_obj = usersetting.objects.get(name=request.user.username)
+            except:
+                favemodel_obj = usersetting(name=request.user.username, fave = str(request.POST.get('faveorder', '')))
+            favemodel_obj.fave = str(request.POST.get('faveorder', ''))
+            favemodel_obj.save()
+        return HttpResponseRedirect('/settings')
+    else:
+        return HttpResponseRedirect('/error')
     
     
+def quickorder(request):
+    if request.method == 'POST':
+        if request.user.is_authenticated:
+            try:
+                faveorder = usersetting.objects.get(name=request.user.username)
+                submitorder = ordermodel.objects.get(name=faveorder.fave)
+                submitorder.value = F('value') + 1
+                submitorder.save()
+                return HttpResponseRedirect('/yournest')
     
-    
+            except:
+                return HttpResponseRedirect('/error')
+
+            

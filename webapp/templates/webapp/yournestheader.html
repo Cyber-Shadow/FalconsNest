@@ -98,7 +98,9 @@
       <span class="tcon-visuallyhidden style-scope zero-transformicon">toggle menu</span>
       </button></zero-transformicon></li>
       <a href="/yournest"><li class="titlename">Falcon's Nest</li></a>
-      <li id="qckorder"><div class="rightheader"><button id="headerbtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">Quick Order</button></div></li>
+      <form action="/quickorder/" method="POST">{% csrf_token %}
+        <li id="qckorder"><div class="rightheader"><button id="headerbtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">Quick Order</button></div></li>
+      </form>
       <a href="/settings"><div class="rightheader"><li class="headername">Logged in as {{ full_name }}</li></div></a>
   </ul>
   <div class="swipe-area"></div>

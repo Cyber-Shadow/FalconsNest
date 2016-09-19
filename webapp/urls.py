@@ -12,7 +12,8 @@ urlpatterns = [
     url(r'^chrismenu/', views.chrismenu),
     url(r'^menu/', views.menu),
     url(r'^error/', views.error),
-    url(r'^about/', views.about),
+    url(r'^about/$', views.about),
+    url(r'^about/terms', views.terms),
     
     #Actions
     url(r'^addorder/$', views.addorder),
@@ -21,6 +22,7 @@ urlpatterns = [
     url(r'^delmenu/$', views.delmenu),
     url(r'^order/$', views.order),
     url(r'^faveorder/$', views.faveorder),
+    url(r'^quickorder/$', views.quickorder),
     
     #Authenication
     url(r'^$', auth.login),

@@ -1,0 +1,5588 @@
+[
+    {
+        "model": "webapp.student",
+        "fields": { "student_number": "433668766",
+        "first_name": "James",
+        "surname": "BUDA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430858777",
+        "first_name": "Shizhen",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430543458",
+        "first_name": "Fahim",
+        "surname": "HAQUE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436426712",
+        "first_name": "Ricky",
+        "surname": "KIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434115361",
+        "first_name": "Jason",
+        "surname": "WU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431628210",
+        "first_name": "Eric",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429944635",
+        "first_name": "Nathan",
+        "surname": "LUK"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400185298",
+        "first_name": "Colin",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433794354",
+        "first_name": "Jerry",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434568196",
+        "first_name": "Kelvin",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429155355",
+        "first_name": "Simon",
+        "surname": "TAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432899420",
+        "first_name": "Leon",
+        "surname": "XU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428211103",
+        "first_name": "Peixiang",
+        "surname": "JING"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432814718",
+        "first_name": "William",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400190534",
+        "first_name": "Lachlan",
+        "surname": "SMITH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400073261",
+        "first_name": "Psalm Jie Gao",
+        "surname": "CHENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433898079",
+        "first_name": "Leo",
+        "surname": "WU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435298907",
+        "first_name": "Kaj",
+        "surname": "BOLLERUP"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430813404",
+        "first_name": "Nigel",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429448433",
+        "first_name": "Rishabh",
+        "surname": "KHANNA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434757762",
+        "first_name": "Cameron",
+        "surname": "RITSON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400056447",
+        "first_name": "Daniel",
+        "surname": "YUAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429446830",
+        "first_name": "James",
+        "surname": "CHIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432755649",
+        "first_name": "Nathan",
+        "surname": "LUU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435302785",
+        "first_name": "James",
+        "surname": "PAEK"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435289312",
+        "first_name": "Sumanth",
+        "surname": "DEVATHI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429448611",
+        "first_name": "Dong Woo",
+        "surname": "KWON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429446848",
+        "first_name": "Patrick",
+        "surname": "CHIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430861115",
+        "first_name": "James",
+        "surname": "XU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436258127",
+        "first_name": "Tianyu",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428564006",
+        "first_name": "Harvey",
+        "surname": "MCGEORGE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429543304",
+        "first_name": "Binhphuong",
+        "surname": "PHAM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433893921",
+        "first_name": "Leo",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400078629",
+        "first_name": "Richard",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437267014",
+        "first_name": "Sheng",
+        "surname": "HE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439535288",
+        "first_name": "Ingar",
+        "surname": "WONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432303586",
+        "first_name": "Tyrone",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434566983",
+        "first_name": "Darren Cheng We",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432220605",
+        "first_name": "Jie Pan Daniel",
+        "surname": "CHENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430856421",
+        "first_name": "Jackie",
+        "surname": "DENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431627922",
+        "first_name": "Kah Hoong Micha",
+        "surname": "CHAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434749417",
+        "first_name": "Jason",
+        "surname": "XU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400504202",
+        "first_name": "Cameron",
+        "surname": "RASPASS"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431325446",
+        "first_name": "Jason",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435289363",
+        "first_name": "Zhen",
+        "surname": "DONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432863531",
+        "first_name": "Horace",
+        "surname": "KUAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435293522",
+        "first_name": "Gordon",
+        "surname": "XIE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434016576",
+        "first_name": "Bowen",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431954800",
+        "first_name": "William",
+        "surname": "HAMILTON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435291929",
+        "first_name": "Peter",
+        "surname": "QIAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433892143",
+        "first_name": "Edwin",
+        "surname": "HE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435290884",
+        "first_name": "Henry",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400076332",
+        "first_name": "Abhishek",
+        "surname": "MALIK"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430290193",
+        "first_name": "Andi",
+        "surname": "YAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431686881",
+        "first_name": "Hao Nan",
+        "surname": "ZHONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432864618",
+        "first_name": "Tobias",
+        "surname": "MARLOW"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430813684",
+        "first_name": "Jahan",
+        "surname": "MAND"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431636093",
+        "first_name": "Dan",
+        "surname": "TRAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434113075",
+        "first_name": "Tarun",
+        "surname": "MAHAJAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430910141",
+        "first_name": "Jason Jin Long",
+        "surname": "GOH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400536023",
+        "first_name": "Ned",
+        "surname": "GUAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433009614",
+        "first_name": "Damien",
+        "surname": "QIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430290720",
+        "first_name": "Luke",
+        "surname": "ZHOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434612331",
+        "first_name": "Hui Ting",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434265983",
+        "first_name": "Yi Zhe",
+        "surname": "ZHU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432765261",
+        "first_name": "Colin",
+        "surname": "LU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433892381",
+        "first_name": "Lachlan",
+        "surname": "HOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433892704",
+        "first_name": "Kevin",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400064628",
+        "first_name": "Andy",
+        "surname": "YU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432764702",
+        "first_name": "Nathan",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433889444",
+        "first_name": "Sugam",
+        "surname": "BHANDARI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433894332",
+        "first_name": "Kevin Jia-Jun",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428781635",
+        "first_name": "Nuwe Ethan Robe",
+        "surname": "AGABA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433000838",
+        "first_name": "Maurice Kwun Ha",
+        "surname": "CHOW"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433912217",
+        "first_name": "Stephen",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439302739",
+        "first_name": "Amrit",
+        "surname": "DHANUSHKOTI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434113288",
+        "first_name": "Clinton",
+        "surname": "MO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433161068",
+        "first_name": "Daniel",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434799325",
+        "first_name": "Brenton",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433012780",
+        "first_name": "Jason Tsz Shum",
+        "surname": "YU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432871363",
+        "first_name": "Leon",
+        "surname": "YAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400064831",
+        "first_name": "Kevin",
+        "surname": "SONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429560799",
+        "first_name": "Matthew",
+        "surname": "WARD"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434260906",
+        "first_name": "Francis",
+        "surname": "GUO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432867382",
+        "first_name": "Tim",
+        "surname": "RAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434209951",
+        "first_name": "Lloyd",
+        "surname": "MORRISON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439747803",
+        "first_name": "Eun",
+        "surname": "SONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433004248",
+        "first_name": "Johannes",
+        "surname": "SO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431628112",
+        "first_name": "David",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433490304",
+        "first_name": "Brandon",
+        "surname": "JI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439489014",
+        "first_name": "Ethan",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431628121",
+        "first_name": "Lawrence",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429605580",
+        "first_name": "Roger",
+        "surname": "TONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431687038",
+        "first_name": "Eric",
+        "surname": "ZONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400542058",
+        "first_name": "Ray",
+        "surname": "ZHU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431962667",
+        "first_name": "Joshua",
+        "surname": "NING"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400079641",
+        "first_name": "Mark",
+        "surname": "ZAKOSHANSKI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434014450",
+        "first_name": "Kevin",
+        "surname": "LU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429447437",
+        "first_name": "Conan",
+        "surname": "FENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435286542",
+        "first_name": "Richard",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431325128",
+        "first_name": "Jonason",
+        "surname": "YANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428781139",
+        "first_name": "Philip",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400078963",
+        "first_name": "Albert",
+        "surname": "WONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400185751",
+        "first_name": "Justin",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434775728",
+        "first_name": "Jordan",
+        "surname": "NICHOLAEFF"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433896572",
+        "first_name": "Xingzhou",
+        "surname": "SHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431321947",
+        "first_name": "Jonathan",
+        "surname": "KORUGA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435629113",
+        "first_name": "Antony",
+        "surname": "YING"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433898192",
+        "first_name": "Rong",
+        "surname": "XI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434210381",
+        "first_name": "Andrew",
+        "surname": "NGUYEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429684561",
+        "first_name": "Ju Hong",
+        "surname": "KIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429448719",
+        "first_name": "Thomas Hoang",
+        "surname": "LE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430860178",
+        "first_name": "Louie",
+        "surname": "SONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436326777",
+        "first_name": "Nick",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430903331",
+        "first_name": "Renming",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400541931",
+        "first_name": "Tiger",
+        "surname": "YUAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438601490",
+        "first_name": "Justin",
+        "surname": "OR"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431325519",
+        "first_name": "Stanley",
+        "surname": "ZHAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435633145",
+        "first_name": "Alec",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400052794",
+        "first_name": "Wen Bin",
+        "surname": "DING"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439584319",
+        "first_name": "Kalist",
+        "surname": "UREMOVIC"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433095171",
+        "first_name": "Dennis",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429447861",
+        "first_name": "Jonathan",
+        "surname": "HE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433898559",
+        "first_name": "Yang",
+        "surname": "YANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438299971",
+        "first_name": "Ronson",
+        "surname": "CHAU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435941257",
+        "first_name": "Jiho",
+        "surname": "KIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429542391",
+        "first_name": "Anish",
+        "surname": "KANIBAGLU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429448760",
+        "first_name": "Nicholas",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432755967",
+        "first_name": "Connell",
+        "surname": "MURPHY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433259068",
+        "first_name": "Jun Ting Joshua",
+        "surname": "GAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430034952",
+        "first_name": "Nicholas",
+        "surname": "WU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434228034",
+        "first_name": "Nelson",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435291872",
+        "first_name": "Arjun",
+        "surname": "PUSHPAVANNAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432768988",
+        "first_name": "Victor",
+        "surname": "TRAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428189931",
+        "first_name": "Kelvin",
+        "surname": "TANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400502579",
+        "first_name": "William",
+        "surname": "KONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434083168",
+        "first_name": "Dylan",
+        "surname": "KONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433012496",
+        "first_name": "Yurk-Wei",
+        "surname": "XU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433891562",
+        "first_name": "Louis",
+        "surname": "GAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431682281",
+        "first_name": "Brian",
+        "surname": "HU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435301096",
+        "first_name": "Jae Hyun",
+        "surname": "JEON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432088618",
+        "first_name": "Leo",
+        "surname": "GUO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439937441",
+        "first_name": "Ryan",
+        "surname": "JEON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433475984",
+        "first_name": "Carty",
+        "surname": "CHAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431809818",
+        "first_name": "Leo",
+        "surname": "MING"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429325552",
+        "first_name": "Luke",
+        "surname": "CHAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435299024",
+        "first_name": "Michael",
+        "surname": "BRERETON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434109540",
+        "first_name": "Swaroop",
+        "surname": "BALAJI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428333276",
+        "first_name": "Jereme",
+        "surname": "XIA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431522551",
+        "first_name": "Kevin",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400065462",
+        "first_name": "Kenny",
+        "surname": "ZHU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429943701",
+        "first_name": "Eric",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429327351",
+        "first_name": "Richard Quan",
+        "surname": "JIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436384092",
+        "first_name": "Joshua",
+        "surname": "BEHAR"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433307372",
+        "first_name": "Harvey",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431320541",
+        "first_name": "Edward",
+        "surname": "FENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431956951",
+        "first_name": "Maxim",
+        "surname": "NESTEROV"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431323044",
+        "first_name": "Srawan",
+        "surname": "NAPIT"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434112851",
+        "first_name": "Sihua",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433786955",
+        "first_name": "Jeffery",
+        "surname": "ZHU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430015613",
+        "first_name": "Charith",
+        "surname": "NAGASINGHE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "440626629",
+        "first_name": "Christopher",
+        "surname": "LE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434568323",
+        "first_name": "Matthew",
+        "surname": "LO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439012668",
+        "first_name": "Calvin",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437424250",
+        "first_name": "Yue",
+        "surname": "YAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400010137",
+        "first_name": "Fahd",
+        "surname": "MINTO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400540527",
+        "first_name": "Raymond",
+        "surname": "SHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428352084",
+        "first_name": "Alexander",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434081980",
+        "first_name": "Matthew",
+        "surname": "FU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428582667",
+        "first_name": "Max",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433897307",
+        "first_name": "Timothy",
+        "surname": "XING"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428199537",
+        "first_name": "Justin",
+        "surname": "BROWN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431956993",
+        "first_name": "Kristian",
+        "surname": "NOLEV"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435491588",
+        "first_name": "Kevin",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "448415732",
+        "first_name": "Jiayang",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432886271",
+        "first_name": "William",
+        "surname": "TAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432761045",
+        "first_name": "Stanley",
+        "surname": "DONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433060792",
+        "first_name": "Max",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435644031",
+        "first_name": "Tong",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436665261",
+        "first_name": "Jun",
+        "surname": "BAIK"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431324156",
+        "first_name": "Raman",
+        "surname": "SOOD"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433004558",
+        "first_name": "Arya",
+        "surname": "KHANNA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430289934",
+        "first_name": "Bob",
+        "surname": "XIA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435929397",
+        "first_name": "Dapu",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429450489",
+        "first_name": "Divyansh",
+        "surname": "SHARMA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432116107",
+        "first_name": "Nathan",
+        "surname": "SINGLACHAR"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429448603",
+        "first_name": "Calvin",
+        "surname": "KWONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434571677",
+        "first_name": "Jaison",
+        "surname": "THAMILARASAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431685906",
+        "first_name": "Joshua",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429332681",
+        "first_name": "Oliver",
+        "surname": "JIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429561027",
+        "first_name": "Hal",
+        "surname": "WHITEHEAD"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429449529",
+        "first_name": "Kaustubh",
+        "surname": "MISHRA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428355172",
+        "first_name": "Francesco",
+        "surname": "CHU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429451591",
+        "first_name": "Bryan",
+        "surname": "YANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400191484",
+        "first_name": "James",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435291597",
+        "first_name": "Sibi",
+        "surname": "PACKIRISAMY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433897595",
+        "first_name": "Si Yuan",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435293531",
+        "first_name": "Jason",
+        "surname": "XING"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428199995",
+        "first_name": "Michael",
+        "surname": "FISHER"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433891007",
+        "first_name": "Justin",
+        "surname": "DONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432768619",
+        "first_name": "Elliot",
+        "surname": "SUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430896377",
+        "first_name": "Ken Jon",
+        "surname": "WONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "442724491",
+        "first_name": "Richard",
+        "surname": "YANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430815237",
+        "first_name": "Joshua",
+        "surname": "NOBLE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435084427",
+        "first_name": "Alex",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "440810446",
+        "first_name": "Onur",
+        "surname": "TANGLAY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400075255",
+        "first_name": "Young In",
+        "surname": "KIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438313052",
+        "first_name": "Jonathan",
+        "surname": "NG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431686619",
+        "first_name": "Ziye William",
+        "surname": "YU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431004712",
+        "first_name": "Daniel",
+        "surname": "DING"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432995607",
+        "first_name": "Jeremy",
+        "surname": "HAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400079005",
+        "first_name": "Wilson",
+        "surname": "WONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432759601",
+        "first_name": "Anvesh",
+        "surname": "CHALASANI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434114101",
+        "first_name": "Herbert",
+        "surname": "SA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433260813",
+        "first_name": "Yunzhang",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437856524",
+        "first_name": "Joshua",
+        "surname": "TAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433890574",
+        "first_name": "Andrew",
+        "surname": "CUI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431955741",
+        "first_name": "Lachlan",
+        "surname": "LAI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429144957",
+        "first_name": "Daniel",
+        "surname": "ZHOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438886109",
+        "first_name": "Ajwad",
+        "surname": "JAWAD"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429327211",
+        "first_name": "William",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428201604",
+        "first_name": "Marvin",
+        "surname": "HE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433899768",
+        "first_name": "Jonathan",
+        "surname": "ZHOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428333349",
+        "first_name": "Joseph",
+        "surname": "YU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433891678",
+        "first_name": "Xiao Long",
+        "surname": "GONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430406736",
+        "first_name": "Austin",
+        "surname": "ZHU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433257791",
+        "first_name": "Alan",
+        "surname": "BURZEVSKI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428203429",
+        "first_name": "Matthew",
+        "surname": "WARNER"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429605555",
+        "first_name": "Ryan",
+        "surname": "TANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437446946",
+        "first_name": "Toby",
+        "surname": "WONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431319144",
+        "first_name": "Ansh",
+        "surname": "BASSI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433792645",
+        "first_name": "Shoban",
+        "surname": "SAYANTHAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400470138",
+        "first_name": "Boswell",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432760065",
+        "first_name": "Terence",
+        "surname": "CHIANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428349237",
+        "first_name": "Hao-Qian",
+        "surname": "LEUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431320835",
+        "first_name": "Pranav",
+        "surname": "GILDER"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433260104",
+        "first_name": "Jonathan",
+        "surname": "JIANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "444316811",
+        "first_name": "Rohit",
+        "surname": "PARTHASARATHY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431519950",
+        "first_name": "Roger",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400057401",
+        "first_name": "Run Chen Roy",
+        "surname": "MA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433899041",
+        "first_name": "Stephen",
+        "surname": "YUAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432416763",
+        "first_name": "Rahul",
+        "surname": "KRISHNA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400013578",
+        "first_name": "Robert",
+        "surname": "ZHENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429451647",
+        "first_name": "Jeremy",
+        "surname": "YE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437351961",
+        "first_name": "Nicholas",
+        "surname": "DULLER"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429144906",
+        "first_name": "Eric",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437341290",
+        "first_name": "Kevin",
+        "surname": "YAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430286366",
+        "first_name": "Ricky",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433893468",
+        "first_name": "Andrew",
+        "surname": "LAU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437408408",
+        "first_name": "Da Woon",
+        "surname": "JEUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431530210",
+        "first_name": "Eric",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433894553",
+        "first_name": "Ma",
+        "surname": "BEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436785127",
+        "first_name": "Tom",
+        "surname": "FAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434209030",
+        "first_name": "Mark",
+        "surname": "MA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430517520",
+        "first_name": "Angus",
+        "surname": "FENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435057233",
+        "first_name": "Jack",
+        "surname": "SPIGGLE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435964541",
+        "first_name": "Tsz Tsun",
+        "surname": "PANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431322846",
+        "first_name": "Harry",
+        "surname": "MOFFAT"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434111307",
+        "first_name": "Robin",
+        "surname": "JIANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432257738",
+        "first_name": "Kinar",
+        "surname": "SHAH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429446791",
+        "first_name": "Michael",
+        "surname": "CHENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432220371",
+        "first_name": "Howard",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434572843",
+        "first_name": "Alan",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "442478457",
+        "first_name": "Eddy",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441615825",
+        "first_name": "Caleb",
+        "surname": "PARK"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441725108",
+        "first_name": "Benjamin",
+        "surname": "NGUYEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437484015",
+        "first_name": "Keegan",
+        "surname": "PINTO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428481411",
+        "first_name": "Leslie",
+        "surname": "CHEUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431574713",
+        "first_name": "Danil",
+        "surname": "DOSEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434082099",
+        "first_name": "Riley",
+        "surname": "GRAINGER"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432996298",
+        "first_name": "Jung Jae",
+        "surname": "KIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433863526",
+        "first_name": "Duc Thinh",
+        "surname": "ONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432086674",
+        "first_name": "Daniel",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441959133",
+        "first_name": "Zhaoqi",
+        "surname": "SUN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436122098",
+        "first_name": "Bisesh",
+        "surname": "BELBASE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436645546",
+        "first_name": "Joseph",
+        "surname": "STALA-SMITH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436698691",
+        "first_name": "Zi Yao",
+        "surname": "SHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436315015",
+        "first_name": "Damon",
+        "surname": "CROWLEY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "442930414",
+        "first_name": "Joshua",
+        "surname": "LAI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428242106",
+        "first_name": "Wilson",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428610075",
+        "first_name": "Dylan",
+        "surname": "SHADBOLT"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429448751",
+        "first_name": "Jamie",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441599340",
+        "first_name": "Christian",
+        "surname": "GALLANT"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432532054",
+        "first_name": "Andrew Hyunwoo",
+        "surname": "JUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430815351",
+        "first_name": "Kai Fung",
+        "surname": "ONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434111366",
+        "first_name": "Benjamin",
+        "surname": "JIAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430343963",
+        "first_name": "Roger",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433263090",
+        "first_name": "Edmond",
+        "surname": "SHI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432999106",
+        "first_name": "Geoffrey",
+        "surname": "XIANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431523078",
+        "first_name": "William",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434113504",
+        "first_name": "Sai Nikkesh",
+        "surname": "NIRUTHAPALAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433892470",
+        "first_name": "Andrew",
+        "surname": "YU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429383901",
+        "first_name": "Matthew",
+        "surname": "TRUONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429605296",
+        "first_name": "Anuj",
+        "surname": "SAVAI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432293785",
+        "first_name": "Louie",
+        "surname": "SHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430366165",
+        "first_name": "Andy",
+        "surname": "ZENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436414064",
+        "first_name": "Phillip",
+        "surname": "CHOI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400541779",
+        "first_name": "Kevin",
+        "surname": "ZOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429543096",
+        "first_name": "Angus",
+        "surname": "NG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431628741",
+        "first_name": "Asira",
+        "surname": "DE SILVA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435292399",
+        "first_name": "Gokul",
+        "surname": "SELVARAJAH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433100603",
+        "first_name": "Kieren",
+        "surname": "TSO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437610347",
+        "first_name": "Mingbo",
+        "surname": "GAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431119501",
+        "first_name": "James",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433042247",
+        "first_name": "Jacky",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432792277",
+        "first_name": "Ethan",
+        "surname": "MORGAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433006682",
+        "first_name": "Calvin",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435280803",
+        "first_name": "Robin",
+        "surname": "LU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430820401",
+        "first_name": "Richard",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434208556",
+        "first_name": "Tony",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432761762",
+        "first_name": "Kelvin",
+        "surname": "HO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429154006",
+        "first_name": "Ryan",
+        "surname": "KRENSEL"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437450447",
+        "first_name": "Marco",
+        "surname": "KALL"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "443813578",
+        "first_name": "Andrew",
+        "surname": "GORGA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432631826",
+        "first_name": "Edward",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430361830",
+        "first_name": "Matthew",
+        "surname": "DUNCAN-NAGY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433012488",
+        "first_name": "Andrew",
+        "surname": "XING"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430861638",
+        "first_name": "Kevin",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435279341",
+        "first_name": "Rearden",
+        "surname": "GAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436560079",
+        "first_name": "Garrick",
+        "surname": "WONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400183252",
+        "first_name": "Soo Han",
+        "surname": "SONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433672704",
+        "first_name": "James",
+        "surname": "PAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400077525",
+        "first_name": "Cavell",
+        "surname": "RAE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429140161",
+        "first_name": "William",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432415163",
+        "first_name": "Hayden",
+        "surname": "KELLY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437288143",
+        "first_name": "Niaz",
+        "surname": "YUSSOUF"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433265050",
+        "first_name": "Chris",
+        "surname": "ZENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400053324",
+        "first_name": "Frank",
+        "surname": "FEI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400065276",
+        "first_name": "Joshua",
+        "surname": "ZHOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431452057",
+        "first_name": "Jacky",
+        "surname": "JIANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400053341",
+        "first_name": "Clarence",
+        "surname": "FENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429310962",
+        "first_name": "Leslie",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434209846",
+        "first_name": "Aaron",
+        "surname": "MISQUITTA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429563518",
+        "first_name": "Tomoki",
+        "surname": "KONDO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431522721",
+        "first_name": "Arthur",
+        "surname": "WONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433298683",
+        "first_name": "Lang Mark",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438704841",
+        "first_name": "Raja Kumaren",
+        "surname": "VIKNARASAH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433509536",
+        "first_name": "Tim Jay",
+        "surname": "XUE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437498814",
+        "first_name": "Ziyuan",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430855824",
+        "first_name": "Ryder",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436638647",
+        "first_name": "Eui Ho",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400079111",
+        "first_name": "Frank",
+        "surname": "XU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433004141",
+        "first_name": "Tanish",
+        "surname": "JOHN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432998282",
+        "first_name": "Richard",
+        "surname": "SONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429604583",
+        "first_name": "Orlando",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432894932",
+        "first_name": "Rui",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432855350",
+        "first_name": "Daniel",
+        "surname": "KANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432860078",
+        "first_name": "Alfred",
+        "surname": "CHO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434274567",
+        "first_name": "Satya",
+        "surname": "MARDHIKASENA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430349384",
+        "first_name": "David",
+        "surname": "PENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432020789",
+        "first_name": "Maksim",
+        "surname": "LISAU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439620749",
+        "first_name": "Henry",
+        "surname": "HEMMINGS"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430811096",
+        "first_name": "Peter",
+        "surname": "CORNEY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439529296",
+        "first_name": "Tobias",
+        "surname": "WONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433896092",
+        "first_name": "Raymond",
+        "surname": "QIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434116261",
+        "first_name": "Dion",
+        "surname": "ZHUO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400192111",
+        "first_name": "Yinghao",
+        "surname": "WU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428337051",
+        "first_name": "Cameron",
+        "surname": "TAI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431530163",
+        "first_name": "Dylan",
+        "surname": "CHAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436167059",
+        "first_name": "Mohana",
+        "surname": "BHOGADI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431452634",
+        "first_name": "Timothy",
+        "surname": "LEUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431322528",
+        "first_name": "Jeffrey",
+        "surname": "MA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434258812",
+        "first_name": "Lawton",
+        "surname": "CAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433894821",
+        "first_name": "Kenneth",
+        "surname": "LU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400292094",
+        "first_name": "Jason",
+        "surname": "HE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435304346",
+        "first_name": "Brendon",
+        "surname": "SUN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431318709",
+        "first_name": "Raymond",
+        "surname": "SU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430213130",
+        "first_name": "Simon",
+        "surname": "MA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435301860",
+        "first_name": "Marcus Chun Min",
+        "surname": "LO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433893794",
+        "first_name": "Kevin",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432869628",
+        "first_name": "Calvin",
+        "surname": "TAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400057150",
+        "first_name": "Leo",
+        "surname": "LUK"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428595866",
+        "first_name": "James",
+        "surname": "NGO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436476078",
+        "first_name": "Christopher",
+        "surname": "CHONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433891015",
+        "first_name": "Bowen",
+        "surname": "DONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431296101",
+        "first_name": "Royce",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432081851",
+        "first_name": "Geoffrey",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434087520",
+        "first_name": "Matthew",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400060282",
+        "first_name": "Kane",
+        "surname": "QIAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434207177",
+        "first_name": "Jason",
+        "surname": "JU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431614588",
+        "first_name": "Jason",
+        "surname": "CHAU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441153821",
+        "first_name": "Gunwoo",
+        "surname": "MOON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439370670",
+        "first_name": "Nathan",
+        "surname": "HAURISSA-OEY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439930471",
+        "first_name": "Timothy",
+        "surname": "NGUYEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430900340",
+        "first_name": "William",
+        "surname": "DIEU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433120990",
+        "first_name": "Victor Jun Xian",
+        "surname": "CHOH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436243545",
+        "first_name": "Kevin",
+        "surname": "YAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "443673971",
+        "first_name": "Ching-Yu",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431324385",
+        "first_name": "Jonah",
+        "surname": "TEMPLE-COLE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431005239",
+        "first_name": "Riki",
+        "surname": "MIYAMURA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400072761",
+        "first_name": "Bhavesh",
+        "surname": "BALAJI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439524278",
+        "first_name": "Samuel",
+        "surname": "HO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429144566",
+        "first_name": "John Alun Zhi L",
+        "surname": "WEI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431323842",
+        "first_name": "James",
+        "surname": "SALIONAS"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429816751",
+        "first_name": "William",
+        "surname": "CHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431730006",
+        "first_name": "Jeffery",
+        "surname": "GE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433536363",
+        "first_name": "Colin",
+        "surname": "HON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434208459",
+        "first_name": "Richard",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432976688",
+        "first_name": "Alexander",
+        "surname": "FRISINA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400473358",
+        "first_name": "Wilson",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438986201",
+        "first_name": "Jerry",
+        "surname": "WENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428682246",
+        "first_name": "Bruce",
+        "surname": "QI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431684101",
+        "first_name": "Louie",
+        "surname": "LUO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436203471",
+        "first_name": "Harrison",
+        "surname": "WONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428420446",
+        "first_name": "Justin",
+        "surname": "WU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432853268",
+        "first_name": "Victor",
+        "surname": "BIAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434081637",
+        "first_name": "Andrew",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431638045",
+        "first_name": "Kevin",
+        "surname": "ZHOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435982921",
+        "first_name": "Jin Hyeok",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441325711",
+        "first_name": "Frederick Ming",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430819046",
+        "first_name": "Donald",
+        "surname": "TANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431955938",
+        "first_name": "Yi Chen",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428333501",
+        "first_name": "Daniel",
+        "surname": "ALLEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432889785",
+        "first_name": "Frank",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400185301",
+        "first_name": "Richard",
+        "surname": "ZHOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431684161",
+        "first_name": "Allen",
+        "surname": "MA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429616913",
+        "first_name": "Thomas Joseph",
+        "surname": "MEREDITH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430858653",
+        "first_name": "Eric",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428332636",
+        "first_name": "Simran",
+        "surname": "THIND"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430526359",
+        "first_name": "Jeremy",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433107012",
+        "first_name": "Won Jae",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431638096",
+        "first_name": "Jeming",
+        "surname": "ZHU-SONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434776554",
+        "first_name": "Jai",
+        "surname": "ROBINSON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439331496",
+        "first_name": "Benjamin",
+        "surname": "HANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439486872",
+        "first_name": "Michael",
+        "surname": "LAU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431617421",
+        "first_name": "James",
+        "surname": "HUYNH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439924144",
+        "first_name": "Philip Munan",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432979768",
+        "first_name": "Max",
+        "surname": "MIKKELSEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400078718",
+        "first_name": "Shane",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432401588",
+        "first_name": "William",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434110998",
+        "first_name": "Wilson",
+        "surname": "HOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432756033",
+        "first_name": "Conan",
+        "surname": "O'CONNELL"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430569350",
+        "first_name": "Nicholas",
+        "surname": "SARGEANT"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432707628",
+        "first_name": "Joseph",
+        "surname": "ISAACS"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436218681",
+        "first_name": "William",
+        "surname": "WU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431321548",
+        "first_name": "Michael",
+        "surname": "JANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435712479",
+        "first_name": "Ben",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434083842",
+        "first_name": "Lucas",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431247402",
+        "first_name": "Dong-Joo",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435008437",
+        "first_name": "E-Young",
+        "surname": "KHOO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439562480",
+        "first_name": "Victor",
+        "surname": "HO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432818004",
+        "first_name": "Victor",
+        "surname": "LIANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434608953",
+        "first_name": "Rahil",
+        "surname": "AJMERA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432644022",
+        "first_name": "Shoryu",
+        "surname": "DAS-ZAMAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435302840",
+        "first_name": "Dylan",
+        "surname": "PARK"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434213002",
+        "first_name": "Daniel",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431627639",
+        "first_name": "Danny",
+        "surname": "CAI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429335400",
+        "first_name": "Max",
+        "surname": "XU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434211247",
+        "first_name": "Kireth",
+        "surname": "SANDHU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436985746",
+        "first_name": "Morgan Z",
+        "surname": "YANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400076022",
+        "first_name": "Richard",
+        "surname": "LIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433899229",
+        "first_name": "Yuchen",
+        "surname": "ZENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432886905",
+        "first_name": "Joseph",
+        "surname": "HE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431324610",
+        "first_name": "James Wei",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439525223",
+        "first_name": "David",
+        "surname": "LAU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434158842",
+        "first_name": "William",
+        "surname": "HOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429148006",
+        "first_name": "William",
+        "surname": "HAM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432886921",
+        "first_name": "Benjamin",
+        "surname": "HE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433898389",
+        "first_name": "Kevin",
+        "surname": "XU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400502536",
+        "first_name": "Paul",
+        "surname": "KIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434240581",
+        "first_name": "Jack",
+        "surname": "JIANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434211417",
+        "first_name": "Soorriamoorthy",
+        "surname": "SARUVA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "440608825",
+        "first_name": "Brian",
+        "surname": "KIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439942801",
+        "first_name": "William",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433152638",
+        "first_name": "Allan",
+        "surname": "WU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438106979",
+        "first_name": "Jason",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439528699",
+        "first_name": "Benjamin",
+        "surname": "TRAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439933402",
+        "first_name": "Matthew",
+        "surname": "VO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "442285454",
+        "first_name": "Mike Xu Han",
+        "surname": "LIANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432863221",
+        "first_name": "Francis",
+        "surname": "KIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437413321",
+        "first_name": "Nicholas Ho Yin",
+        "surname": "TSE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436358571",
+        "first_name": "Maximilian",
+        "surname": "GATT"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429789184",
+        "first_name": "Zekai",
+        "surname": "KUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400503443",
+        "first_name": "Ashkon",
+        "surname": "MOSTOFI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431518155",
+        "first_name": "Aaron Zhong Bao",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431632781",
+        "first_name": "Timothy",
+        "surname": "PARK"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400503451",
+        "first_name": "Aimon",
+        "surname": "MOSTOFI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430520881",
+        "first_name": "Mitchell",
+        "surname": "JO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400079102",
+        "first_name": "Thomas Chen",
+        "surname": "XIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431323991",
+        "first_name": "Chwen Sern",
+        "surname": "SIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439744855",
+        "first_name": "Joshua",
+        "surname": "PARK"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429603668",
+        "first_name": "Mangesh",
+        "surname": "DASHPUTRE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433898982",
+        "first_name": "Josh",
+        "surname": "YU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435302173",
+        "first_name": "Michael",
+        "surname": "DENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431686023",
+        "first_name": "Bill",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431959267",
+        "first_name": "Aaron",
+        "surname": "VU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432768031",
+        "first_name": "Lachlan",
+        "surname": "SIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434566363",
+        "first_name": "Senan",
+        "surname": "FUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "445750751",
+        "first_name": "Ben",
+        "surname": "SUN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428336119",
+        "first_name": "Ching Yan",
+        "surname": "NG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431323036",
+        "first_name": "Pratik",
+        "surname": "NAPIT"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432395871",
+        "first_name": "Roland",
+        "surname": "CHEUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434567262",
+        "first_name": "Jeffrey",
+        "surname": "JIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434209889",
+        "first_name": "Andrew",
+        "surname": "MO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431686066",
+        "first_name": "Albert",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431538415",
+        "first_name": "Ziyue",
+        "surname": "ZHU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432514986",
+        "first_name": "Param",
+        "surname": "NAYYAR"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435495117",
+        "first_name": "Kevin",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429605687",
+        "first_name": "William",
+        "surname": "TU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434824028",
+        "first_name": "Wei Ya",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429326681",
+        "first_name": "Arasa",
+        "surname": "HARDIE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433585674",
+        "first_name": "Alexander",
+        "surname": "VORSTERMANS"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428579721",
+        "first_name": "Jason",
+        "surname": "DONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430911902",
+        "first_name": "Nigel",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430569813",
+        "first_name": "Christopher",
+        "surname": "TSANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434614805",
+        "first_name": "Alex Kyung Bin",
+        "surname": "YIHM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438570616",
+        "first_name": "Hyun Seung",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400207640",
+        "first_name": "Forest",
+        "surname": "YANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400606650",
+        "first_name": "Zachary",
+        "surname": "BEAUCHAMP"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437451591",
+        "first_name": "Jason",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "440916872",
+        "first_name": "Sung Kuk",
+        "surname": "GO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428846478",
+        "first_name": "Hirun",
+        "surname": "BANDARA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434202817",
+        "first_name": "Oliver",
+        "surname": "BRUNSDON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434778697",
+        "first_name": "Zhiyuan",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434016339",
+        "first_name": "Samuel",
+        "surname": "XU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436373287",
+        "first_name": "Tianning",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434224306",
+        "first_name": "Rodger",
+        "surname": "LIANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431628601",
+        "first_name": "Alexander",
+        "surname": "CRONIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400181101",
+        "first_name": "Angus",
+        "surname": "LEUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434206294",
+        "first_name": "Jordan",
+        "surname": "HE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434575231",
+        "first_name": "Alan",
+        "surname": "ZHOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428416023",
+        "first_name": "Isaac",
+        "surname": "CHUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432518779",
+        "first_name": "Raymond",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438561056",
+        "first_name": "Fu Xiang",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431320991",
+        "first_name": "Zhizhong",
+        "surname": "GUAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429448638",
+        "first_name": "Ethan",
+        "surname": "KWONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433244320",
+        "first_name": "Andrew",
+        "surname": "ZHAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438626824",
+        "first_name": "Jeremy",
+        "surname": "MAK"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431685957",
+        "first_name": "Clement",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437957177",
+        "first_name": "Theodore",
+        "surname": "KE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400537887",
+        "first_name": "Vincent",
+        "surname": "LE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433969847",
+        "first_name": "Anderson",
+        "surname": "NGUYEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434568960",
+        "first_name": "Aaron",
+        "surname": "OOI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435782361",
+        "first_name": "Issac",
+        "surname": "KIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433663985",
+        "first_name": "Jeevan",
+        "surname": "SEKHON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400077061",
+        "first_name": "Jeffery Dongyi",
+        "surname": "PAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400061751",
+        "first_name": "Owen",
+        "surname": "TANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400190984",
+        "first_name": "David Wing-Keon",
+        "surname": "TAI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434112508",
+        "first_name": "Steve",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430351087",
+        "first_name": "Eddy",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430816519",
+        "first_name": "Nathan",
+        "surname": "SAM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433673344",
+        "first_name": "Nicholas",
+        "surname": "SHALABY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432397335",
+        "first_name": "Andrew",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438703896",
+        "first_name": "Timothy",
+        "surname": "HUI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438646574",
+        "first_name": "Nathan",
+        "surname": "SO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400074950",
+        "first_name": "Dylan",
+        "surname": "JUNN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430441086",
+        "first_name": "Max",
+        "surname": "SWINDAIL"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432398251",
+        "first_name": "Alix",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438000674",
+        "first_name": "Jayden",
+        "surname": "ALDERSON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432117014",
+        "first_name": "Kavieth",
+        "surname": "MUNASINGHE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434826225",
+        "first_name": "Jixuan",
+        "surname": "YU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435009433",
+        "first_name": "Samarth",
+        "surname": "SHRIVASTAVA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437414360",
+        "first_name": "Aaron",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431122171",
+        "first_name": "Daniel Joshua",
+        "surname": "ARACKAL"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437297835",
+        "first_name": "Stephen",
+        "surname": "WONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441955634",
+        "first_name": "Andy",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434610125",
+        "first_name": "Joseph",
+        "surname": "CHUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431322200",
+        "first_name": "Jeffrey",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428417712",
+        "first_name": "Ravindu",
+        "surname": "KAHAWITA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431320282",
+        "first_name": "Aayush",
+        "surname": "DHAWAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435950051",
+        "first_name": "Philip",
+        "surname": "HAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430819259",
+        "first_name": "Luca",
+        "surname": "THOMAS"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431538156",
+        "first_name": "Edward",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433004256",
+        "first_name": "Yaron",
+        "surname": "GU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431627078",
+        "first_name": "Aidan",
+        "surname": "BIGNUCOLO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438513019",
+        "first_name": "Nicholas",
+        "surname": "DODD"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433895274",
+        "first_name": "Jeffrey",
+        "surname": "MENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431739640",
+        "first_name": "Daniel",
+        "surname": "HUYNH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431681889",
+        "first_name": "Kevin Si Yu",
+        "surname": "FANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400061017",
+        "first_name": "Ran",
+        "surname": "SHI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434566801",
+        "first_name": "William",
+        "surname": "HE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437199728",
+        "first_name": "Gary",
+        "surname": "CHAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435884784",
+        "first_name": "Bowen",
+        "surname": "Xiao"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431637936",
+        "first_name": "Jia Wei",
+        "surname": "ZHAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "445208485",
+        "first_name": "Luke",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435899161",
+        "first_name": "Peter",
+        "surname": "BAE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435559808",
+        "first_name": "Christopher",
+        "surname": "CHEUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436167024",
+        "first_name": "Michael",
+        "surname": "ZHENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435594042",
+        "first_name": "Stephen",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435558933",
+        "first_name": "Jack",
+        "surname": "VALLIS"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435715044",
+        "first_name": "Calum",
+        "surname": "GAYNOR"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436076193",
+        "first_name": "Dell",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428804376",
+        "first_name": "Nathan",
+        "surname": "LAI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435649637",
+        "first_name": "Daniel",
+        "surname": "JIAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436107277",
+        "first_name": "Anunaya",
+        "surname": "MAINALI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435608299",
+        "first_name": "Yun",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435618791",
+        "first_name": "Justin",
+        "surname": "LEW"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435575960",
+        "first_name": "James",
+        "surname": "SOMMER"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436016921",
+        "first_name": "Tongyu",
+        "surname": "HU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436059736",
+        "first_name": "Lewin",
+        "surname": "EATOUGH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435804161",
+        "first_name": "Gun",
+        "surname": "IM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "443084886",
+        "first_name": "Tishan",
+        "surname": "RITIGAHAPOLA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435636683",
+        "first_name": "Alfred",
+        "surname": "TRAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436358083",
+        "first_name": "Damien",
+        "surname": "GRANET"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435904483",
+        "first_name": "Jonn",
+        "surname": "LIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435607799",
+        "first_name": "Phillip",
+        "surname": "CHUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435891811",
+        "first_name": "Vinuk",
+        "surname": "EKANAYAKE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429429889",
+        "first_name": "Elton",
+        "surname": "LE KHAC"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435983065",
+        "first_name": "Kaixin",
+        "surname": "KANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "442974560",
+        "first_name": "Joshua",
+        "surname": "COHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435715630",
+        "first_name": "Ruizhi",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436115211",
+        "first_name": "Gordon",
+        "surname": "YANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "443052330",
+        "first_name": "Ethan",
+        "surname": "CHAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435926100",
+        "first_name": "Ricky",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438305149",
+        "first_name": "Michael",
+        "surname": "LO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436908598",
+        "first_name": "Kah Min",
+        "surname": "KHOO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437448779",
+        "first_name": "Darius",
+        "surname": "KUAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432891089",
+        "first_name": "William",
+        "surname": "FENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431628198",
+        "first_name": "Alexander",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434610010",
+        "first_name": "Max",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435637663",
+        "first_name": "Simon",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400472301",
+        "first_name": "Nathan",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430818961",
+        "first_name": "Kiran",
+        "surname": "TAM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438000721",
+        "first_name": "Cameron",
+        "surname": "CHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434568668",
+        "first_name": "Siddhartha",
+        "surname": "MISRA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "442519277",
+        "first_name": "Nicholas",
+        "surname": "TILL"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432975657",
+        "first_name": "Jason",
+        "surname": "CAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429055547",
+        "first_name": "Nicholas",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431955091",
+        "first_name": "Hua Yang",
+        "surname": "HU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400052000",
+        "first_name": "Dylan",
+        "surname": "CHAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434111315",
+        "first_name": "Edward",
+        "surname": "JIANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438479805",
+        "first_name": "Matthew",
+        "surname": "TSANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431319772",
+        "first_name": "Angus Hao Tian",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433671261",
+        "first_name": "Christopher",
+        "surname": "KIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400074631",
+        "first_name": "Jim",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431521075",
+        "first_name": "Theodore",
+        "surname": "PICARD"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431514923",
+        "first_name": "Keanu",
+        "surname": "BIAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429325315",
+        "first_name": "Isaac",
+        "surname": "BROOKE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434210771",
+        "first_name": "Stephen",
+        "surname": "PARK"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429020174",
+        "first_name": "Tiancheng",
+        "surname": "XIA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433302842",
+        "first_name": "Neil",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436800975",
+        "first_name": "Bodu",
+        "surname": "GONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438703942",
+        "first_name": "Akansh",
+        "surname": "KOLLA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429940800",
+        "first_name": "Jack",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430861468",
+        "first_name": "Herbert",
+        "surname": "YOUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430089897",
+        "first_name": "Nicholas",
+        "surname": "LAM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431518198",
+        "first_name": "Mark",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431954796",
+        "first_name": "Daniel",
+        "surname": "HAMILTON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433298870",
+        "first_name": "Deawen",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432230112",
+        "first_name": "Bill",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433894235",
+        "first_name": "Anthony",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428234006",
+        "first_name": "Qiyuan",
+        "surname": "GUO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429451892",
+        "first_name": "Yi Tao",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432758079",
+        "first_name": "Kashan",
+        "surname": "ALI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436551711",
+        "first_name": "Yash",
+        "surname": "GUPTA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435008674",
+        "first_name": "Jiaheng",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432863280",
+        "first_name": "Brian Nam Yul",
+        "surname": "KIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438924906",
+        "first_name": "Alexander",
+        "surname": "BURFOOT"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432396703",
+        "first_name": "Ziyang",
+        "surname": "GAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429602360",
+        "first_name": "Jason",
+        "surname": "AHN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428199120",
+        "first_name": "Nilesh",
+        "surname": "NIRMALAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429450047",
+        "first_name": "Aryan",
+        "surname": "POKHARNA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433892640",
+        "first_name": "Edwin",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434262089",
+        "first_name": "Jacky",
+        "surname": "LAU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429063558",
+        "first_name": "Tim",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432395693",
+        "first_name": "Wisdom",
+        "surname": "CAI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434790263",
+        "first_name": "Eden",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "447605953",
+        "first_name": "Joshua",
+        "surname": "LUI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430813218",
+        "first_name": "Joshua",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441567081",
+        "first_name": "Varun",
+        "surname": "SETHU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441588976",
+        "first_name": "Siddhant",
+        "surname": "KALRA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434116040",
+        "first_name": "Micheal",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436324642",
+        "first_name": "Kevin",
+        "surname": "BAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429447500",
+        "first_name": "Ethan",
+        "surname": "FONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431631342",
+        "first_name": "Samuel",
+        "surname": "LIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434758629",
+        "first_name": "Harry",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430171933",
+        "first_name": "Steven",
+        "surname": "VAN DEN HEEVER"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430350684",
+        "first_name": "Yang",
+        "surname": "XIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433896050",
+        "first_name": "Edward",
+        "surname": "QIAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431631130",
+        "first_name": "Eric",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441655045",
+        "first_name": "Ryan",
+        "surname": "GIANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433892682",
+        "first_name": "Brian",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429563704",
+        "first_name": "Braith",
+        "surname": "LEUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431108763",
+        "first_name": "Jason",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433889754",
+        "first_name": "Clayton",
+        "surname": "CHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434012902",
+        "first_name": "James",
+        "surname": "CHEUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429241758",
+        "first_name": "Lee",
+        "surname": "JIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428156722",
+        "first_name": "Kevin",
+        "surname": "MAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430030850",
+        "first_name": "Edwin",
+        "surname": "LAM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436725213",
+        "first_name": "Yehun",
+        "surname": "JU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428221273",
+        "first_name": "Pengyu",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400057303",
+        "first_name": "Kaiwen",
+        "surname": "LUO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433673883",
+        "first_name": "Dennis",
+        "surname": "SUN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434573092",
+        "first_name": "Stewart",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435596169",
+        "first_name": "Bipandeep",
+        "surname": "BANGA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441570520",
+        "first_name": "Daniel",
+        "surname": "JIANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432814742",
+        "first_name": "Adam",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433890302",
+        "first_name": "Ian",
+        "surname": "CHENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "444465816",
+        "first_name": "Junhou",
+        "surname": "XIE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432117031",
+        "first_name": "Sakun",
+        "surname": "MUNASINGHE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430895834",
+        "first_name": "Andy",
+        "surname": "SUN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428175565",
+        "first_name": "Felix",
+        "surname": "SUN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433018435",
+        "first_name": "Pranav",
+        "surname": "NAGALAKONDA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430895842",
+        "first_name": "Jin",
+        "surname": "SUNWOO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "446118919",
+        "first_name": "Trent",
+        "surname": "ZENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441470622",
+        "first_name": "Kyle",
+        "surname": "WU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428562666",
+        "first_name": "Zahin",
+        "surname": "KHAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431627019",
+        "first_name": "Raffy",
+        "surname": "BEYLERIAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441297530",
+        "first_name": "Joshua",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441615922",
+        "first_name": "Joshua",
+        "surname": "SU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "446552449",
+        "first_name": "Harris",
+        "surname": "P JOY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435288804",
+        "first_name": "Sashank",
+        "surname": "BANDI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431880997",
+        "first_name": "Kelvin",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433790804",
+        "first_name": "Ethan",
+        "surname": "LAU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430275534",
+        "first_name": "Gordon",
+        "surname": "YANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431453061",
+        "first_name": "Desmond",
+        "surname": "MA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441017821",
+        "first_name": "Yuxuan",
+        "surname": "WU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432642551",
+        "first_name": "William",
+        "surname": "LUU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433303261",
+        "first_name": "Brandon",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434110181",
+        "first_name": "Derrick",
+        "surname": "CHONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429567700",
+        "first_name": "Rowan",
+        "surname": "SILCOCK"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434382696",
+        "first_name": "Daniel",
+        "surname": "PHAM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432978273",
+        "first_name": "Donren",
+        "surname": "LEUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429531080",
+        "first_name": "Anson",
+        "surname": "GE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432630641",
+        "first_name": "Tristan",
+        "surname": "TAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429603331",
+        "first_name": "Anders",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432866041",
+        "first_name": "Joshua",
+        "surname": "NG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429050057",
+        "first_name": "Eric",
+        "surname": "CAI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431737400",
+        "first_name": "Brendan",
+        "surname": "NGUYEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434195608",
+        "first_name": "Kai",
+        "surname": "VAN DER KLEY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435010016",
+        "first_name": "Matthew",
+        "surname": "XU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429449758",
+        "first_name": "Eric",
+        "surname": "NING"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430861531",
+        "first_name": "Richard",
+        "surname": "YU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434211751",
+        "first_name": "Charles",
+        "surname": "SHI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433899571",
+        "first_name": "Edward",
+        "surname": "ZHAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431255511",
+        "first_name": "Shengjun",
+        "surname": "ZENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431123649",
+        "first_name": "Eric",
+        "surname": "ZHOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431521717",
+        "first_name": "Avneet",
+        "surname": "SINGH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436219318",
+        "first_name": "Seungwoo",
+        "surname": "SON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433293185",
+        "first_name": "Thilakamuni",
+        "surname": "DE SILVA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432855074",
+        "first_name": "Craig",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431452146",
+        "first_name": "Nicholas",
+        "surname": "KALAPOS"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431305054",
+        "first_name": "Dong Jae",
+        "surname": "JEONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434203601",
+        "first_name": "Stephan",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431125820",
+        "first_name": "Patrick",
+        "surname": "WU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "444012382",
+        "first_name": "Abel",
+        "surname": "PARAMBY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "446092430",
+        "first_name": "Benedek",
+        "surname": "HORVATH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400534675",
+        "first_name": "Alexander",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432398471",
+        "first_name": "Charles",
+        "surname": "LIANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434115469",
+        "first_name": "Teewin",
+        "surname": "XIAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431452740",
+        "first_name": "Cheng",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "443707450",
+        "first_name": "Daniel",
+        "surname": "TANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432888398",
+        "first_name": "Vincent",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437209189",
+        "first_name": "Yunzhe",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435561136",
+        "first_name": "Samuel",
+        "surname": "MAK"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431522837",
+        "first_name": "Eric",
+        "surname": "XU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434274478",
+        "first_name": "James",
+        "surname": "TENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434655544",
+        "first_name": "Pin-Chien",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428362497",
+        "first_name": "Derek",
+        "surname": "TRAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432887201",
+        "first_name": "Jun Yan",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429563640",
+        "first_name": "Ethan",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433017421",
+        "first_name": "Joon",
+        "surname": "YOO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400534691",
+        "first_name": "Darrel Shen",
+        "surname": "CHIA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429153832",
+        "first_name": "Benjamin",
+        "surname": "JEONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431685469",
+        "first_name": "Codey",
+        "surname": "SUH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432897753",
+        "first_name": "Damien",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434574064",
+        "first_name": "Joshua",
+        "surname": "WOO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429450721",
+        "first_name": "Ravija",
+        "surname": "WICKRAMARATHNA SIRIW"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432892301",
+        "first_name": "Hanyuan",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435301797",
+        "first_name": "Jack",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431321921",
+        "first_name": "Martin",
+        "surname": "KNEZEVIC"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441655541",
+        "first_name": "Walter",
+        "surname": "ZHUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434264707",
+        "first_name": "James",
+        "surname": "WU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434110068",
+        "first_name": "Anson",
+        "surname": "CHIA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428295251",
+        "first_name": "Archit",
+        "surname": "MAHAJAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431598710",
+        "first_name": "Ritwik",
+        "surname": "JYOSHITH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441470363",
+        "first_name": "Vincent",
+        "surname": "GO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430812483",
+        "first_name": "Victor",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "404650009",
+        "first_name": "Carl",
+        "surname": "BRAGANZA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428363981",
+        "first_name": "Angus",
+        "surname": "ZENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431521059",
+        "first_name": "Yong",
+        "surname": "PHUA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434016649",
+        "first_name": "Brendon",
+        "surname": "ZHAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429056454",
+        "first_name": "Jayden",
+        "surname": "LY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430565257",
+        "first_name": "Aman",
+        "surname": "JUNEJA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "420400012",
+        "first_name": "Aviral",
+        "surname": "AGARWAL"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433013140",
+        "first_name": "Berwyn Sun",
+        "surname": "ZHU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "444574691",
+        "first_name": "Tarin",
+        "surname": "Leslie"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436047142",
+        "first_name": "Luc",
+        "surname": "Jeffriess"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "443016210",
+        "first_name": "Adam",
+        "surname": "Chan"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "442234850",
+        "first_name": "Ethan",
+        "surname": "Tran"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435794203",
+        "first_name": "Bryson",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435627471",
+        "first_name": "Justin",
+        "surname": "QIAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436440162",
+        "first_name": "Shunyao",
+        "surname": "LIANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435671951",
+        "first_name": "Dev",
+        "surname": "KANCHHAL"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436094698",
+        "first_name": "Daniel",
+        "surname": "KIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435655858",
+        "first_name": "Hugo",
+        "surname": "XIAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435671799",
+        "first_name": "Aidan",
+        "surname": "GILLING"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437426864",
+        "first_name": "Aaron",
+        "surname": "CHUA-TRAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435965571",
+        "first_name": "Avish",
+        "surname": "REDDY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435883150",
+        "first_name": "Min Seung",
+        "surname": "KIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435605061",
+        "first_name": "Timothy",
+        "surname": "LAU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436031238",
+        "first_name": "Johnny",
+        "surname": "QIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436356897",
+        "first_name": "Lin",
+        "surname": "THU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435833861",
+        "first_name": "Richard",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435902103",
+        "first_name": "Jayson",
+        "surname": "CHEONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436030193",
+        "first_name": "Blake",
+        "surname": "ALEXANDER"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435982735",
+        "first_name": "Aaron",
+        "surname": "PENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435998062",
+        "first_name": "Alex",
+        "surname": "POULOS"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435721478",
+        "first_name": "Yifei",
+        "surname": "CHENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436100841",
+        "first_name": "Jayath",
+        "surname": "GUNAWARDENA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435923674",
+        "first_name": "Nelson",
+        "surname": "FENG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435847919",
+        "first_name": "Alan",
+        "surname": "DO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441055978",
+        "first_name": "Kenny",
+        "surname": "TSAI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435967370",
+        "first_name": "Henry",
+        "surname": "LAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436277318",
+        "first_name": "Hersh",
+        "surname": "KETKAR"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436100868",
+        "first_name": "Jared",
+        "surname": "WONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435616488",
+        "first_name": "Anthony",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435736424",
+        "first_name": "Ian",
+        "surname": "FAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436101759",
+        "first_name": "Eric",
+        "surname": "DAI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441133693",
+        "first_name": "Joshua",
+        "surname": "CHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437504784",
+        "first_name": "Jake",
+        "surname": "YIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436264518",
+        "first_name": "William",
+        "surname": "XU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435577211",
+        "first_name": "Anthony",
+        "surname": "HOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "442662355",
+        "first_name": "Jason",
+        "surname": "TON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435904114",
+        "first_name": "Jason",
+        "surname": "CHOI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "442210292",
+        "first_name": "Anirudh",
+        "surname": "SASTRY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435930565",
+        "first_name": "Kiet",
+        "surname": "TO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434886651",
+        "first_name": "Joshua",
+        "surname": "TRAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436717555",
+        "first_name": "Yash",
+        "surname": "SAMANT"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435804004",
+        "first_name": "Roy",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435480080",
+        "first_name": "Nelson",
+        "surname": "YANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "440945856",
+        "first_name": "Mingxuan",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428197810",
+        "first_name": "Callum",
+        "surname": "PARSONS"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "443014454",
+        "first_name": "Adam",
+        "surname": "BUCIC"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437582840",
+        "first_name": "Shayan",
+        "surname": "EFTEKHAR"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435836976",
+        "first_name": "Aiken",
+        "surname": "GOH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436466927",
+        "first_name": "Raymon",
+        "surname": "XIAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436727151",
+        "first_name": "Taiga",
+        "surname": "Yamaguchi"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435679358",
+        "first_name": "Philip",
+        "surname": "CHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435544983",
+        "first_name": "Jonathan",
+        "surname": "YEO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436724241",
+        "first_name": "Peter",
+        "surname": "NIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "442507104",
+        "first_name": "Ming-Lok",
+        "surname": "SUN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435820328",
+        "first_name": "Lachlan",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "443018034",
+        "first_name": "Samuel",
+        "surname": "YAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436539959",
+        "first_name": "Jiachen",
+        "surname": "WU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428484088",
+        "first_name": "Owen",
+        "surname": "MON"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435816509",
+        "first_name": "Ken",
+        "surname": "YOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435817076",
+        "first_name": "Alistar",
+        "surname": "BURNS"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435931880",
+        "first_name": "Kobe",
+        "surname": "TRAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "442956588",
+        "first_name": "Rohan",
+        "surname": "WAHAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435375499",
+        "first_name": "Xiang",
+        "surname": "HUANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "442285292",
+        "first_name": "Chris",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436072104",
+        "first_name": "Ian",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435604013",
+        "first_name": "Henry",
+        "surname": "YEUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436180969",
+        "first_name": "Jerry",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435995071",
+        "first_name": "Ajhor",
+        "surname": "WRIDDHO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "443080279",
+        "first_name": "Malcolm",
+        "surname": "WONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437337489",
+        "first_name": "Rehan",
+        "surname": "DE SARAM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435846378",
+        "first_name": "Angad",
+        "surname": "SINGH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "448251047",
+        "first_name": "Morris",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435785671",
+        "first_name": "Shinhaeng",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435751148",
+        "first_name": "Ronald",
+        "surname": "FONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435714846",
+        "first_name": "Lucas",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435908161",
+        "first_name": "Zac",
+        "surname": "SABER"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "443224653",
+        "first_name": "James",
+        "surname": "HOLBOROW"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435536875",
+        "first_name": "Joshua",
+        "surname": "ALFAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435600697",
+        "first_name": "Nelson",
+        "surname": "LUO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "443050671",
+        "first_name": "Christopher",
+        "surname": "BAE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435662269",
+        "first_name": "Michael",
+        "surname": "SHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436416784",
+        "first_name": "Jackson",
+        "surname": "FU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "443610626",
+        "first_name": "Jingye",
+        "surname": "XU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435633501",
+        "first_name": "Byron",
+        "surname": "OUYANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "442733074",
+        "first_name": "Guang Wei",
+        "surname": "CHONG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435556388",
+        "first_name": "Chi Yeung",
+        "surname": "HAU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435791832",
+        "first_name": "Jeffrey",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435473083",
+        "first_name": "Dominic",
+        "surname": "CHEUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429381916",
+        "first_name": "Samuel",
+        "surname": "LIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435533400",
+        "first_name": "Laurence",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435849610",
+        "first_name": "Daniel",
+        "surname": "LIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "443053701",
+        "first_name": "Jaden",
+        "surname": "KE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435908390",
+        "first_name": "Henry",
+        "surname": "HUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435924492",
+        "first_name": "Kevin",
+        "surname": "SHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435597955",
+        "first_name": "Nathan",
+        "surname": "CHAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435736190",
+        "first_name": "Tianlin",
+        "surname": "QU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "442976856",
+        "first_name": "Louis",
+        "surname": "PAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435800335",
+        "first_name": "Joseph",
+        "surname": "HOGAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435539785",
+        "first_name": "Oscar",
+        "surname": "FEVRE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "440948065",
+        "first_name": "Sung Woo",
+        "surname": "GO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435544681",
+        "first_name": "Ricky",
+        "surname": "ZOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435614183",
+        "first_name": "Jason",
+        "surname": "ZOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432398374",
+        "first_name": "Carey",
+        "surname": "LI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439872420",
+        "first_name": "Alex",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "437177473",
+        "first_name": "Sean",
+        "surname": "WIBISONO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436373678",
+        "first_name": "Sukrit",
+        "surname": "KHANNA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400190321",
+        "first_name": "Chan Woo",
+        "surname": "SHIM"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435740693",
+        "first_name": "Lachlan",
+        "surname": "DOE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435301738",
+        "first_name": "Junru",
+        "surname": "ZHOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430577239",
+        "first_name": "Kwun Hang Cedri",
+        "surname": "SIU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438447431",
+        "first_name": "Jordan",
+        "surname": "LY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434116031",
+        "first_name": "Allan",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431149931",
+        "first_name": "Sohum",
+        "surname": "JAIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428350022",
+        "first_name": "Daniel",
+        "surname": "OUYANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430565281",
+        "first_name": "Aditya",
+        "surname": "JUNEJA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431125838",
+        "first_name": "Oscar",
+        "surname": "XIE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433790821",
+        "first_name": "Jonathan",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435098428",
+        "first_name": "Alexander",
+        "surname": "CAI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434748593",
+        "first_name": "Oscar",
+        "surname": "SHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "439636521",
+        "first_name": "Sahil",
+        "surname": "KHARWADKAR"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "432191966",
+        "first_name": "Kieran Kong",
+        "surname": "LIEW"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434112338",
+        "first_name": "Timothy",
+        "surname": "LEUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "441784406",
+        "first_name": "Caleb",
+        "surname": "HANLY"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436057709",
+        "first_name": "Tanay",
+        "surname": "SHRESTHA"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435870813",
+        "first_name": "Paul",
+        "surname": "BUI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428420713",
+        "first_name": "Chen",
+        "surname": "ZHOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434852960",
+        "first_name": "Charlie",
+        "surname": "ZHOU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400008990",
+        "first_name": "Himan Ayusche",
+        "surname": "KUMARAGE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429162106",
+        "first_name": "Jeffrey",
+        "surname": "ZHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431322269",
+        "first_name": "William",
+        "surname": "LIN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400074666",
+        "first_name": "Charles Kwong Y",
+        "surname": "HUI"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433672801",
+        "first_name": "Moonkyu Michael",
+        "surname": "PARK"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435837581",
+        "first_name": "Benjamin",
+        "surname": "PAYNE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "440635105",
+        "first_name": "Jae Won",
+        "surname": "CHANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435845703",
+        "first_name": "Jia Yi",
+        "surname": "YU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435884059",
+        "first_name": "Louis",
+        "surname": "AHN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436231687",
+        "first_name": "Zhenyu",
+        "surname": "SHEN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438246983",
+        "first_name": "Seung Min",
+        "surname": "JUNG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "436114753",
+        "first_name": "Kai Wen",
+        "surname": "HU"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "435724914",
+        "first_name": "Daniel",
+        "surname": "WANG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "444073829",
+        "first_name": "Thinesshan",
+        "surname": "THEVATHASAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431959488",
+        "first_name": "Aden",
+        "surname": "WEIR"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429563631",
+        "first_name": "James",
+        "surname": "LEE"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "431318873",
+        "first_name": "Luis",
+        "surname": "ALVAREZ RODRIGUEZ"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "430815075",
+        "first_name": "Thomas",
+        "surname": "NG"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433026926",
+        "first_name": "Harry",
+        "surname": "PAN"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433922816",
+        "first_name": "Jacob",
+        "surname": "HOWARD"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "438627022",
+        "first_name": "Nathan",
+        "surname": "TO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "433861931",
+        "first_name": "Hanry",
+        "surname": "CAO"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "400504059",
+        "first_name": "Simon",
+        "surname": "PIECH"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "429447356",
+        "first_name": "Kalin",
+        "surname": "ENTCHEV"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "434086124",
+        "first_name": "Zeu",
+        "surname": "SUL"
+    }},
+    {
+        "model": "webapp.student",
+        "fields":{ "student_number": "428585348",
+        "first_name": "Brendan",
+        "surname": "YE"
+    }}
+]

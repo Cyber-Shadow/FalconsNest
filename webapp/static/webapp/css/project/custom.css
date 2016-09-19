@@ -186,8 +186,12 @@ h3 {
 }
 
 #loginpage {
-  height:100vh;
+  height: inherit;
+  width: inherit;
   background-color: #07795f;
+  text-align: center;
+  vertical-align: middle;
+  float: none;
 }
 
 

@@ -1,6 +1,6 @@
 {% extends "webapp/yournestheader.html" %}
 
- {% block content %}
+{% block content %}
  <html lang="en">
 
  <body>
@@ -9,7 +9,7 @@
      
      <div class="prompt" >
        <font color="#F00" style="font-weight:bold;">{{ content }}</font>
-       <form action="/auth/" method="POST">
+       <form action="/changepw/" method="POST">
          {% csrf_token %}
          <h2>Change your password:</h2>
          <h3>Old Password:</h3> <input class="form-control" type="password" name="password">
@@ -22,26 +22,20 @@
    <div class="prompt">
      <h2>Change your favourite order:</h2>
      <h3>Order:</h3> 
-       <form action="/faveorder/" method="post">
-       <!--<input class="form-control" type="order" name="order" placeholder="Menu...">-->
-         {% for order in orderlist %}
-           <label class="ordertype mdl-radio mdl-js-radio mdl-js-ripple-effect" for="menutype-u" />
-           <input type="radio" class="mdl-radio__button" id="menutype-u" name="faveorder" value='{{ order.name }}'>
-           <span class="mdl-radio__label">{{ order.name }}</span>
-           </label> <br>
-         {% endfor %}
+      <form action="/faveorder/" method="POST">{% csrf_token %}
+      {% for order in orderlist %}
+        <label class="ordertype mdl-radio mdl-js-radio mdl-js-ripple-effect" for="menutype-{{ order.name }}" />
+          <input type="radio" class="mdl-radio__button" id="menutype-{{ order.name }}" name="faveorder" value="{{ order.name }}">
+          <span class="mdl-radio__label">{{ order.name }}</span>
+        </label> <br>
+      {% endfor %}
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit">Submit</button>
-       </form>
-      </div>
-       <br>
-       <br>
-     </div> 
-   </form>
- </div>
+     </form>
+       
+   </div>
+   <br>
+   <br>
+   
 </body>
 
-
-
-
-
- {% endblock %}
+{% endblock %}

@@ -16,17 +16,18 @@ findItem = ->
     for j in [0..endresult.length - 1]
       temp = (endresult[j].split(" ")).join("_")
       endresult[j] = endresult[j] + " ($" + costs[j] + ")" + 
-                                    "<button class='btn flatbutton' id='" + 
-                                    temp + "minus' onClick='changeval(\"" +
+                                    "<div class=<button class='btn flatbutton' id='" + 
+                                    temp + "minus' onClick='changeVal(\"" +
                                     endresult[j] + "\", -1)'>-</button>
                                     <input class='itemamount' id='" + 
                                     temp + "amount' value='" + amounts[j] +
                                     "' onkeyup='updateItem(\"" + endresult[j] +
-                                    "\")'></input>
-                                    <button class='btn flatbutton' id='" + 
-                                    temp + "plus' onClick='changeval(\"" +
+                                    "\")'></input>" + 
+                                    "<button class='btn flatbutton' id='" +
+                                    temp + "plus' onClick='changeVal(\"" +
                                     endresult[j] + "\", 1)'>+</button>"
-  $("#dropdownmenu").html endresult.join "<br>"
+  $("#dropdownmenu").html endresult.join("<br>") + "<br><button class='mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white'" +
+                                                   "type='submit'>Order your stuff!</button>"
   
 changeVal = (string, amount) ->
   sum = sumAmounts()

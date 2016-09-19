@@ -27,9 +27,27 @@ class menumodel(models.Model):
         return self.name
   
         
-class favemodel(models.Model):
+class usersetting(models.Model):
     name = models.CharField(max_length=50)
-    favorite = models.CharField(max_length=50)
+    fave = models.CharField(max_length=50)
     
     def __unicode__(self):
         return self.name
+
+class student(models.Model):
+    student_number = models.IntegerField()
+    first_name = models.CharField(max_length=50)
+    surname = models.CharField(max_length=50)
+    signedup = models.BooleanField(default=False)
+    
+    def __unicode__(self):
+        return str(self.student_number)
+        
+    def First_Name(self):
+        return self.first_name
+    
+    def Last_Name(self):
+        return self.surname
+        
+    def Signed_Up(self):
+        return self.signedup
