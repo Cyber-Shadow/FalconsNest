@@ -35,7 +35,7 @@ class usersetting(models.Model):
         return self.name
 
 class student(models.Model):
-    student_number = models.IntegerField()
+    student_number = models.CharField(max_length=9)
     first_name = models.CharField(max_length=50)
     surname = models.CharField(max_length=50)
     signedup = models.BooleanField(default=False)

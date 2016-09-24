@@ -2,19 +2,19 @@
 
 {% block content %}
  <html lang="en">
-
  <body>
    <div class="accountSettings">
      <h1 class="settingstitle">Account Settings</h1>
-     
+
      <div class="prompt" >
-       <font color="#F00" style="font-weight:bold;">{{ content }}</font>
-       <form action="/changepw/" method="POST">
+       <form action="/changepw/" method="POST">{% csrf_token %}
          {% csrf_token %}
+c
          <h2>Change your password:</h2>
-         <h3>Old Password:</h3> <input class="form-control" type="password" name="password">
-         <h3>Password:</h3> <input class="form-control" type="password" name="password">
-         <h3>Confirm Password:</h3> <input class="form-control" type="password" name="password">
+         <h3>Current Password:</h3> <input class="form-control" type="password" name="oldpw">
+         <h3>New Password:</h3> <input class="form-control" type="password" name="newpw">
+         <h3>Confirm Password:</h3> <input class="form-control" type="password" name="confpw">
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit">Submit</button>
        </form>
      </div>
    </div>

@@ -28,19 +28,17 @@ def chris(request):                                #Main Chris page
     
 def yournest(request):
     #Try if user is authenticated, if not authenticated redirect to /unauthorised
-    menulist = ordermodel.objects.all()
-    yourdict = {}
+    if unreg(request.user.username) is True:
+        return HttpResponseRedirect('/unauthorised')
     if not request.user.is_authenticated:
         return HttpResponseRedirect('/')
-        
     try:
         if request.user.username == "chris":
-        
             return HttpResponseRedirect('/chris')
-
     except:
         return HttpResponseRedirect('/')
         
+    '''
     try:
         fullnamedict = {'full_name':request.user.username}
         yourdict = ordrd
@@ -52,6 +50,11 @@ def yournest(request):
         yourdict.update(fullnamedict)
         yourdict.update(csrf(request))
         yourdict.update({'menulist':menulist})
+    '''
+    yourdict = {'menulist': ordermodel.objects.all(),
+                'full_name': str(request.user.first_name + ' ' + request.user.last_name),
+            }
+    yourdict.update(csrf(request))
     return render(request, 'webapp/yournest.html', yourdict)
     
 
@@ -71,13 +74,24 @@ def schoollinks(request):
         return HttpResponseRedirect('/error')
 
 def settings(request):
-    if request.user.is_authenticated: 
+    if request.user.is_authenticated:
+
         pushdict = { 'full_name' : request.user.username,
                      'orderlist' : ordermodel.objects.all(),
-                } 
+                }
+        
+        try:
+            for x in [1,2,3]:
+                if request.session['cpwerror'] == x: 
+                    pushdict.update({'error':x})
+        except:
+            pass
+        finally:
+            request.session['cpwerror'] = 0
         return render(request, 'webapp/settings.html', pushdict)
     
     else:
+
         return HttpResponseRedirect('/unauthorised')
     
 def menu(request):
@@ -218,6 +232,9 @@ def order(request):
             return HttpResponseRedirect('/unauthorised')
     else:
         return HttpResponseRedirect('/error')
+        
+def ben(request):
+    return render(request, 'webapp/ben.html')
 
 
 def faveorder(request):
@@ -248,5 +265,15 @@ def quickorder(request):
     
             except:
                 return HttpResponseRedirect('/error')
+                
+def unreg(username):
+    try:
+        studentreg = student.objects.get(student_number=username)
+        if studentreg.signedup == False:
+            return True
+        else:
+            return False
+    except:
+        return False
 
             

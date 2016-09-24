@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 {% extends "webapp/yournestheader.html" %}
-
+    <style type="text/css">
+       p{
+           position: absolute;
+           left: 3%;
+       }     
+    </style>
 {% block content %}
 <html>
 <head>
 <title>Terms and Conditions</title>
 </head>
 <body>
+<h1>Terms and Conditions<h1>
 <p>Credit
 
 This document was created using a Contractology template available at http://www.freenetlaw.com.
@@ -27,13 +33,14 @@ Unless otherwise stated, NSBWhitespace and/or its licensors own the intellectual
 You may view, download for caching purposes only, and print pages from the website for your own personal use, subject to the restrictions set out below and elsewhere in these terms and conditions.
  
 You must not:
- 
-<li>republish material from this website (including republication on another website);</li>
-<li>sell, rent or sub-license material from the website;</li>
-<li>show any material from the website in public;</li>
-<li>reproduce, duplicate, copy or otherwise exploit material on this website for a commercial purpose;</li>
-<li>edit or otherwise modify any material on the website; or
-<li>redistribute material from this website (except for content specifically and expressly made available for redistribution).</li>
+<ul>
+    <li>republish material from this website (including republication on another website);</li>
+    <li>sell, rent or sub-license material from the website;</li>
+    <li>show any material from the website in public;</li>
+    <li>reproduce, duplicate, copy or otherwise exploit material on this website for a commercial purpose;</li>
+    <li>edit or otherwise modify any material on the website; or
+    <li>redistribute material from this website (except for content specifically and expressly made available for redistribution).</li>
+</ul>
  
  
 Acceptable use
@@ -152,8 +159,7 @@ NSBWhitespace is a not-for-profit organisation dedicated to the digital improvem
  
 NSBWhitespace’s address is Falcon Street & Miller Street, Crows Nest NSW 2065.
  
-You can contact NSBWhitespace by email to nsbfalconsnest@gmail.com
-</p>
+You can contact NSBWhitespace by email to nsbfalconsnest@gmail.com</p>
 </body>
 </html>
 {% endblock %}

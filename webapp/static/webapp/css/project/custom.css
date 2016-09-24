@@ -1,5 +1,29 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
 
+@media (min-width: 475px) 
+{
+    #mobileimg
+    {
+      display: none;
+    }
+    #loginbox
+    {
+      margin-top:45%;
+    }
+    #logincontainer
+    {
+      margin-top:45%;
+    }
+}
+
+@media (max-width: 475px) 
+{
+    .logosection
+    {
+      display:none;
+    }
+}
+
 html {
   width: 100%;
   background-color: #f2f2f2;
@@ -15,6 +39,17 @@ body {
 h3 {
   text-align: left;
   padding-bottom: 0px;
+}
+
+.logosection {
+  height: 100vh;
+  width: 100vw;
+}
+
+#logincontainer {
+  width:100%;
+  text-align:center;
+  margin-top:0;
 }
 
 #signin {
@@ -73,7 +108,11 @@ h3 {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-top:50%;
+}
+
+#loginbox {
+    display: inline;
+    align-items: center;
 }
 
 .prompt {
@@ -186,13 +225,12 @@ h3 {
 }
 
 #loginpage {
-  height: inherit;
-  width: inherit;
   background-color: #07795f;
   text-align: center;
   vertical-align: middle;
   float: none;
 }
+
 
 
 /**************************

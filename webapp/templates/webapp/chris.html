@@ -28,6 +28,7 @@
     <form action="/addorder/" method="POST">{% csrf_token %}
       <h3>Add an item to live ordering:</h3> 
       <input class="form-control" type="order" name="addorder" placeholder="Menu...">
+      <br>
       <input class="form-control" type="order" name="addorderprice" placeholder="Insert Price...">
       <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit">Submit</button>
     </form>
@@ -36,6 +37,7 @@
       <h3>Add an item to the menu:</h3> 
       <p>Unorderable food (e.g. Sushi) are fresh food that cannot be ordered.</p>
       <input class="form-control" type="order" name="menuadd" placeholder="Menu...">
+      <br>
       <input class="form-control" type="order" name="menuaddprice" placeholder="Menu...">
       <button data-toggle="collapse" data-target="#ordertypes">Display Options</button>
       <div class="collapse" id="ordertypes">

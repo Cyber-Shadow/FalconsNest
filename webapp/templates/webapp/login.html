@@ -12,15 +12,21 @@
 </head>
 
 <body>
-<table>
+<table style="width: 100%;">
 <tr>
-<td width="75%" style="background-color: #07795f;"> 
-<div id="loginpage" style="width:100%">
-<img src="{% static 'webapp/img/logo.svg' %}">
+<td class="logosection" style="background-color: #07795f; width:65vw"> 
+<div id="loginpage">
+<img style="width:35%;height:100%;min-width:250px"src="{% static 'webapp/img/logo.svg' %}">
 </div>
 </td>
-<td width="33.5%" min-width="150px">
-<div style="height:100vh; width:100%;">
+
+
+<td id="loginbox" style="">
+<div style="text-align:center;width:100%">
+<div id="mobileimg" style="width=100vw;padding-top:10%;">
+        <img style="width:50%;height:50%;display:block;margin:auto;top:0;bottom:0;left:0;right:0;"src="{% static 'webapp/img/logo.svg' %}">
+</div>
+<div id="logincontainer">
     <div class="loginformcontrol">
         <font color="#F00" style="font-weight:bold;">{{ content }}</font>
         <form action="/auth/" method="POST">
@@ -28,7 +34,9 @@
             <h3>Student ID:</h3> <div class="input-group">
             <input type="text" class="form-control" placeholder="Username" name="username">
             </div>
-            <h3>Password:</h3> <input class="form-control" type="password"  placeholder="Password"  name="password">
+            <h3>Password:</h3> <div class="input-group">
+            <input class="form-control" type="password"  placeholder="Password"  name="password">
+            </div>
             <br>
             <div id="button">
                 <button input type="submit" class="btn btn-primary btn-lg raised">Submit</button>
@@ -36,10 +44,12 @@
         </form>
     </div>
 </div>
+</div>
 </td>
+
 </tr>
 </table>
-    
+
 </body> 
 </html>
 </body> 

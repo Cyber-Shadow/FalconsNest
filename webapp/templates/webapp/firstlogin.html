@@ -6,17 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <div class="loginbar">
-        <h1 style="font-weight:bold;">Hi {{ firsttimeuser }}! Welcome to Falcon's Nest, the easy way to order food!</h1>
+        <h1 style="font-weight:bold;">Hi {{ full_name }}! Welcome to Falcon's Nest, the easy way to order food!</h1>
     </div>
   </br>
     <div class="prompt">
-        <font color="#F00" style="font-weight:bold;">{{ content }}</font>
+         {% ifequal error 1 %}
+           <font color="#F00" style="font-weight:bold;">You did not change your password.</font>
+         {% endifequal %}
+         {% ifequal error 2 %}
+           <font color="#F00" style="font-weight:bold;">Your new password is not long enough.</font>
+         {% endifequal %}
+         {% ifequal error 3 %}
+           <font color="#F00" style="font-weight:bold;">Your new password and comfirmation password did not match.</font>
+         {% endifequal %}
         <form action="/authr/" method="POST">
             {% csrf_token %}
-            {{ invalid }}
             <h2>Before you continue, you must change your password...</h2>
-            <h3>Password:</h3> <input class="form-control" type="password" name="password">
-            <h3>Confirm Password:</h3> <input class="form-control" type="password" name="confirm">
+            <h3>Password:</h3> <input class="form-control" type="password" name="newpw">
+            <h3>Confirm Password:</h3> <input class="form-control" type="password" name="confpw">
             <div id="button">
             </br>
                 <button input type="submit" class="btn btn-primary btn-lg raised"><span>Submit</span></button>

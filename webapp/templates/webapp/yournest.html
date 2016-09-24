@@ -18,10 +18,8 @@
         data-toggle="collapse" data-target="#menusearch">Order Here</button>
         <div id="menusearch" class="collapse">
           <input id="menuinput" placeholder="Search the menu..." onkeyup="findItem()" value=""></input>
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary white" type="submit">Order your stuff!</button>
         </div>
         <form id="dropdownmenu" action="/order/" method="POST">
-          {% csrf_token %}
           
         </form>
       </div>
